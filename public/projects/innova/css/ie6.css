@@ -1,0 +1,71 @@
+div#content {
+    height: 100%;
+    overflow-y: visible;
+	overflow-x:hidden;
+}
+
+div#main {
+    height:1px;
+	overflow:visible;
+}
+
+/*
+opacity
+*/
+
+div.bgr {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+div.bgr1 {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+/*
+png fix
+*/
+
+a.rss span{
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/rss.png", sizingMethod = "crop");
+}
+
+body#ank a.logo {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/title2.png", sizingMethod = "crop");
+}
+
+body#pvb a.logo {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/title1.png", sizingMethod = "crop");
+}
+
+div.postfooter {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/postfooter.png", sizingMethod = "crop");
+}
+
+div.postfooter div.tags {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/itags.png", sizingMethod = "crop");
+}
+
+div.postfooter a.more {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/arr1.png", sizingMethod = "crop");
+}
+/*
+element:hover
+*/
+
+element {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+element.hover{}

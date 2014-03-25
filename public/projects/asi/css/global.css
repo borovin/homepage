@@ -1,0 +1,32 @@
+.g-imgLeft {
+    float: left;
+    max-width: 50%;
+    padding: 0 20px 10px 0;
+}
+
+.g-imgRight {
+    float: right;
+    max-width: 50%;
+    padding: 0 0 10px 20px;
+}
+
+.g-button {
+    display: inline-block;
+    margin: 0 0 10px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    *display: inline;
+    *zoom: 1;
+}
+
+.g-button img {
+    margin: 0;
+    position: relative;
+}
+
+.ff3 button.g-button img {
+    left: -3px;
+}

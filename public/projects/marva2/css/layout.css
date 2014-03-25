@@ -1,0 +1,57 @@
+.l-outside {
+    min-height: 100%;
+    width:100%;
+    min-width:1000px;
+}
+
+.l-inside{
+    padding-bottom:150px !important;
+    z-index:20;
+    clear:both;
+}
+
+.l-header{
+    padding:15px 0 0;
+    background:url("../img/bg1.png") 0 0 repeat-x;
+    border-bottom:10px solid #b7dafa;
+    width:100%;
+    z-index:10;
+}
+
+.l-footer {
+    height: 120px;
+    margin-top: -120px !important;
+    z-index:30;
+}
+
+.l-pageCenter{
+    width:960px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.l-leftSide{
+    width:686px;
+    float:left;
+    padding-bottom:50px;
+}
+
+.l-rightSide{
+    float:right;
+    margin:0 -12px;
+    width:290px;
+}
+
+.l-rightSideText{
+    padding:0 0 0 30px;
+    color:#999999;
+    font-size:12px;
+}
+
+.l-header .l-leftSide{
+    padding-bottom:0;
+}
+
+.l-text{
+    padding:30px 0;
+}

@@ -1,0 +1,112 @@
+.b-form .field {
+}
+
+.b-form label {
+}
+
+.b-form .inputOuter {
+    background:url("../img/input1.png") 0 0 no-repeat;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.b-form .inputInner {
+    background:url("../img/input1.png") right 0 no-repeat;
+    padding:0 10px 0 0;
+    left:10px;
+    display:block;
+    -display:inline;
+    -zoom:1;
+}
+
+.b-form .inputText {
+    border:none;
+    background:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    height:34px;
+    line-height:34px;
+    width:200px;
+}
+
+.b-form .inputInner label {
+    position:absolute;
+    left:1px;
+    top:10px;
+    color:#9c9c9c;
+    font-size:12px;
+}
+
+.b-form .inputInner button.b-button {
+    margin-right:-3px;
+    vertical-align:top;
+    top:2px;
+}
+
+.gecko .b-form .inputInner button.b-button {
+    margin-right:-6px;
+}
+
+.b-form textarea{
+    border:none;
+    background:none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    padding-top:8px;
+}
+
+/**/
+
+.b-form_big{
+
+}
+
+.b-form_big .field{
+    padding-bottom:10px;
+}
+
+.b-form_big .field .input{
+    background:#fff;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    vertical-align:middle;
+    height:45px;
+    padding:0 10px;
+    font-size:18px;
+    color:#3c71a8;
+    border:1px solid #badaf7;
+    border-radius:5px;
+    margin-right:5px;
+}
+
+.b-form_big .input input{
+    border:none;
+    background:none;
+    height:45px;
+    line-height:45px;
+    font-family:Arial;
+    font-size:18px;
+    color:#3c71a8;
+    width:400px;
+    outline:none;
+}
+
+.b-form_big .hint{
+    color:#3b70a7;
+    font-size:12px;
+}
+
+.b-form_big .prefix{
+    padding-right:2px;
+    -top:-12px;
+}
+
+.b-form_big .input label{
+    position:absolute;
+    color:#bacde0;
+    top:12px;
+    left:10px;
+}

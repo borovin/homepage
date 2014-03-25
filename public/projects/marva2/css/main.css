@@ -1,0 +1,32 @@
+@import "default.css";
+@import "layout.css";
+@import "global.css";
+@import "icons.css";
+@import "js.css";
+
+/* BLOCKS */
+
+@import "b-button.css";
+@import "b-form.css";
+@import "b-logo.css";
+@import "b-topMenu.css";
+@import "b-topContacts.css";
+@import "b-languageSelect.css";
+@import "b-intro.css";
+@import "b-clients.css";
+@import "b-clientSlider.css";
+@import "b-bottomData.css";
+@import "b-footerTools.css";
+@import "b-partnerCase.css";
+@import "b-list.css";
+@import "b-feedback.css";
+@import "b-trialSteps.css";
+@import "b-productsCase.css";
+@import "b-table.css";
+@import "b-compare.css";
+@import "b-rightMenu1.css";
+@import "b-videoPreview.css";
+@import "b-rightMenu2.css";
+@import "b-paginator.css";
+
+@import "import1.css";

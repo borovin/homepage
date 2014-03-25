@@ -1,0 +1,86 @@
+.b-feedback {
+
+}
+
+.b-feedback .g-avatar{
+    float:left;
+    margin:0 15px 0 0;
+}
+
+.b-feedback h4{
+    color:#2481d0;
+    font-size:18px;
+}
+
+.b-feedback p{
+    color:#666;
+    font-size:13px;
+    padding-right:30px;
+}
+
+.b-feedback .userName{
+    color:#000;
+    font-size:14px;
+}
+
+.b-feedback .userInfo{
+    color:#666;
+    font-size:12px;
+    font-style:italic;
+}
+
+.b-feedback h2 .title{
+    top:2px;
+    *top:0;
+}
+
+.b-feedback .arrow{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    height:32px;
+    width:32px;
+    cursor:pointer;
+    *margin-right:5px;
+}
+
+.b-feedback .arrow:hover{
+    background-position:0 -32px;
+}
+
+.b-feedback .arrow:active{
+    background-position:0 -64px;
+}
+
+.b-feedback .arrow.disabled{
+    cursor:default;
+    background-position:0 -96px !important;
+}
+
+.b-feedback .arrowRight{
+    background:url("../img/arrow1_right.png") 0 0 no-repeat;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/arrow1_right.png", sizingMethod = "crop");
+    right:0;
+}
+
+.b-feedback .arrowLeft{
+    background:url("../img/arrow1_left.png") 0 0 no-repeat;
+    left:0;
+    margin-left:10px;
+    margin-right:5px;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/arrow1_left.png", sizingMethod = "crop");
+}
+
+.b-feedback .sliderList{
+    list-style:none;
+    overflow:hidden;
+    padding:0;
+}
+
+.b-feedback .item{
+    float:left;
+    width:575px;
+}

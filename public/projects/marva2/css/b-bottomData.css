@@ -1,0 +1,90 @@
+.b-bottomData{
+    padding:0 0 40px;
+    overflow:hidden;
+    clear:both;
+    -zoom:1;
+}
+
+.b-bottomData h4{
+    font-size:14px;
+    font-weight:bold;
+    padding:0 0 15px;
+    text-transform:uppercase;
+}
+
+.b-bottomData .siteMap{
+    float:left;
+    width:600px;
+}
+
+.b-bottomData .siteMap .column{
+    float:left;
+    width:25%;
+}
+
+.b-bottomData .siteMap ul{
+    list-style:none;
+    padding:0;
+}
+
+.b-bottomData .siteMap li{
+
+}
+
+.b-bottomData .siteMap li a{
+    font-size:11px;
+    text-decoration:none;
+}
+
+.b-bottomData .statistics{
+    float:right;
+}
+
+.b-bottomData .statistics .item{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align:top;
+    font-family:Helvetica;
+}
+
+.b-bottomData .statistics .item1{
+    padding:0 10px 0 0;
+    color:#ffbb00;
+}
+
+.b-bottomData .statistics .item2{
+    padding:0 0 0 10px;
+    color:#a7c818;
+}
+
+.b-bottomData .statistics .item3{
+    padding:0 0 0 10px;
+    color:#4a9de9;
+}
+
+.b-bottomData .statistics .number{
+    font-size:36px;
+    font-weight:bold;
+}
+
+.b-bottomData .statistics .description{
+    font-weight:bold;
+}
+
+.b-bottomData .statistics .separator{
+    vertical-align:top;
+    font-weight:bold;
+    font-size:30px;
+    color:#cccccc;
+    line-height:44px;
+    *top:5px;
+}
+
+.mac .b-bottomData .statistics .separator{
+    top:-5px;
+}
+
+.webkit .b-bottomData .statistics .separator{
+    top:0;
+}

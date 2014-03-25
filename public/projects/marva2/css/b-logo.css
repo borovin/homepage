@@ -1,0 +1,25 @@
+.b-logo {
+    float:left;
+    margin:0 75px 0 0;
+}
+
+.b-logo .logo {
+    margin:0 20px 0 0;
+    white-space:nowrap;
+    text-decoration:none;
+    -zoom:1;
+    -height:29px;
+    -width:138px;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/logo.png", sizingMethod="crop");
+}
+
+.b-logo .logo img {
+    border:none;
+    -display:none;
+}
+
+.b-logo .slogan {
+    font-size:18px;
+    top:-4px;
+}

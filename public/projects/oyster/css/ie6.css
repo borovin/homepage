@@ -1,0 +1,154 @@
+div#content {
+    height: 100%;
+    overflow-y: visible;
+	overflow-x:hidden;
+	position:relative;
+}
+
+div#footer{
+	margin-top:-177px;
+}
+div#search input.button {
+	top:1px;
+	padding-bottom:3px;
+}
+
+h1#info {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titleinfo.png", sizingMethod = "crop");
+}
+
+h1#voice {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titlevoice.png", sizingMethod = "crop");c
+}
+
+h1#connect {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titleconnect.png", sizingMethod = "crop");
+}
+
+h1#data {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titledata.png", sizingMethod = "crop");
+}
+
+h1#contact {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titlecontact.png", sizingMethod = "crop");
+}
+
+div#oy {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/oy.png", sizingMethod = "crop");
+}
+
+a#logo {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/logo.png", sizingMethod = "crop");
+}
+
+body#inside a#logo {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/logoin.png", sizingMethod = "crop");
+}
+
+div#puls h2 {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titleclients.png", sizingMethod = "crop");
+}
+
+div#before h3 {
+	background:#ED1E26 url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titlebefore.png", sizingMethod = "crop");
+}
+
+div#after h3 {
+	background:#ED1E26 url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/titleafter.png", sizingMethod = "crop");
+}
+
+div#textblock p.post {
+	height:1px;
+	overflow:visible;
+}
+
+div#center h2#tsearch {
+    margin-left:35px;
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/h2search.png", sizingMethod = "crop")
+}
+
+div#center h2#tinfo {
+    margin-left:35px;
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/h2info.png", sizingMethod = "crop")
+}
+
+div.menu ul li a {
+    white-space:nowrap;
+}
+
+/*
+opacity
+*/
+
+element{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+
+/*
+png fix
+*/
+
+element {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../im/img.png", sizingMethod = "crop");
+}
+
+/*
+element:hover
+*/
+
+div.menu {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+div.menu.hover{
+	background:#fafafa;
+}
+
+div#textblock p.post {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+div#textblock p.post.hover {
+    background: #d0d0d0;
+}
+
+div#search input.button {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+div#search input.button.hover {
+    background: transparent url(../im/search.png) no-repeat scroll 0 -44px;
+	color:#ff343c;
+}

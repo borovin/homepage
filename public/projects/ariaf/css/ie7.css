@@ -1,0 +1,27 @@
+body {
+    overflow-y: visible;
+}
+
+div#left {
+	padding:42px 20px 0 49px;
+}
+
+div.circle div.top, div.circle div.bottom {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+div.circle div.left, div.circle div.right {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+div#right p {
+	margin-top:-70px;
+}
+
+div#footer div.phone {
+	white-space:nowrap;
+}
+
+div#footer div.address {
+	white-space:nowrap;
+}

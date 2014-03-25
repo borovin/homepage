@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="screen, print" href="css/main.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fix.js">
+    </script>
+    <script type="text/javascript" src="js/ready.js">
+    </script>
+    <!--[if lte IE 6]>
+    <link href="css/ie.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/ie/ie.js">
+    </script>
+    <script type="text/javascript" src="js/rounded-corners-min.js">
+    </script><![endif]-->
+    <link rel="shortcut icon" type="image/ico" href="styles/favicon.gif"/>
+</head>
+<body>
+<div class="l-outside">
+<div class="l-header">
+    <div class="l-pageCenter">
+        <div class="b-logo">
+            <a href="#" class="logo" title="#"><img src="img/logo.png" alt="#"/></a>
+
+            <div class="slogan">Сервисное обслуживание</div>
+        </div>
+        <div class="b-topMenu">
+            <ul>
+                <li><a href="#">Обслуживание</a></li>
+                <li><a href="#">Подбор расходомеров</a></li>
+                <li class="active"><a href="#">Мои настройки</a></li>
+                <li class="login"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="l-inside">
+<h1>Подбор расходомеров</h1>
+
+<p style="width:500px;">
+    Подбор пар приборов производится для "замкнутых систем" и в некоторых случаях не дает ожидаемого результата
+</p>
+
+<div class="l-leftSide2">
+    <form action="#" class="b-form b-form_podbor j-dynamicForm">
+        <h2>1. Заполните поля:</h2>
+
+        <p>
+            Укажите диаметр трубопровода и диапазон расхода:
+        </p>
+        <fieldset class="horizontalField" style="padding-bottom:40px;">
+                    <span class="fieldTitle">
+                            Dy
+                    </span>
+
+            <div class="field" style="padding-right:50px;">
+                <select name="dy" style="min-width:80px;">
+                    <option>1000</option>
+                    <option>1000</option>
+                    <option>1000</option>
+                    <option>1000</option>
+                    <option>1000</option>
+                </select>
+            </div>
+                    <span class="fieldTitle">
+                            Расход, м<sup>3</sup>
+                    </span>
+
+            <div class="field">
+                <label class="toggled">от</label> <input style="width:40px;" type="text"
+                    class="text j-textInput"/>
+            </div>
+            <div class="field">
+                <label class="toggled">до</label> <input style="width:40px;" type="text"
+                    class="text j-textInput"/>
+            </div>
+        </fieldset>
+        <p>
+            Введите типы и серийные номера расходомеров, которые необходимо подобрать в пары:
+        </p>
+        <fieldset class="horizontalField j-dynamicField">
+            <div class="field">
+                <select style="min-width:150px;">
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="toggled"> Введите номер прибора </label> <input type="text"
+                    class="text j-textInput"/>
+            </div>
+                    <span class="iconClose2 j-removeField">
+                    </span>
+        </fieldset>
+        <fieldset class="horizontalField j-dynamicField">
+            <div class="field">
+                <select style="min-width:150px;">
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="toggled"> Введите номер прибора </label> <input type="text"
+                    class="text j-textInput"/>
+            </div>
+                    <span class="iconClose2 j-removeField">
+                    </span>
+        </fieldset>
+        <fieldset class="horizontalField j-dynamicField">
+            <div class="field">
+                <select style="min-width:150px;">
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                    <option>
+                        Выберите тип...
+                    </option>
+                </select>
+            </div>
+            <div class="field">
+                <label class="toggled"> Введите номер прибора </label> <input type="text"
+                    class="text j-textInput"/>
+            </div>
+                    <span class="iconClose2 j-removeField">
+                    </span>
+                    <span class="iconAdd1 j-addField">
+                    </span>
+        </fieldset>
+        <div id="fieldsetTmp">
+            <fieldset class="horizontalField j-dynamicField">
+                <div class="field">
+                    <select style="min-width:150px;">
+                        <option>
+                            Выберите тип...
+                        </option>
+                        <option>
+                            Выберите тип...
+                        </option>
+                        <option>
+                            Выберите тип...
+                        </option>
+                        <option>
+                            Выберите тип...
+                        </option>
+                        <option>
+                            Выберите тип...
+                        </option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="toggled"> Введите номер прибора </label> <input type="text"
+                        class="text j-textInput"/>
+                </div>
+                        <span class="iconClose2 j-removeField">
+                    </span>
+                    <span class="iconAdd1 j-addField">
+                    </span>
+            </fieldset>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="b-button b-button_3">
+                Подобрать
+            </button>
+        </div>
+    </form>
+</div>
+<div class="l-rightSide2">
+    <div class="b-selectionResult">
+        <h2>2. Результаты подбора в пары</h2>
+
+        <p>
+            Подбор пар приборов производится для "замкнутых систем" и в некоторых случаях не дает ожидаемого результата
+        </p>
+
+        <div class="legend">
+                    <span class="legendItem">
+                        <span class="iArrRight1">
+                        </span>
+                        Ставить на вход
+                    </span>
+                    <span class="legendItem">
+                        <span class="iArrLeft1">
+                        </span>
+                        Ставить на выход
+                    </span>
+        </div>
+        <ol>
+            <li>
+                <span class="num">1</span>
+
+                <div class="in">
+                            <span class="iArrRight1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+                <div class="out">
+                            <span class="iArrLeft1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+            </li>
+            <li>
+                <span class="num">2</span>
+
+                <div class="in">
+                            <span class="iArrRight1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+                <div class="out">
+                            <span class="iArrLeft1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+            </li>
+            <li>
+                <span class="num">3</span>
+
+                <div class="in">
+                            <span class="iArrRight1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+                <div class="out">
+                            <span class="iArrLeft1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+            </li>
+            <li>
+                <span class="num">4</span>
+
+                <div class="in">
+                            <span class="iArrRight1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+                <div class="out">
+                            <span class="iArrLeft1">
+                            </span> №1 <strong>Взлет ТЭР</strong> (837472728472461274)
+                </div>
+            </li>
+        </ol>
+        <div class="buttons">
+            <a href="#" class="b-button b-button_1"> Распечатать </a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="l-footer">
+    <div class="g-copyrights">2011 © ЗАО Взлет. Все права защищены.</div>
+</div>
+</body>
+</html>

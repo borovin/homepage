@@ -1,0 +1,133 @@
+.b-news{
+    padding:30px 0 80px;
+    overflow:hidden;
+}
+
+.b-news .newsCal{
+    float:right;
+    padding:20px 0 0 70px;
+}
+
+.b-news .newsCal .monthList{
+    float:left;
+    overflow:hidden;
+    list-style:none;
+}
+
+.b-news .newsCal .yearList{
+    float:left;
+    overflow:hidden;
+    list-style:none;
+    padding-left:50px;
+}
+
+.b-news .newsCal li{
+
+}
+
+.b-news .newsCal li a{
+    display:block;
+    text-decoration:none;
+    padding:5px 10px;
+    border-radius:4px;
+}
+
+.b-news .newsCal li.active a {
+    color:#fff;
+    background:#4882bc;
+    background: -moz-linear-gradient(100% 100% 90deg, #3a70a6, #5d9dde);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5d9dde), to(#3a70a6)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#5d9dde, #3a70a6); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#3a70a6, #5d9dde);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#5d9dde,endColorstr=#3a70a6,GradientType=0);
+}
+
+.b-news .newsCal li a:hover{
+
+}
+
+.b-news  .newsList{
+    overflow:hidden;
+    padding-top:20px;
+}
+
+.b-news .newsItem{
+    padding-bottom:25px;
+}
+
+.b-news .newsDate{
+    float:left;
+    color:#358ddb;
+    width:60px;
+    margin:0 30px 0 0;
+}
+
+.b-news .newsDate .number{
+    text-align:center;
+    font-weight:bold;
+    background:url("../img/cal1.png") 0 0 no-repeat;
+    width:29px;
+    height:33px;
+    margin:0 auto;
+    line-height:40px;
+}
+
+.b-news .newsDate .month{
+    text-align:center;
+}
+
+.b-news .newsContent{
+    overflow:hidden;
+    *zoom:1;
+}
+
+.b-news .newsContent h3{
+    font-weight:normal;
+    font-size:18px;
+    padding-bottom:15px;
+}
+
+.b-news .newsContent h3 a{
+    text-decoration:none;
+}
+
+.b-news .newsContent p{
+}
+
+.b-news .b-paginator{
+    padding-left:90px;
+}
+
+.b-news .allNewsLink{
+    font-size:16px;
+    padding-bottom:15px;
+}
+
+.b-news .newsColumn{
+    float:right;
+    width:220px;
+}
+
+.b-news .newsColumn .newsPreview{
+    padding-bottom:20px;
+}
+
+.b-news .newsColumn .newsPreview a{
+    text-decoration:none;
+}
+
+.b-news .newsColumn h4{
+    font-size:15px;
+}
+
+.b-news .newsColumn .date{
+    font-size:11px;
+    color:#555555;
+    padding-bottom:5px;
+}
+
+.b-news .fullDate{
+    font-size:11px;
+    color:#555555;
+    padding-bottom:5px;
+}

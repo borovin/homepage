@@ -1,0 +1,14 @@
+.b-videoPreview{
+    margin: 0 0 30px;
+}
+
+.b-videoPreview img{
+    margin:0 0 10px -12px;
+}
+
+.b-videoPreview .previewDescription{
+    font-size:11px;
+    font-style:italic;
+    color:#999999;
+    padding:0 30px 10px;
+}

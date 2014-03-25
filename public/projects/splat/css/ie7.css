@@ -1,0 +1,35 @@
+div#center div.post {
+    padding-bottom: 10px;
+}
+
+div#right div.post {
+	padding-bottom:10px;
+}
+
+div.column {
+    margin-right: -1px;
+}
+
+div#search {
+	padding-top:3px;
+}
+
+div.dealer div.search {
+	padding-top:3px;
+}
+
+ul#mainmenu div.sub span.bordert {
+	margin-bottom:-1px;
+}
+
+ul#mainmenu div.sub {
+	width:200px;
+}
+
+ul#mainmenu ul.submain li a {
+	white-space:normal;
+}
+
+div.item{
+	display:inline;
+}

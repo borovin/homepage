@@ -1,0 +1,43 @@
+.b-trialSteps{
+    margin:-80px 0 80px;
+    *zoom:1;
+}
+
+.b-trialSteps .buttons{
+    text-align:center;
+    clear:both;
+    padding:20px 0;
+}
+
+.b-trialSteps .buttons .b-button{
+    margin-right:10px;
+}
+
+.b-trialSteps .step{
+    float:left;
+    width:270px;
+    padding:0 75px 0 0;
+    text-align:center;
+}
+
+.b-trialSteps .step3{
+    padding-right:0;
+}
+
+.b-trialSteps h3{
+    font-size:28px;
+    color:#3e75ad;
+    padding:0 0 10px;
+    letter-spacing:-0.04em;
+    text-transform:none;
+}
+
+.b-trialSteps p{
+    font-size:14px;
+}
+
+.b-trialSteps .step img{
+    vertical-align:top;
+    display:block;
+    margin:0 0 25px -24px;
+}

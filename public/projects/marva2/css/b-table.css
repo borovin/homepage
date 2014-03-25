@@ -1,0 +1,49 @@
+.b-table{
+    width:100%;
+    margin-bottom:30px;
+}
+
+.b-table thead th{
+    color:#4090d5;
+    font-size:16px;
+    font-weight:bold;
+    text-shadow:1px 1px 1px #fff;
+    padding:20px;
+    background:#cee8ff;
+    border:1px solid #fff;
+}
+
+.b-table .flash td{
+    background:#fff2b2;
+    padding:20px;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #fff;
+    text-align:center;
+    color:#aa7e28;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.b-table tbody th, .b-table tfoot th{
+    border:1px solid #fff;
+    background:#e9f0c6;
+    color:#67840e;
+    padding:15px 10px;
+    text-align:left;
+    font-weight:normal;
+}
+
+.b-table tbody td, .b-table tfoot td{
+    padding:15px 10px;
+    border:1px solid #fff;
+    text-align:center;
+}
+
+.b-table tbody tr:nth-child(even) td{
+    background:#f5f5f5;
+}
+
+.b-table tbody td .b-button, .b-table tfoot td .b-button{
+    margin-right:5px;
+    font-size:15px;
+}

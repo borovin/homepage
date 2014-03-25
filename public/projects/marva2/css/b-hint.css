@@ -1,0 +1,22 @@
+.b-hint{
+    width:483px;
+    display:none;
+    position:absolute;
+    z-index:1000;
+    margin:0 0 0 -56px;
+}
+
+.b-hint .borderTop{
+    height:45px;
+    background:url("../img/hintTop1.png") 0 0 no-repeat;
+}
+
+.b-hint .hintText{
+    background:url("../img/hintBg1.png") 0 0 repeat-y;
+    padding:5px 50px 0;
+}
+
+.b-hint .borderBottom{
+    height:45px;
+    background:url("../img/hintBottom1.png") 0 0 no-repeat;
+}

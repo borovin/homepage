@@ -1,0 +1,155 @@
+body#day {
+	background: url(../im/backday.jpg) center 0 no-repeat;
+	height: 950px;
+}
+
+body#night {
+	background: url(../im/backnight.jpg) center 0 no-repeat;
+	height: 950px;
+}
+
+body#night a.logo {
+	background: url(../im/logow.png) center 0 no-repeat;
+}
+
+body#night div#header address {
+	background: url(../im/phonew.png) center 0 no-repeat;
+}
+
+body#night blockquote {
+	color: #fff;
+}
+
+body#night span.qbig {
+	color: #c1c1c1;
+	-top:-4px;
+}
+
+body#night span.qsmall {
+	color: #c1c1c1;
+}
+
+body#night div#partners a#p5:hover {
+	background-position: 0 -64px;
+}
+
+body#night div#partners a#p5 {
+	background: url(../im/part5b.jpg) 0 0 no-repeat;
+	height: 60px;
+	position: relative;
+	top: 10px;
+}
+
+body#night ul#leftmenu li a {
+	background: #000000 url(../im/menu.jpg) no-repeat;
+}
+
+body#night ul#leftmenu li#company a {
+	width: 102px;
+	background-position: 5px -180px;
+}
+
+body#night ul#leftmenu li#address a {
+	width: 184px;
+	background-position: 5px -217px;
+}
+
+body#night ul#leftmenu li#clients a {
+	width: 77px;
+	background-position: 5px -255px;
+}
+
+body#night ul#leftmenu li#contacts a {
+	width: 216px;
+	background-position: 5px -293px;
+}
+
+body#night ul#leftmenu li#press a {
+	width: 110px;
+	background-position: 5px -331px;
+}
+
+div#footer {
+	margin-top: -350px;
+	border: none;
+	height: auto;
+	left:0;
+}
+
+ul#leftmenu {
+	padding:138px 0 30px 72px;
+}
+
+ul#leftmenu li {
+	padding-bottom: 3px;
+}
+
+body#night ul#leftmenu li a span {
+	background: url(../im/decor1.png) 0 -35px no-repeat;
+	display:block;
+}
+
+div#copyrights {
+	border-top: 1px solid #CDCDCD;
+	padding-left: 20px;
+	width:230px;
+}
+
+div#madein {
+	border-top: 1px solid #cdcdcd;
+	width: 100px;
+	text-align: right;
+}
+
+div#news {
+	margin: 36px 0 0 67px;
+	position: relative;
+	width: 226px;
+	z-index: 100;
+}
+
+div#news div.post {
+	font-size: 12px;
+	min-height: 60px;
+	padding: 9px 10px 10px;
+}
+
+div#news div.post.top {
+	background: #ffef87;
+	margin-bottom:2px;
+}
+
+div#news div.post a {
+	text-decoration:none;
+}
+
+div#news div.post.bottom {
+	background: #fff9d5;
+}
+
+div#news div.post h6 {
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+div#news div.post h6 a {
+	color: #837735;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+div#news div.post p {
+	padding:5px 0 0;
+	margin: 0;
+	color: #837735;
+	padding-bottom: 2px;
+	line-height:16px;
+}
+
+div#news div.post span.date {
+	float: none;
+	color: #000;
+	font-style:italic;
+	font-size:12px;
+}

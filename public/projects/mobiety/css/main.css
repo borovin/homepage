@@ -1,0 +1,352 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    min-width:1010px;
+    position:relative;
+}
+
+/* Reset styles */
+
+div, li, span, b, a, ul, ol, input, p, h1, h2, h3, h4, h5, h6, dl, dd, dt, form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul {
+}
+
+ul li {
+    font-size:13px;
+}
+
+p {
+    padding-bottom:35px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border: none;
+}
+
+a {
+    color: #5996ca;
+    outline: none;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+form {
+}
+
+/* Headings */
+
+h1 {
+    font-size:48px;
+    padding-bottom:20px;
+    letter-spacing:-0.04em;
+}
+
+h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    color:#3da4e5;
+    font-weight:normal;
+}
+
+h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    color:#6e6e6e;
+    font-weight:normal;
+}
+
+h4 {
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-transform:uppercase;
+}
+
+h5 {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+form .field {
+}
+
+form label {
+}
+
+form .text {
+}
+
+.overflow {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+/**/
+
+.outside {
+    min-height: 100%;
+    width:970px;
+    padding:0 20px;
+    margin:0 auto;
+    *overflow: hidden;
+    *zoom: 1;
+}
+
+/**/
+
+.header {
+    padding:30px 0 45px;
+}
+
+.topMenu {
+    height:51px;
+    padding-right:10px;
+    background:url("../img/topMenu.png") 0 0 no-repeat;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/topMenu.png', sizingMethod='scale');
+    position: static;
+}
+
+.topMenu ul {
+    list-style:none;
+}
+
+.topMenu li {
+    float: left;
+    margin-top:2px;
+}
+
+.topMenu li.right {
+    float: right;
+}
+
+.topMenu li a {
+    display:block;
+    height:43px;
+    line-height:44px;
+    color:#8e8e8e;
+    padding:0 22px 0 20px;
+    text-decoration:none;
+    font-size:14px;
+    background:url('../img/border2.png') right 0 no-repeat;
+    -float: left;
+}
+
+.topMenu li.right a {
+    font-size:12px;
+    color:#5996ca;
+    background:none;
+}
+
+.topMenu li a:hover {
+}
+
+.topMenu li.active {
+}
+
+.topMenu li.active a {
+    background:url("../img/activeItem.png") 0 0 repeat-x;
+    border-left:1px solid #7f91aa;
+    border-bottom:1px solid #4c5e75;
+    color:#fff;
+    margin-left:-2px;
+    padding-left:22px;
+}
+
+.logoBox {
+    float:left;
+    height:43px;
+    background:url('../img/border2.png') right 0 no-repeat;
+    margin-top:2px;
+    padding:0 35px 0 25px;
+}
+
+.logoBox .logo{
+    display:block;
+    position: relative;
+    background:url('../img/logo.png') 0 0 no-repeat;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/logo.png', sizingMethod='crop');
+    width:101px;
+    height:17px;
+    top:14px;
+    -float: left;
+}
+
+.logoBox .logo span{
+    width:101px;
+    height:17px;
+}
+
+/**/
+
+.gradient1{
+    position: absolute;
+    left:0;
+    top:0;
+    width:50%;
+    background:url("../img/gradient1.png") right 0 repeat-y #fbffee;
+    height:597px;
+    -height:592px;
+}
+
+.mac .gradient1, .mac .gradient2{
+    height:593px;
+}
+
+.gradient2{
+    position: absolute;
+    left:50%;
+    top:0;
+    width:50%;
+    background:url("../img/gradient2.png") 0 0 repeat-y #ecfaff;
+    height:597px;
+    -height:592px;
+}
+
+.gradient3{
+    position: absolute;
+    width:754px;
+    height:353px;
+    background:url("../img/gradient3.png") 0 0 no-repeat;
+    right:0;
+    top:-2px;
+}
+
+.gradient4{
+    position: absolute;
+    width:754px;
+    height:363px;
+    background:url("../img/gradient4.png") 0 0 no-repeat;
+    right:0;
+    top:-12px;
+}
+
+.decor1{
+    width:328px;
+    display:block;
+    height:229px;
+    background:url("../img/decor1.png") 0 bottom no-repeat;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/decor1.png', sizingMethod='scale');
+    margin:0 auto;
+}
+
+.decor2{
+    width:328px;
+    display:block;
+    height:229px;
+    background:url("../img/decor2.png") 0 0 no-repeat;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/decor2.png', sizingMethod='scale');
+    margin:0 auto;
+}
+
+.decorRight{
+    float:right;
+    width:450px;
+    background-position:center 0;
+    height:226px;
+    top:-1px;
+}
+
+.border1{
+    overflow:hidden;
+    background:url("../img/border1.png") center bottom no-repeat;
+}
+
+.content {
+    padding:0 25px 150px;
+}
+
+.col1 {
+    float: left;
+    width: 50%;
+    *zoom: 1;
+}
+
+.col1 .inner {
+    padding:0 25px;
+}
+
+.col2{
+    width:25%;
+    float:left;
+}
+
+.col2 .inner{
+    padding-right:20px;
+}
+
+.promoList{
+    color:#666;
+    font-size:13px;
+    list-style: none;
+}
+
+.promoList li{
+    padding:0 0 20px 15px;
+    background:url("../img/mark1.png") 0 5px no-repeat;
+}
+
+/**/
+
+.footer {
+    height: 80px;
+    margin: -121px auto 0;
+    width:960px;
+    padding:20px 0;
+    border-top:1px solid #e5e5e5;
+}
+
+.footer .copyright{
+    color:#a8a8a8;
+    font-size:13px;
+}
+
+.footer ul{
+    float: right;
+    list-style: none;
+    font-size:12px;
+}
+
+.footer li{
+    float: left;
+    padding:0 0 0 30px;
+}
+
+.clear {
+    clear: both;
+}
