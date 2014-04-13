@@ -1,7 +1,7 @@
 define(
     [
         'jquery',
-        'jquery/ui.widget'
+        'widget'
     ], function($) {
 
 		$.widget('homepage.slider', {
@@ -71,5 +71,9 @@ define(
 				});
 			}
 		});
+
+        return function(el){
+            $(el).slider();
+        }
 
 });
