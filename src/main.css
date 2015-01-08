@@ -1,0 +1,40 @@
+@import "http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=latin,cyrillic";
+
+@import "kit/default.css";
+@import "blocks/header/header.css";
+@import "blocks/content/content.css";
+@import "blocks/tabList/tabList.css";
+@import "blocks/resume/resume.css";
+@import "blocks/slider/slider.css";
+@import "blocks/portfolio/portfolio.css";
+
+body {
+    font-size: 13px;
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    min-width: 980px;
+    background: #fafafa;
+}
+
+a{
+    color: #336699;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 27px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 15px;
+}
