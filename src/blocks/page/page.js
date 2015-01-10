@@ -4,6 +4,11 @@ define(function(require, exports, module) {
 
     return Block.extend({
         el: '#page',
-        template: require('tpl!./page.hbs')
+        template: require('tpl!./page.ejs'),
+        data: {
+            jobs: require('data/jobs'),
+            resume: require('text!data/resume.html'),
+            info: require('data/info')
+        }
     });
 });

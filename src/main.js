@@ -7,6 +7,7 @@ require.config({
         "*": {
             block: 'bower_components/block/block',
             tpl: 'kit/templateLoader/templateLoader',
+            text: 'bower_components/text/text',
             underscore: 'bower_components/lodash/dist/lodash'
         }
     }

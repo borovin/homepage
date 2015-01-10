@@ -1,0 +1,529 @@
+<div id="page">
+
+    <div class="page__content">
+
+        <div class="page__header">
+            <h1 class="page__headerTitle">Андрей Боровин</h1>
+        </div>
+
+        <div class="resume">
+            <div class="resume__top">
+                <div class="resume__photo">
+                    <img src="/img/avatar.jpg" alt="Андрей Боровин"/>
+                </div>
+                <div class="resume__info">
+                    <div class="resume__infoRow">
+                        <div class="resume__infoTitle">Город:</div>
+                        <div class="resume__infoText"><%- data.info.city %></div>
+                    </div>
+
+                    <div class="resume__infoRow">
+                        <div class="resume__infoTitle">Призвание:</div>
+                        <div class="resume__infoText"><%- data.info.profession %></div>
+                    </div>
+
+                    <div class="resume__infoRow">
+                        <div class="resume__infoTitle">Skype:</div>
+                        <div class="resume__infoText"><%- data.info.skype %></div>
+                    </div>
+
+                    <div class="resume__infoRow">
+                        <div class="resume__infoTitle">Телефон:</div>
+                        <div class="resume__infoText"><%- data.info.phone %></div>
+                    </div>
+
+                    <div class="resume__infoRow">
+                        <div class="resume__infoTitle">e-mail:</div>
+                        <div class="resume__infoText">
+                            <a href="mailto:<%- data.info.mail %>"><%- data.info.mail %></a>
+                        </div>
+                    </div>
+
+                    <div class="resume__infoRow">
+                        <div class="resume__infoTitle">Github:</div>
+                        <div class="resume__infoText">
+                            <a target="_blank" href="https://github.com/<%- data.info.github %>">github.com/<%- data.info.github %></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="resume__card">
+                <ul class="resume__experience">
+                    <% _.each(data.jobs, function(job){ %>
+                    <li class="resume__experienceItem">
+                        <div class="resume__experienceTitle"><%- job.title %></div>
+                        <br/>
+
+                        <div class="resume__experiencePlace">
+
+                            <% if (job.url){ %>
+                            <a href="<%- job.url %>"><%- job.company %></a>,
+                            <% } else { %>
+                            <%- job.company %>,
+                            <% } %>
+
+                            <%- job.dateFrom %> — <%- job.dateTo %>
+                        </div>
+
+                        <div class="resume__experienceText">
+                            <%= job.description %>
+                        </div>
+                    </li>
+                    <% }) %>
+                </ul>
+
+                <h3>Профессиональные знания и навыки:</h3>
+
+                <div class="resume__experienceText">
+
+                    <%= data.resume %>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page__content">
+        <noindex>
+            <div class="portfolio">
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Производственная компания "Взлет"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="http://borovin.github.io/aflowt">
+                                    <img alt="#" src="http://borovin.github.io/aflowt/screens/1.png"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="http://borovin.github.io/aflowt/about.html">
+                                    <img alt="#" src="http://borovin.github.io/aflowt/screens/2.png"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="http://borovin.github.io/aflowt/catalog.html">
+                                    <img alt="#" src="http://borovin.github.io/aflowt/screens/3.png"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="http://borovin.github.io/aflowt/details.html">
+                                    <img alt="#" src="http://borovin.github.io/aflowt/screens/4.png"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                    <p>
+                        Данный проект я для примера перевел на HTML5-технологии, с использованием
+                        методологии BEM и AMD модулей.
+                        Остальный проекты разрабатывались в 2008-2009 годах с приоритетом старых
+                        браузеров (IE 6, Opera 8/9) и
+                        используют соответстующие подходы.
+                    </p>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Учебный центр "Арсенал"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/arsenal/index.html"><img alt="#"
+                                                                                            src="/portfolio/arsenal/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/arsenal/index.html"><img alt="#"
+                                                                                            src="/portfolio/arsenal/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/arsenal/index.html"><img alt="#"
+                                                                                            src="/portfolio/arsenal/3.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/arsenal/training.html"><img alt="#"
+                                                                                               src="/portfolio/arsenal/4.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/arsenal/training.html"><img alt="#"
+                                                                                               src="/portfolio/arsenal/5.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/arsenal/training.html"><img alt="#"
+                                                                                               src="/portfolio/arsenal/6.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/arsenal/training.html"><img alt="#"
+                                                                                               src="/portfolio/arsenal/7.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Интернет-сервис "Марва"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/marva2/about.html"><img alt="#"
+                                                                                           src="/portfolio/marva2/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/marva2/clients.html"><img alt="#"
+                                                                                             src="/portfolio/marva2/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/marva2/features.html"><img alt="#"
+                                                                                              src="/portfolio/marva2/3.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/marva2/index.html"><img alt="#"
+                                                                                           src="/portfolio/marva2/4.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/marva2/partners.html"><img alt="#"
+                                                                                              src="/portfolio/marva2/5.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/marva2/product_table.html"><img
+                                            alt="#"
+                                            src="/portfolio/marva2/6.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/marva2/trial.html"><img alt="#"
+                                                                                           src="/portfolio/marva2/7.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Ресторан "Арияф"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/ariaf/index.html"><img alt="#"
+                                                                                          src="/portfolio/ariaf/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/ariaf/index.html"><img alt="#"
+                                                                                          src="/portfolio/ariaf/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/ariaf/page.html"><img alt="#"
+                                                                                         src="/portfolio/ariaf/3.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Агенство социальной информации СПб</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/asi/content.html"><img alt="#"
+                                                                                          src="/portfolio/asi/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/asi/form.html"><img alt="#"
+                                                                                       src="/portfolio/asi/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/asi/page.html"><img alt="#"
+                                                                                       src="/portfolio/asi/3.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Рекламное агенство "Доминанта"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/dominanta/address.html"><img alt="#"
+                                                                                                src="/portfolio/dominanta/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/dominanta/address.html"><img alt="#"
+                                                                                                src="/portfolio/dominanta/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/dominanta/indexday.html"><img alt="#"
+                                                                                                 src="/portfolio/dominanta/3.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/dominanta/indexnight.html"><img
+                                            alt="#"
+                                            src="/portfolio/dominanta/4.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Проектный институт "Дорпроект"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/dorproject/home.html"><img alt="#"
+                                                                                              src="/portfolio/dorproject/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/dorproject/divntro.html"><img alt="#"
+                                                                                                 src="/portfolio/dorproject/2.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Рекламное агенство "Eltphant&Castle"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/eac/eac_about.html"><img alt="#"
+                                                                                            src="/portfolio/eac/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/eac/eac_comments.html"><img alt="#"
+                                                                                               src="/portfolio/eac/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/eac/eac_discount.html"><img alt="#"
+                                                                                               src="/portfolio/eac/3.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/eac/eac_project_list.html"><img
+                                            alt="#"
+                                            src="/portfolio/eac/4.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/eac/index.html"><img alt="#"
+                                                                                        src="/portfolio/eac/5.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Производственная компания "ФинКом"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/finkom/about.html"><img alt="#"
+                                                                                           src="/portfolio/finkom/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/finkom/catalog.html"><img alt="#"
+                                                                                             src="/portfolio/finkom/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/finkom/details.html"><img alt="#"
+                                                                                             src="/portfolio/finkom/3.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/finkom/index.html"><img alt="#"
+                                                                                           src="/portfolio/finkom/4.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/finkom/services.html"><img alt="#"
+                                                                                              src="/portfolio/finkom/5.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Игровой портал "Иннова"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/innova/index.html"><img alt="#"
+                                                                                           src="/portfolio/innova/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/innova/index2.html"><img alt="#"
+                                                                                            src="/portfolio/innova/2.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Интернет-сервис "Mobiety"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/mobiety/companies.html"><img alt="#"
+                                                                                                src="/portfolio/mobiety/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/mobiety/index.html"><img alt="#"
+                                                                                            src="/portfolio/mobiety/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/mobiety/respondents.html"><img
+                                            alt="#"
+                                            src="/portfolio/mobiety/3.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Интернет-провайдер "Oyster"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/oyster/index.html"><img alt="#"
+                                                                                           src="/portfolio/oyster/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/oyster/inside.html"><img alt="#"
+                                                                                            src="/portfolio/oyster/2.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Учебный центр "Парадокс"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/paradox/buy.html"><img alt="#"
+                                                                                          src="/portfolio/paradox/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/paradox/calendar.html"><img alt="#"
+                                                                                               src="/portfolio/paradox/2.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/paradox/index.html"><img alt="#"
+                                                                                            src="/portfolio/paradox/3.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/paradox/vacancy.html"><img alt="#"
+                                                                                              src="/portfolio/paradox/4.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Компания "Splat"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/splat/index.html"><img alt="#"
+                                                                                          src="/portfolio/splat/1.jpg"/></a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/splat/goodsfinder.html"><img alt="#"
+                                                                                                src="/portfolio/splat/2.jpg"/></a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <h3 class="portfolio__itemTitle">Сервисное обслуживание "Взлет"</h3>
+
+                    <div class="slider" require="blocks/slider/slider">
+                        <div class="slider__mask">
+                            <div class="slider__item slider__item_state_active">
+                                <a target="_blank" href="/projects/vzlet/index.html">
+                                    <img alt="#" src="/portfolio/vzlet/1.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/registration.html">
+                                    <img alt="#" src="/portfolio/vzlet/2.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/moderation.html">
+                                    <img alt="#" src="/portfolio/vzlet/3.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/podbor.html">
+                                    <img alt="#" src="/portfolio/vzlet/4.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/requestList.html">
+                                    <img alt="#" src="/portfolio/vzlet/5.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/requestPage.html">
+                                    <img alt="#" src="/portfolio/vzlet/6.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/settings.html">
+                                    <img alt="#" src="/portfolio/vzlet/7.jpg"/>
+                                </a>
+                            </div>
+                            <div class="slider__item">
+                                <a target="_blank" href="/projects/vzlet/userPage.html">
+                                    <img alt="#" src="/portfolio/vzlet/8.jpg"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="slider__control slider__next"></a>
+                        <a href="#" class="slider__control slider__prev"></a>
+                    </div>
+                </div>
+            </div>
+        </noindex>
+    </div>
+
+</div>

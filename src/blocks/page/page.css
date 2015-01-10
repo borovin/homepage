@@ -1,0 +1,25 @@
+.page__content {
+    padding: 30px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.page__content:last-child {
+    background-color: #f4f4f4;
+}
+
+.page__header {
+    padding: 0 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page__headerTitle {
+    font-size: 64px;
+    padding: 0;
+    white-space: nowrap;
+    color: #444;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+}
