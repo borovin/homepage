@@ -1,7 +1,7 @@
 ({
     baseUrl: '../src/',
 
-    mainConfigFile: '../src/require.config.js',
+    mainConfigFile: '../src/main.js',
     dir: "../build",
 
     stubModules: ['ejs', 'amd-loader'],
@@ -31,20 +31,8 @@
 
     modules: [
         {
-            name: "require.config",
-            include: ['require.config.production']
-        },
-        {
-            name: "app",
+            name: "main",
             exclude: ['jquery']
-        },
-        {
-            name: "routes/unauthorized",
-            exclude: ['app', 'jquery']
-        },
-        {
-            name: "routes/authorized",
-            exclude: ['app', 'jquery']
         }
     ]
 
