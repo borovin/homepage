@@ -1,0 +1,25 @@
+{
+  "name": "ejsLoader",
+  "main": "ejsLoader.js",
+  "version": "0.0.0",
+  "authors": [
+    "Andrew Borovin <a@borovin.com>"
+  ],
+  "description": "amd plugin for ejs template",
+  "keywords": [
+    "amd",
+    "ejs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "amd-loader": "https://github.com/guybedford/amd-loader.git",
+    "lodash": "~3.1.0"
+  }
+}

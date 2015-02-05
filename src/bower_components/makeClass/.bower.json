@@ -1,0 +1,32 @@
+{
+  "name": "makeClass",
+  "main": "makeClass.js",
+  "authors": [
+    "a@borovin.com"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.1.0",
+    "deepExtend": "https://github.com/borovin/deepExtend.git"
+  },
+  "homepage": "https://github.com/borovin/makeClass",
+  "_release": "c319c27ea8",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c319c27ea8365db57bf4651b03c2f8feb881bb11"
+  },
+  "_source": "https://github.com/borovin/makeClass.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/borovin/makeClass.git"
+}

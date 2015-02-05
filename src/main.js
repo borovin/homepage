@@ -5,20 +5,17 @@ require.config({
     },
     map: {
         "*": {
-            block: 'bower_components/block/block',
-            tpl: 'kit/templateLoader/templateLoader',
-            text: 'bower_components/text/text',
-            underscore: 'bower_components/lodash/dist/lodash'
+            ejs: 'bower_components/ejsLoader/ejsLoader',
+            underscore: 'bower_components/lodash/lodash'
         }
     }
 });
 
-define(function(require, exports, module) {
-    //requirements
-    var Page = require('blocks/page/page');
+if (CONFIG.clientVersion) {
+    require.config({
+        urlArgs: 'version=' + CONFIG.clientVersion
+    });
+}
 
-    document.body.innerHTML = '<div id="page"></div>';
-
-    new Page();
-});
+require(['app']);
 
