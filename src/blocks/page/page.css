@@ -16,10 +16,8 @@
 }
 
 .page__headerTitle {
-    font-size: 64px;
+    font-size: 44px;
     padding: 0;
     white-space: nowrap;
     color: #444;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-weight: bold;
 }
