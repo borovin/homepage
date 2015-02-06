@@ -7,8 +7,8 @@ define(function(require, exports, module) {
         template: require('ejs!./page.ejs'),
         data: {
             jobs: require('data/jobs/jobs'),
-            resume: require('ejs!data/resume.html'),
-            info: require('data/info'),
+            resume: require('ejs!data/resume/resume.html'),
+            info: require('data/info/info'),
             portfolio: require('data/portfolio/portfolio')
         },
         blocks: {
