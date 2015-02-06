@@ -1,0 +1,16 @@
+<div class="slider">
+    <div class="slider__mask">
+
+        <% _.forEach(project.items, function(item, index){ %>
+        <div class="slider__item <%- index === position ? 'slider__item_state_active' : '' %>">
+            <a target="_blank" href="<%- item.url %>">
+                <img alt="#" src="<%- item.screenUrl %>"/>
+            </a>
+        </div>
+        <% }) %>
+
+    </div>
+
+    <a href="#" class="slider__control slider__next"></a>
+    <a href="#" class="slider__control slider__prev"></a>
+</div>

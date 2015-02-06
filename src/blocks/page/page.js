@@ -6,9 +6,13 @@ define(function(require, exports, module) {
         el: '#page',
         template: require('ejs!./page.ejs'),
         data: {
-            jobs: require('data/jobs'),
+            jobs: require('data/jobs/jobs'),
             resume: require('ejs!data/resume.html'),
-            info: require('data/info')
+            info: require('data/info'),
+            portfolio: require('data/portfolio/portfolio')
+        },
+        blocks: {
+            slider: require('blocks/slider/slider')
         }
     });
 });

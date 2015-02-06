@@ -16,8 +16,10 @@
 }
 
 .page__headerTitle {
-    font-size: 44px;
-    padding: 0;
+    font-size: 36px;
+    padding: 0 0 20px;
     white-space: nowrap;
     color: #444;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #eee;
 }

@@ -1,79 +1,75 @@
-define(
-    [
-        'jquery',
-        'widget'
-    ], function($) {
+define(function (require) {
+    var Block = require('kit/block/block');
 
-		$.widget('homepage.slider', {
-			options: {
-				position: 0
-			},
-			_create: function() {
-				var slider = this,
-					$slider = this.element;
+    return Block.extend({
+        position: 0,
+        projectId: null,
+        template: require('ejs!./slider.html'),
+        events: {
+            'click .slider__next': function(e){
+                e.preventDefault();
+                this.nextSlide();
+            },
+            'click .slider__prev': function(e){
+                e.preventDefault();
+                this.prevSlide();
+            }
+        },
+        render: function() {
+            var block = this,
+                portfolio = block.get('data.portfolio');
 
-				slider.$slider__item = $slider.find('.slider__item');
-				slider.$slider__prev = $slider.find('.slider__prev');
-				slider.$slider__next = $slider.find('.slider__next');
+            block.project = _.find(portfolio, {id: block.projectId});
 
-				//events
-				slider.$slider__prev.on('click', function() {
-					slider.prevSlide();
-					return false;
-				});
+            Block.prototype.render.apply(this, arguments);
 
-				slider.$slider__next.on('click', function() {
-					slider.nextSlide();
-					return false;
-				});
-			},
-			move: function(params) {
+            block.$slider__item = block.$('.slider__item');
 
-				if (this.$slider__item.filter('.slider__item_state_active').is(':animated')) {
-					return false;
-				}
+        },
+        move: function(params) {
 
-				var opt = $.extend({
-					position: 0,
-					direction: '-',
-					speed: 200
-				}, params);
+            if (this.$slider__item.filter('.slider__item_state_active').is(':animated')) {
+                return false;
+            }
 
-				if (opt.position == this.$slider__item.length) {
-					opt.position = 0;
-				}
+            var opt = $.extend({
+                position: 0,
+                direction: '-',
+                speed: 200
+            }, params);
 
-				if (opt.position < 0) {
-					opt.position = this.$slider__item.length - 1;
-				}
+            if (opt.position == this.$slider__item.length) {
+                opt.position = 0;
+            }
 
-				var slider = this,
-					$activeSlide = slider.$slider__item.filter('.slider__item_state_active'),
-					$nextSlide = slider.$slider__item.eq(opt.position).addClass('slider__item_state_next');
+            if (opt.position < 0) {
+                opt.position = this.$slider__item.length - 1;
+            }
 
-				slider._setOption('position', opt.position);
+            var slider = this,
+                $activeSlide = slider.$slider__item.filter('.slider__item_state_active'),
+                $nextSlide = slider.$slider__item.eq(opt.position).addClass('slider__item_state_next');
 
-				$activeSlide.animate({'left': opt.direction + $activeSlide.width()}, function() {
-					$activeSlide.removeClass('slider__item_state_active').css({'left': 0});
-					$nextSlide.addClass('slider__item_state_active').removeClass('slider__item_state_next');
-				});
-			},
-			nextSlide: function() {
-				this.move({
-					position: this.options.position + 1,
-					direction: '-'
-				});
-			},
-			prevSlide: function() {
-				this.move({
-					position: this.options.position - 1,
-					direction: ''
-				});
-			}
-		});
+            slider.set({
+                position: opt.position
+            });
 
-        return function(el){
-            $(el).slider();
+            $activeSlide.animate({'left': opt.direction + $activeSlide.width()}, function() {
+                $activeSlide.removeClass('slider__item_state_active').css({'left': 0});
+                $nextSlide.addClass('slider__item_state_active').removeClass('slider__item_state_next');
+            });
+        },
+        nextSlide: function() {
+            this.move({
+                position: this.position + 1,
+                direction: '-'
+            });
+        },
+        prevSlide: function() {
+            this.move({
+                position: this.position - 1,
+                direction: ''
+            });
         }
-
+    });
 });
