@@ -5,8 +5,14 @@
     box-sizing: border-box;
 }
 
+.page__content_fixed {
+    position: fixed;
+    top: 0;
+}
+
 .page__content:last-child {
     background-color: #f4f4f4;
+    float: right;
 }
 
 .page__header {
