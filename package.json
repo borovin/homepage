@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "ln -snf ./src/ public && node ./server.js",
+    "start": "./node_modules/grunt-cli/bin/grunt start",
     "develop": "./node_modules/grunt-cli/bin/grunt develop"
   },
   "dependencies": {

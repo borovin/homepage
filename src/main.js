@@ -1,21 +1,8 @@
-require.config({
-    baseUrl: '/',
-    paths: {
-        jquery: 'bower_components/jquery/dist/jquery.min'
-    },
-    map: {
-        "*": {
-            ejs: 'bower_components/ejsLoader/ejsLoader',
-            underscore: 'bower_components/lodash/lodash'
-        }
-    }
+require([
+    'blocks/page/page'
+], function (Page) {
+
+    document.body.innerHTML = '<div id="page"></div>';
+
+    new Page();
 });
-
-if (CONFIG.clientVersion) {
-    require.config({
-        urlArgs: 'version=' + CONFIG.clientVersion
-    });
-}
-
-require(['app']);
-

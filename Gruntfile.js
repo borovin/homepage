@@ -14,14 +14,21 @@ module.exports = function(grunt) {
             build: {
                 command: 'rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js'
             },
-            develop: {
-                command: 'rm -rf ./build && ln -snf ./src/ public'
+            linkSrc: {
+                command: 'ln -snf ./src/ public'
+            },
+            linkBuild: {
+                command: 'ln -snf ./build/ public'
+            },
+            nodeStart: {
+                command: 'node ./server.js'
             }
         }
     });
 
-    grunt.registerTask('develop', ['config:init', 'shell:develop']);
-    grunt.registerTask('production', ['config:init', 'shell:build']);
+    grunt.registerTask('develop', ['config:init', 'shell:linkSrc']);
+    grunt.registerTask('production', ['config:init', 'shell:build', 'shell:linkBuild']);
+    grunt.registerTask('start', ['production', 'shell:nodeStart']);
 
     grunt.registerMultiTask('config', 'Create config.js from template', function(){
 
