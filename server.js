@@ -1,3 +1,3 @@
 var app = require('./index.js');
 
-app.listen(process.env.port || 8080);
+app.listen(process.env.port || 80);
