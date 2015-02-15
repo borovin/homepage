@@ -1,3 +1,3 @@
 window.CONFIG = {
-    clientVersion: '1423998342644'
+    clientVersion: '1423998626230'
 };

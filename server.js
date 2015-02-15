@@ -1,9 +1,7 @@
-var express = require('express');
-var app = express();
+var app = require('./index.js');
 
 app.set('port', (process.env.PORT || 5000));
-app.use(express.static(__dirname + '/public'));
 
-app.listen(app.get('port'), function() {
-    console.log("Node app is running at localhost:" + app.get('port'))
+app.listen(app.get('port') || 8080, function(){
+    console.log("Node app is running at: " + app.get('port'))
 });
