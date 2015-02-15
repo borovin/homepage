@@ -22,10 +22,14 @@ module.exports = function(grunt) {
             },
             nodeStart: {
                 command: 'node ./server.js'
+            },
+            deploy: {
+                command: 'git push dokku@borovin.com:<%- grunt.option("host") || "test" %> <%- grunt.option("branch") || "master" %>:master'
             }
         }
     });
 
+    grunt.registerTask('deploy', ['shell:deploy']);
     grunt.registerTask('develop', ['config:init', 'shell:linkSrc']);
     grunt.registerTask('production', ['config:init', 'shell:build', 'shell:linkBuild']);
     grunt.registerTask('start', ['production', 'shell:nodeStart']);
