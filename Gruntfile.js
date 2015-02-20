@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-gitinfo');
 
     grunt.config.init({
         config: {
@@ -22,10 +23,14 @@ module.exports = function(grunt) {
             },
             nodeStart: {
                 command: 'node ./server.js'
+            },
+            deploy: {
+                command: 'git push dokku@borovin.com:<%- grunt.option("host") || "test" %> <%- grunt.option("branch") || gitinfo.local.branch.current.name %>:master'
             }
         }
     });
 
+    grunt.registerTask('deploy', ['shell:deploy']);
     grunt.registerTask('develop', ['config:init', 'shell:linkSrc']);
     grunt.registerTask('production', ['config:init', 'shell:build', 'shell:linkBuild']);
     grunt.registerTask('start', ['production', 'shell:nodeStart']);
