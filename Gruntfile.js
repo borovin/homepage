@@ -26,14 +26,26 @@ module.exports = function(grunt) {
             },
             deploy: {
                 command: 'git push dokku@borovin.com:<%- grunt.option("host") || "test" %> <%- grunt.option("branch") || gitinfo.local.branch.current.name %>:master'
+            },
+            destroy: {
+                command: 'ssh -t dokku@borovin.com -- --force apps:destroy <%- grunt.option("host") || "test" %>'
             }
         }
     });
 
-    grunt.registerTask('deploy', ['gitinfo', 'shell:deploy']);
+    grunt.registerTask('destroy', ['shell:destroy']);
     grunt.registerTask('develop', ['config:init', 'shell:linkSrc']);
     grunt.registerTask('production', ['config:init', 'shell:build', 'shell:linkBuild']);
     grunt.registerTask('start', ['production', 'shell:nodeStart']);
+
+    grunt.registerTask('deploy', 'deploy app to remote host', function(){
+
+        if (!grunt.option('host')){
+            grunt.fail.warn('specify --host=HOSTNAME');
+        }
+
+        grunt.task.run(['gitinfo', 'shell:deploy']);
+    });
 
     grunt.registerMultiTask('config', 'Create config.js from template', function(){
 
