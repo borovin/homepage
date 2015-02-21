@@ -56,6 +56,9 @@ define(function(require, exports, module) {
         blocks: {
             slider: require('blocks/slider/slider')
         },
+        initialize: function(){
+            window.PAGE = this;
+        },
         render: function(){
             var render = Block.prototype.render.apply(this, arguments),
                 page__content = this.el.querySelectorAll('.page__content');

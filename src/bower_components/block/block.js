@@ -1,6 +1,7 @@
 define(function(require, exports, module) {
     //requirements
     var get = require('bower_components/get/get'),
+        set = require('bower_components/set/set'),
         deepExtend = require('bower_components/deepExtend/deepExtend'),
         makeClass = require('bower_components/makeClass/makeClass'),
 
@@ -23,9 +24,12 @@ define(function(require, exports, module) {
 
                 block.stopListening();
 
-                deepExtend(block, block.defaults, data);
+                deepExtend(block, data);
 
                 block._ensureElement();
+
+                block.initCollections();
+                block.initModels();
 
                 return $.when(initialize.apply(block, arguments)).then(function() {
                     block.render();
@@ -51,19 +55,6 @@ define(function(require, exports, module) {
         defaults: {},
         children: {},
 
-        Model: function() {
-        },
-        Collection: function() {
-        },
-
-        initialize: function() {
-
-            var block = this;
-
-            block.initCollections();
-            block.initModels();
-        },
-
         render: function() {
 
             var block = this;
@@ -84,23 +75,20 @@ define(function(require, exports, module) {
         get: function() {
 
             var block = this,
-                args = [block].concat([].slice.call(arguments)),
-                result = get.apply(null, args);
+                args = [block].concat([].slice.call(arguments));
 
-            if (typeof result === 'undefined' && block.parentBlock){
-                result = block.parentBlock.get.apply(block.parentBlock, arguments)
-            }
-
-            return result;
+            return get.apply(null, args);
         },
 
-        set: function(data) {
+        set: function() {
 
-            var block = this;
+            var block = this,
+                args = [block].concat([].slice.call(arguments)),
+                __set = set.apply(null, args);
 
-            deepExtend(block, data);
+            block.trigger('set', __set);
 
-            block.trigger('set', data);
+            return __set;
         },
 
         initBlocks: function() {
@@ -198,8 +186,16 @@ define(function(require, exports, module) {
 
             $(document).off('.' + block.cid);
 
-            _.each(block.globalEvents, function(handler, eventName) {
-                $(document).on(eventName + '.' + block.cid, handler.bind(block));
+            _.each(block.globalEvents, function(handler, event) {
+                var path = event.split(' '),
+                    eventName = path.shift();
+
+                if (path.length){
+                    $(document).on(eventName + '.' + block.cid, path.join(' '), handler.bind(block));
+                } else {
+                    $(document).on(eventName + '.' + block.cid, handler.bind(block));
+                }
+
             });
         }
     });

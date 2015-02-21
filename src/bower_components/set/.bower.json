@@ -1,8 +1,7 @@
 {
-  "name": "block",
-  "main": "block.js",
-  "version": "0.0.1",
-  "description": "extended backbone view",
+  "name": "set",
+  "main": "set.js",
+  "description": "Function for smart set object properties",
   "authors": [
     "a@borovin.com"
   ],
@@ -25,13 +24,17 @@
   ],
   "dependencies": {
     "deepExtend": "https://github.com/borovin/deepExtend.git",
-    "makeClass": "https://github.com/borovin/makeClass.git",
-    "get": "https://github.com/borovin/get.git",
-    "set": "https://github.com/borovin/set.git",
-
-    "backbone": "~1.1.2",
-    "jquery": "~2.1.1",
     "lodash": "~3.1.0",
     "requirejs": "~2.1.15"
-  }
+  },
+  "homepage": "https://github.com/borovin/set",
+  "_release": "b4046cf31f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b4046cf31f7d60fa9d3f3f3de86ca2703ff1c14d"
+  },
+  "_source": "https://github.com/borovin/set.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/borovin/set.git"
 }

@@ -17,7 +17,7 @@ define(function (require) {
         },
         render: function() {
             var block = this,
-                portfolio = block.get('data.portfolio');
+                portfolio = PAGE.get('data.portfolio');
 
             block.project = _.find(portfolio, {id: block.projectId});
 

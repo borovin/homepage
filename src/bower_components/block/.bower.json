@@ -26,17 +26,18 @@
     "deepExtend": "https://github.com/borovin/deepExtend.git",
     "makeClass": "https://github.com/borovin/makeClass.git",
     "get": "https://github.com/borovin/get.git",
+    "set": "https://github.com/borovin/set.git",
     "backbone": "~1.1.2",
     "jquery": "~2.1.1",
     "lodash": "~3.1.0",
     "requirejs": "~2.1.15"
   },
   "homepage": "https://github.com/borovin/block",
-  "_release": "ed99160099",
+  "_release": "ef9b9b5aec",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "ed99160099820baf253c5764cf3a9d3ca98cc5df"
+    "commit": "ef9b9b5aecf75c88a00f6311b36f696d4e2b736e"
   },
   "_source": "git@github.com:borovin/block.git",
   "_target": "*",
