@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('deploy', ['shell:deploy']);
+    grunt.registerTask('deploy', ['gitinfo', 'shell:deploy']);
     grunt.registerTask('develop', ['config:init', 'shell:linkSrc']);
     grunt.registerTask('production', ['config:init', 'shell:build', 'shell:linkBuild']);
     grunt.registerTask('start', ['production', 'shell:nodeStart']);
