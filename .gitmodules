@@ -1,3 +1,0 @@
-[submodule "homepage_api"]
-	path = homepage_api
-	url = git@bitbucket.org:borovin/homepage_api.git
