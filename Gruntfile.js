@@ -26,12 +26,11 @@ module.exports = function(grunt) {
                 command: 'node ./server.js'
             },
             deploy: {
-                command: 'git push dokku@borovin.com:<%- grunt.option("host") || "test" %> origin/<%- grunt.option("branch") || HEAD:master'
-            },
-            deployApi: {
                 command: [
+                    'git fetch',
+                    'git push dokku@borovin.com:<%- grunt.option("host") %> HEAD:master',
                     'cd api',
-                    'git push dokku@borovin.com:<%- grunt.option("host") %> HEAD:master'
+                    'git push dokku@borovin.com:<%- grunt.option("apiHost") %> HEAD:master'
                 ].join(' && ')
             },
             //deployApi: {
@@ -56,6 +55,10 @@ module.exports = function(grunt) {
 
         if (!grunt.option('host')){
             grunt.fail.warn('specify --host=HOSTNAME');
+        }
+
+        if (!grunt.option('apiHost')){
+            grunt.fail.warn('specify --apiHost=HOSTNAME');
         }
 
         grunt.task.run(['gitinfo', 'shell:deploy']);
