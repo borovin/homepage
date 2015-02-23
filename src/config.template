@@ -1,3 +1,4 @@
 window.CONFIG = {
-    clientVersion: '<%- clientVersion %>'
+    clientVersion: '<%- clientVersion %>',
+    apiUrl: '<%- apiUrl %>'
 };

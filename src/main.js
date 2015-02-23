@@ -1,8 +1,6 @@
 require([
-    'blocks/page/page'
+    'pages/main/main'
 ], function (Page) {
-
-    document.body.innerHTML = '<div id="page"></div>';
 
     new Page();
 });

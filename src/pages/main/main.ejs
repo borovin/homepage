@@ -14,28 +14,28 @@
                 <div class="resume__info">
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Город:</div>
-                        <div class="resume__infoText"><%- data.info.city %></div>
+                        <div class="resume__infoText"><%- models.info.get('city') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Призвание:</div>
-                        <div class="resume__infoText"><%- data.info.profession %></div>
+                        <div class="resume__infoText"><%- models.info.get('profession') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Skype:</div>
-                        <div class="resume__infoText"><%- data.info.skype %></div>
+                        <div class="resume__infoText"><%- models.info.get('skype') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Телефон:</div>
-                        <div class="resume__infoText"><%- data.info.phone %></div>
+                        <div class="resume__infoText"><%- models.info.get('phone') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">e-mail:</div>
                         <div class="resume__infoText">
-                            <a href="mailto:<%- data.info.mail %>"><%- data.info.mail %></a>
+                            <a href="mailto:<%- models.info.get('mail') %>"><%- models.info.get('mail') %></a>
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@
                         <div class="resume__infoTitle">Github:</div>
                         <div class="resume__infoText">
                             <a target="_blank"
-                               href="https://github.com/<%- data.info.github %>">github.com/<%- data.info.github %></a>
+                               href="https://github.com/<%- models.info.get('github') %>">github.com/<%- models.info.get('github') %></a>
                         </div>
                     </div>
 

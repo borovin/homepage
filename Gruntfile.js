@@ -6,7 +6,8 @@ module.exports = function(grunt) {
     grunt.config.init({
         config: {
             options: {
-                clientVersion: '<%- grunt.option("clientVersion") || "' + Date.now() + '" %>'
+                clientVersion: '<%- grunt.option("clientVersion") || "' + Date.now() + '" %>',
+                apiHost: '<%- grunt.option("apiHost") || "http://api.borovin.com" %>'
             },
             init: {
             }

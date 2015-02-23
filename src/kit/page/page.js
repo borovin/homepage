@@ -4,7 +4,6 @@ define(function(require, exports, module) {
 
     return Block.extend({
         el: '#page',
-        template: require('ejs!./page.ejs'),
         scrollTop: 0,
         globalEvents: {
             'scroll': function(){
@@ -47,17 +46,39 @@ define(function(require, exports, module) {
 
             }
         },
-        data: {
-            jobs: require('resources/jobs/jobs'),
-            resume: require('ejs!resources/resume/resume.html'),
-            info: require('resources/info/info'),
-            portfolio: require('resources/portfolio/portfolio')
-        },
-        blocks: {
-            slider: require('blocks/slider/slider')
-        },
         initialize: function(){
-            window.PAGE = this;
+
+            var page = this;
+
+            window.PAGE = page;
+
+            page.loading();
+
+            return $.when(Block.prototype.initialize.apply(page, arguments)).then(function(){
+                return page.fetch();
+            });
+        },
+        fetch: function(resorces) {
+            var page = this,
+                resorces = resorces || {};
+
+            var collectionsList = _(page.collections).filter(function(collection, name) {
+                return !resorces.collections || resorces.collections.indexOf(name) != -1;
+            }).value();
+
+            var modelsList = _(page.models).filter(function(model, name) {
+                return (!resorces.models || resorces.models.indexOf(name) != -1) && model && model.id;
+            }).value();
+
+            var dataList = collectionsList.concat(modelsList);
+
+            page.fetchList = _.map(dataList, function(data) {
+                return (data && typeof data.fetch === 'function') ? data.fetch() : data;
+            });
+
+            return $.when.apply($, page.fetchList).then(function() {
+                delete page.fetchList;
+            });
         },
         render: function(){
             var render = Block.prototype.render.apply(this, arguments),
@@ -75,6 +96,15 @@ define(function(require, exports, module) {
             }
 
             return render;
+        },
+        loading: function(start) {
+
+            if (start || start === undefined){
+                this.el.classList.add('loading');
+            } else {
+                this.el.classList.remove('loading');
+            }
+
         }
     });
 });
