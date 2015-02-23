@@ -4,7 +4,7 @@ define(function (require) {
     return Model.extend({
         sync: function(method, model, options) {
             options = _.extend({
-                url: CONFIG.apiUrl + _.result(this, 'url')
+                url: CONFIG.apiHost + _.result(this, 'url')
             }, options);
 
             return Model.prototype.sync.call(this, method, model, options);

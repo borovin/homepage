@@ -55,15 +55,6 @@ module.exports = function(grunt) {
         grunt.task.run(['gitinfo', 'shell:deploy']);
     });
 
-    grunt.registerTask('deployApi', 'deploy api to remote host', function(){
-
-        if (!grunt.option('host')){
-            grunt.fail.warn('specify --host=HOSTNAME');
-        }
-
-        grunt.task.run(['gitinfo', 'shell:deployApi']);
-    });
-
     grunt.registerMultiTask('config', 'Create config.js from template', function(){
 
         var template = grunt.file.read('src/config.template');
