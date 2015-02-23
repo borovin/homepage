@@ -26,8 +26,21 @@ module.exports = function(grunt) {
                 command: 'node ./server.js'
             },
             deploy: {
-                command: 'git push dokku@borovin.com:<%- grunt.option("host") || "test" %> <%- grunt.option("branch") || gitinfo.local.branch.current.name %>:master'
+                command: 'git push dokku@borovin.com:<%- grunt.option("host") || "test" %> origin/<%- grunt.option("branch") || HEAD:master'
             },
+            deployApi: {
+                command: [
+                    'cd api',
+                    'git push dokku@borovin.com:<%- grunt.option("host") %> HEAD:master'
+                ].join(' && ')
+            },
+            //deployApi: {
+            //    command: [
+            //        'git remote add api -f git@github.com:borovin/homepage_api.git',
+            //        'git push dokku@borovin.com:<%- grunt.option("host") || "api" %> api/<%- grunt.option("branch") || "master" %>:master',
+            //        'git remote rm api'
+            //    ].join(' && ')
+            //},
             destroy: {
                 command: 'ssh -t dokku@borovin.com -- --force apps:destroy <%- grunt.option("host") || "test" %>'
             }
@@ -46,6 +59,15 @@ module.exports = function(grunt) {
         }
 
         grunt.task.run(['gitinfo', 'shell:deploy']);
+    });
+
+    grunt.registerTask('deployApi', 'deploy api to remote host', function(){
+
+        if (!grunt.option('host')){
+            grunt.fail.warn('specify --host=HOSTNAME');
+        }
+
+        grunt.task.run(['gitinfo', 'shell:deployApi']);
     });
 
     grunt.registerMultiTask('config', 'Create config.js from template', function(){
