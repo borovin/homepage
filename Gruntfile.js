@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         config: {
             options: {
                 clientVersion: '<%- grunt.option("clientVersion") || "' + Date.now() + '" %>',
-                apiHost: '<%- grunt.option("apiHost") || "http://api.borovin.com" %>'
+                apiHost: '<%- process.env.API_HOST || "http://api.borovin.com" %>'
             },
             init: {
             }
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('destroy', ['shell:destroy']);
     grunt.registerTask('develop', ['config:init', 'shell:linkSrc']);
-    grunt.registerTask('production', ['config:init', 'shell:build', 'shell:linkBuild']);
-    grunt.registerTask('start', ['production', 'shell:nodeStart']);
+    grunt.registerTask('build', ['config:init', 'shell:build', 'shell:linkBuild']);
+    grunt.registerTask('start', ['build', 'shell:nodeStart']);
 
     grunt.registerTask('deploy', 'deploy app to remote host', function(){
 
