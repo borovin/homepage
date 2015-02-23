@@ -27,7 +27,6 @@ module.exports = function(grunt) {
             },
             deploy: {
                 command: [
-                    'git fetch',
                     'git push dokku@borovin.com:<%- grunt.option("host") %> HEAD:master',
                     'cd api',
                     'git push dokku@borovin.com:<%- grunt.option("apiHost") %> HEAD:master'
