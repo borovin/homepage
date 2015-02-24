@@ -10,6 +10,6 @@ casper.test.begin('Title', function suite(test) {
 
     casper.run(function() {
         test.done();
-    });
+    }, 10000);
 
 });
