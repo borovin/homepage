@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 command: 'node ./server.js'
             },
             deploy: {
-                command: 'git push dokku@borovin.com:<%- grunt.option("host") %> <%- grunt.option("branch") || "HEAD" %>:master'
+                command: 'git push dokku@borovin.com:<%- grunt.option("host") %> <%- grunt.option("branch") || gitinfo.local.branch.current.name %>:master'
             },
             //deployApi: {
             //    command: [
