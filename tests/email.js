@@ -14,5 +14,5 @@ casper.test.begin('Email', function suite(test) {
 
     casper.run(function() {
         test.done();
-    });
+    }, 1000);
 });
