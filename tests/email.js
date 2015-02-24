@@ -6,7 +6,7 @@ casper.test.begin('Email', function suite(test) {
 
     casper.waitForSelector('[test="email"]', function() {
         test.assertSelectorHasText('[test="email"]', 'a@borovin.com');
-    }, 10000);
+    });
 
     casper.run(function() {
         test.done();
