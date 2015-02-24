@@ -6,7 +6,7 @@ casper.test.begin('Phone', function suite(test) {
 
     casper.waitForSelector('[test="phone"]', function() {
         test.assertSelectorHasText('[test="phone"]', '+79218902868');
-    });
+    }, 10000);
 
     casper.run(function() {
         test.done();
