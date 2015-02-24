@@ -53,7 +53,7 @@ module.exports = function(grunt) {
                 }
             },
             linkApp: {
-                command: 'ssh -t deploy@borovin.com ln -snf apps/<%- grunt.option("app") %> server/apps/<%- grunt.option("app") %>'
+                command: 'ssh -t deploy@borovin.com ln -snf ~/apps/<%- grunt.option("app") %> ~/server/apps/<%- grunt.option("app") %>'
             }
         }
     });
