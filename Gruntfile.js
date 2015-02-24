@@ -49,10 +49,7 @@ module.exports = function(grunt) {
             },
             buildApp: {
                 command: function(app){
-
-                    var app = grunt.option('app');
-
-                    return 'ssh -t deploy@borovin.com "cd apps/' + app + ' && npm install && npm run build"'
+                    return 'ssh -t deploy@borovin.com "cd apps/' + grunt.option('app') + ' && npm install && npm run build"'
                 }
             },
             linkApp: {
