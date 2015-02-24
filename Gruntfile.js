@@ -37,6 +37,21 @@ module.exports = function(grunt) {
             //},
             destroy: {
                 command: 'ssh -t dokku@borovin.com -- --force apps:destroy <%- grunt.option("host") || "test" %>'
+            },
+            ssh: {
+                command: 'ssh -t deploy@borovin.com <%- grunt.option("cmd") %>'
+            },
+            removeApp: {
+                command: 'ssh -t deploy@borovin.com rm -rf apps/<%- grunt.option("app") %>'
+            },
+            cloneApp: {
+                command: 'ssh -t deploy@borovin.com git clone git@github.com:borovin/homepage.git --branch <%- grunt.option("branch") || gitinfo.local.branch.current.name %> --single-branch apps/<%- grunt.option("app") %>'
+            },
+            buildApp: {
+                command: 'ssh -t deploy@borovin.com cd apps/<%- grunt.option("app") %> && npm install && npm run build'
+            },
+            linkApp: {
+                command: 'ssh -t deploy@borovin.com ln -snf apps/<%- grunt.option("app") %> server/apps/<%- grunt.option("app") %>'
             }
         }
     });
@@ -48,11 +63,11 @@ module.exports = function(grunt) {
 
     grunt.registerTask('deploy', 'deploy app to remote host', function(){
 
-        if (!grunt.option('host')){
-            grunt.fail.warn('specify --host=HOSTNAME');
+        if (!grunt.option('app')){
+            grunt.fail.warn('specify --app=NAME');
         }
 
-        grunt.task.run(['gitinfo', 'shell:deploy']);
+        grunt.task.run(['gitinfo', 'shell:removeApp', 'shell:cloneApp', 'shell:buildApp', 'shell:linkApp']);
     });
 
     grunt.registerMultiTask('config', 'Create config.js from template', function(){

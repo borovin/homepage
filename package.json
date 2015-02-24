@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "start": "./node_modules/grunt-cli/bin/grunt start",
+    "build": "./node_modules/grunt-cli/bin/grunt build",
     "develop": "./node_modules/grunt-cli/bin/grunt develop"
   },
   "dependencies": {
+    "casperjs": "^1.1.0-beta3",
     "express": "^4.10.7",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-shell": "^1.1.1",
     "grunt-gitinfo": "^0.1.7",
-    "casperjs": "^1.1.0-beta3"
+    "grunt-shell": "^1.1.1"
   }
 }
