@@ -5,7 +5,7 @@ casper.test.begin('Title', function suite(test) {
     casper.viewport(1280, 1024);
 
     casper.then(function() {
-        test.assertTitle('Andrey Borovin', 'title is correct');
+        test.assertTitle('Andrey Borovin 1', 'title is correct');
     });
 
     casper.run(function() {
