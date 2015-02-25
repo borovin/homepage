@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "./node_modules/grunt-cli/bin/grunt start",
-    "build": "./node_modules/grunt-cli/bin/grunt build",
-    "develop": "./node_modules/grunt-cli/bin/grunt develop"
+    "build": "./node_modules/grunt-cli/bin/grunt build"
   },
   "dependencies": {
     "express": "^4.10.7",
