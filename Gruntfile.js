@@ -4,6 +4,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-gitinfo');
 
     grunt.config.init({
+        repositoryUrl: 'git@github.com:borovin/homepage.git',
+        apiRepositoryUrl: 'git@github.com:borovin/homepage_api.git',
+        apiBranch: 'master',
         config: {
             options: {
                 clientVersion: '<%- grunt.option("clientVersion") || "' + Date.now() + '" %>',
@@ -29,7 +32,7 @@ module.exports = function(grunt) {
                 command: 'ssh -t deploy@borovin.com rm -rf apps/<%- grunt.option("app") %>'
             },
             cloneApp: {
-                command: 'ssh -t deploy@borovin.com git clone git@github.com:borovin/homepage.git --branch <%- grunt.option("branch") || gitinfo.local.branch.current.name %> --single-branch apps/<%- grunt.option("app") %>'
+                command: 'ssh -t deploy@borovin.com git clone <%- repositoryUrl %> --branch <%- grunt.option("branch") || gitinfo.local.branch.current.name %> --single-branch apps/<%- grunt.option("app") %>'
             },
             buildApp: {
                 command: function(app){
