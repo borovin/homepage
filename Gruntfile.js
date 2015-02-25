@@ -28,36 +28,17 @@ module.exports = function(grunt) {
             deploy: {
                 command: 'git push dokku@borovin.com:<%- grunt.option("host") %> <%- grunt.option("branch") || gitinfo.local.branch.current.name %>:master'
             },
-            //deployApi: {
-            //    command: [
-            //        'git remote add api -f git@github.com:borovin/homepage_api.git',
-            //        'git push dokku@borovin.com:<%- grunt.option("host") || "api" %> api/<%- grunt.option("branch") || "master" %>:master',
-            //        'git remote rm api'
-            //    ].join(' && ')
-            //},
-            destroy: {
-                command: 'ssh -t dokku@borovin.com -- --force apps:destroy <%- grunt.option("host") || "test" %>'
-            },
-            ssh: {
-                command: 'ssh -t deploy@borovin.com <%- grunt.option("cmd") %>'
-            },
             removeApp: {
                 command: 'ssh -t deploy@borovin.com rm -rf apps/<%- grunt.option("app") %>'
             },
             cloneApp: {
-                command: 'ssh -t deploy@borovin.com git clone git@github.com:borovin/homepage.git --branch <%- grunt.option("branch") || gitinfo.local.branch.current.name %> --single-branch apps/<%- grunt.option("app") %>'
+                command: function(){
+                    return 'ssh -t deploy@borovin.com "git clone git@github.com:borovin/homepage.git --branch' + (grunt.option("branch") || grunt.gitinfo.local.branch.current.name) + '--single-branch apps/' + grunt.option("app") + '"';
+                }
             },
             buildApp: {
                 command: function(app){
                     return 'ssh -t deploy@borovin.com "cd apps/' + grunt.option('app') + ' && npm install && npm run build"'
-                }
-            },
-            linkApp: {
-                command: function(){
-
-                    var app = grunt.option('app');
-
-                    return 'ssh -t deploy@borovin.com "ln -snf ~/apps/' + app + '/ ~/server/apps/' + app + '"';
                 }
             }
         }
@@ -74,7 +55,7 @@ module.exports = function(grunt) {
             grunt.fail.warn('specify --app=NAME');
         }
 
-        grunt.task.run(['gitinfo', 'shell:removeApp', 'shell:cloneApp', 'shell:buildApp', 'shell:linkApp']);
+        grunt.task.run(['gitinfo', 'shell:removeApp', 'shell:cloneApp', 'shell:buildApp']);
     });
 
     grunt.registerMultiTask('config', 'Create config.js from template', function(){
