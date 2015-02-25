@@ -28,15 +28,38 @@ module.exports = function(grunt) {
             nodeStart: {
                 command: 'node ./server.js'
             },
+
+            //APP
             removeApp: {
-                command: 'ssh -t deploy@borovin.com rm -rf apps/<%- grunt.option("app") %>'
+                command: function(){
+                    return 'ssh -t deploy@borovin.com "rm -rf apps/' + grunt.option("app") + '"';
+                }
             },
             cloneApp: {
-                command: 'ssh -t deploy@borovin.com git clone <%- repositoryUrl %> --branch <%- grunt.option("branch") || gitinfo.local.branch.current.name %> --single-branch apps/<%- grunt.option("app") %>'
+                command: function(){
+                    return 'ssh -t deploy@borovin.com "git clone ' + grunt.config('repositoryUrl') + ' --branch ' + (grunt.option("branch") || grunt.config('gitinfo').local.branch.current.name) + ' --single-branch apps/' + grunt.option("app") + '"';
+                }
             },
             buildApp: {
                 command: function(app){
                     return 'ssh -t deploy@borovin.com "cd ~/apps/' + grunt.option('app') + ' && npm install && npm run build"'
+                }
+            },
+
+            //API
+            removeApi: {
+                command: function(){
+                    return 'ssh -t deploy@borovin.com "rm -rf apps/api-' + grunt.option("app") + '"';
+                }
+            },
+            cloneApi: {
+                command: function(){
+                    return 'ssh -t deploy@borovin.com git clone ' + grunt.config('apiRepositoryUrl') + ' --branch ' + grunt.config('apiBranch') + ' --single-branch apps/api-' + grunt.option("app");
+                }
+            },
+            buildApi: {
+                command: function(app){
+                    return 'ssh -t deploy@borovin.com "cd ~/apps/api-' + grunt.option('app') + ' && npm install"'
                 }
             }
         }
@@ -53,7 +76,16 @@ module.exports = function(grunt) {
             grunt.fail.warn('specify --app=NAME');
         }
 
-        grunt.task.run(['gitinfo', 'shell:removeApp', 'shell:cloneApp', 'shell:buildApp']);
+        grunt.task.run(['gitinfo', 'shell:removeApp', 'shell:cloneApp', 'shell:buildApp', 'deployApi']);
+    });
+
+    grunt.registerTask('deployApi', 'deploy api to remote host', function(){
+
+        if (!grunt.option('app')){
+            grunt.fail.warn('specify --app=NAME');
+        }
+
+        grunt.task.run(['gitinfo', 'shell:removeApi', 'shell:cloneApi', 'shell:buildApi']);
     });
 
     grunt.registerMultiTask('config', 'Create config.js from template', function(){
