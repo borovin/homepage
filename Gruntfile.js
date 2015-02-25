@@ -25,20 +25,15 @@ module.exports = function(grunt) {
             nodeStart: {
                 command: 'node ./server.js'
             },
-            deploy: {
-                command: 'git push dokku@borovin.com:<%- grunt.option("host") %> <%- grunt.option("branch") || gitinfo.local.branch.current.name %>:master'
-            },
             removeApp: {
                 command: 'ssh -t deploy@borovin.com rm -rf apps/<%- grunt.option("app") %>'
             },
             cloneApp: {
-                command: function(){
-                    return 'ssh -t deploy@borovin.com "git clone git@github.com:borovin/homepage.git --branch' + (grunt.option("branch") || grunt.gitinfo.local.branch.current.name) + '--single-branch apps/' + grunt.option("app") + '"';
-                }
+                command: 'ssh -t deploy@borovin.com git clone git@github.com:borovin/homepage.git --branch <%- grunt.option("branch") || gitinfo.local.branch.current.name %> --single-branch apps/<%- grunt.option("app") %>'
             },
             buildApp: {
                 command: function(app){
-                    return 'ssh -t deploy@borovin.com "cd apps/' + grunt.option('app') + ' && npm install && npm run build"'
+                    return 'ssh -t deploy@borovin.com "cd ~/apps/' + grunt.option('app') + ' && npm install && npm run build"'
                 }
             }
         }
