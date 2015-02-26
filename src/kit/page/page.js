@@ -18,6 +18,7 @@ define(function(require, exports, module) {
 
                 if (scrollTop < 0){
                     $(this.fixedContent).css('top', 0);
+                    $(this.fixedContent).css('bottom', 'auto');
                     return;
                 }
 
