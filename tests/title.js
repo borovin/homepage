@@ -7,10 +7,6 @@ casper.test.begin('Title', function suite(test) {
         test.assertTitle('Andrey Borovin', 'title is correct');
     });
 
-    casper.then(function() {
-        test.assertTitle('Test', 'title is incorrect');
-    });
-
     casper.run(function() {
         test.done();
     });
