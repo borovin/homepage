@@ -5,20 +5,9 @@ module.exports = function(grunt) {
 
     grunt.config.init({
         repositoryUrl: 'git@github.com:borovin/homepage.git',
-        config: {
-            options: {
-                clientVersion: '<%- grunt.option("clientVersion") || "' + Date.now() + '" %>',
-                apiHost: '<%- grunt.option("apiHost") || "http://api.borovin.com" %>'
-            },
-            init: {
-            }
-        },
         shell: {
             build: {
-                command: 'rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js'
-            },
-            linkBuild: {
-                command: 'ln -snf ./build/ public'
+                command: 'rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public'
             },
 
             //Deploy commands
@@ -40,7 +29,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('build', ['config:init', 'shell:build', 'shell:linkBuild']);
+    grunt.registerTask('build', ['config', 'shell:build']);
 
     grunt.registerTask('deploy', 'deploy app to remote host', function(){
 
@@ -51,13 +40,10 @@ module.exports = function(grunt) {
         grunt.task.run(['gitinfo', 'shell:removeApp', 'shell:cloneApp', 'shell:buildApp']);
     });
 
-    grunt.registerMultiTask('config', 'Create config.js from template', function(){
+    grunt.registerTask('config', 'Create config.js from template', function () {
 
-        var template = grunt.file.read('src/config.template');
-
-        var config = grunt.template.process(template, {
-            data: this.options()
-        });
+        var template = grunt.file.read('src/config.template'),
+            config = grunt.template.process(template);
 
         grunt.file.write('./src/config.js', config);
     });
