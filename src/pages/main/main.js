@@ -13,9 +13,6 @@ define(function(require, exports, module) {
         },
         models: {
             info: require('resources/info/model')
-        },
-        blocks: {
-            slider: require('blocks/slider/slider')
         }
     });
 });

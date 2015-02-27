@@ -33,11 +33,11 @@
     "requirejs": "~2.1.15"
   },
   "homepage": "https://github.com/borovin/block",
-  "_release": "ef9b9b5aec",
+  "_release": "8d77ff2a58",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "ef9b9b5aecf75c88a00f6311b36f696d4e2b736e"
+    "commit": "8d77ff2a583b810662baa0e9b6de78f1cf129de6"
   },
   "_source": "git@github.com:borovin/block.git",
   "_target": "*",

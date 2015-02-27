@@ -1,3 +1,5 @@
+<% var slider = require('blocks/slider/slider') %>
+
 <div id="page">
 
     <div class="page__content">
@@ -101,7 +103,11 @@
 
                 <div class="portfolio__item">
                     <h3 class="portfolio__itemTitle"><%- project.title %></h3>
-                    <b block="slider" data-project-id="<%- project.id %>"></b>
+
+                    <%= block(slider, {
+                        project: project
+                    }) %>
+
                 </div>
                 <% }) %>
             </div>
