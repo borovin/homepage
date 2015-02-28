@@ -1,5 +1,9 @@
 .idea/
+.DS_Store
+tests/.DS_Store
 public
 node_modules/
 build/
 config.js
+tests/failures
+tests/results
