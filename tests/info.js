@@ -1,11 +1,8 @@
 casper.test.begin('Info block', function (test) {
 
-    casper.waitForSelector('.resume__top', function () {
-        phantomcss.screenshot('.resume__top', 'info');
-    });
-
-    casper.then(function () {
-        phantomcss.compareAll();
+    casper.waitWhileSelector('#page.loading', function () {
+        test.assertSelectorHasText('[test="phone"]', '+79218902868');
+        test.assertSelectorHasText('[test="email"]', 'a@borovin.com');
     });
 
     casper.run(function () {
