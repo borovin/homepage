@@ -7,11 +7,10 @@
     stubModules: ['ejs', 'amd-loader'],
     skipDirOptimize: true,
     optimizeAllPluginResources: true,
-    removeCombined: false,
+    removeCombined: true,
 
     preserveLicenseComments: false,
     optimizeCss: 'standard',
-    optimize: 'none',
 
     modules: [
         {
