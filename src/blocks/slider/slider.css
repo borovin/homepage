@@ -8,13 +8,14 @@
     overflow: hidden;
 	position: relative;
 	z-index: 1;
-	padding-bottom: 56.25%;
+	padding-bottom: 51.70%;
 }
 
 .slider__item{
 	position: absolute;
 	top: 0;
 	left: 0;
+    bottom: 0;
 	width: 100%;
 	overflow: hidden;
 	z-index: 0;
@@ -31,6 +32,11 @@
 .slider__item img{
 	width: 100%;
 	vertical-align: top;
+}
+
+.slider__itemLink {
+    display: block;
+    height: 100%;
 }
 
 .slider__control{
