@@ -8,6 +8,7 @@
     overflow: hidden;
 	position: relative;
 	z-index: 1;
+	padding-bottom: 56.25%;
 }
 
 .slider__item{
@@ -20,7 +21,6 @@
 }
 
 .slider__item_state_active {
-	position: relative;
 	z-index: 10;
 }
 
