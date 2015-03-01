@@ -8,39 +8,33 @@ define(function(require, exports, module) {
         globalEvents: {
             'scroll': function(){
 
-                var scrollTop = $(document).scrollTop(),
-                    windowHeight = $(window).height(),
-                    documentHeight = $(document).height(),
-                    scrollDistance = this.scrollTop - scrollTop,
-                    fixedTopPosition = this.fixedContent.offsetTop + scrollDistance,
-                    fixedHeight = $(this.fixedContent).outerHeight(),
+                var scrollTop = document.body.scrollTop,
+                    scrollHeight = document.body.scrollHeight,
+                    windowHeight = window.innerHeight,
+                    scrollMax = scrollHeight - windowHeight,
+                    fixedHeight = this.fixedContent.clientHeight,
                     scrollOffset = windowHeight - fixedHeight;
 
                 if (scrollTop < 0){
-                    $(this.fixedContent).css('top', 0);
-                    return;
+                    scrollTop = 0;
                 }
 
-                if (scrollTop > documentHeight - windowHeight){
-                    $(this.fixedContent).css('top', scrollOffset);
-                    return;
+                if (scrollTop > scrollMax){
+                    scrollTop = scrollMax;
                 }
 
-                if (scrollTop > this.scrollTop){
-                    //scroll down
-                    if (this.fixedContent.offsetTop > scrollOffset) {
-                        $(this.fixedContent).css('top', fixedTopPosition);
-                    } else {
-                        $(this.fixedContent).css('top', scrollOffset);
-                    }
-                } else {
-                    //scroll up
-                    if (this.fixedContent.offsetTop < 0){
-                        $(this.fixedContent).css('top', fixedTopPosition);
-                    } else {
-                        $(this.fixedContent).css('top', 0);
-                    }
+                var scrollDistance = this.scrollTop - scrollTop,
+                    fixedTopPosition = this.fixedContent.offsetTop + scrollDistance;
+
+                if (fixedTopPosition >= 0){
+                    fixedTopPosition = 0;
                 }
+
+                if (fixedTopPosition <= scrollOffset){
+                    fixedTopPosition = scrollOffset;
+                }
+
+                this.fixedContent.style.top = fixedTopPosition + 'px';
 
                 this.scrollTop = scrollTop;
 
