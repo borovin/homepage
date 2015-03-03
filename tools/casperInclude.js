@@ -5,9 +5,9 @@ var phantomcss = require(path);
 phantomcss.init({
     rebase: casper.cli.get("rebase"),
     libraryRoot: fs.absolute(fs.workingDirectory + '/node_modules/phantomcss'),
-    screenshotRoot: fs.absolute(fs.workingDirectory + '/tests/screenshots/' + casper.cli.options.os),
-    failedComparisonsRoot: fs.absolute(fs.workingDirectory + '/tests/failures'),
-    comparisonResultRoot: fs.absolute(fs.workingDirectory + '/tests/results'),
+    screenshotRoot: fs.absolute(fs.workingDirectory + '/tests/ui/screenshots/' + casper.cli.options.os),
+    failedComparisonsRoot: fs.absolute(fs.workingDirectory + '/tests/ui/failures'),
+    comparisonResultRoot: fs.absolute(fs.workingDirectory + '/tests/ui/results'),
     addLabelToFailedImage: false
 });
 
