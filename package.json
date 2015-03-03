@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ln -snf ./src/ public && ./node_modules/grunt-cli/bin/grunt config && node server.js",
     "build": "./node_modules/grunt-cli/bin/grunt build",
-    "test": "./node_modules/casperjs/bin/casperjs test tests/ --host=http://localhost:8080 --includes=./tools/casperInclude.js"
+    "test": "./node_modules/grunt-cli/bin/grunt test"
   },
   "dependencies": {
     "express": "^4.10.7",

@@ -76,8 +76,11 @@ define(function (require, exports, module) {
         },
         render: function () {
             var page = this,
+                prevPage = document.getElementById('page'),
                 render = Block.prototype.render.apply(page, arguments),
                 page__content = this.el.querySelectorAll('.page__content');
+
+            prevPage.block && prevPage.block.remove();
 
             page.leftContent = page__content[0];
             page.rightContent = page__content[1];
@@ -107,6 +110,15 @@ define(function (require, exports, module) {
 
             page.el.dataset.status = 'loaded';
 
+        },
+        remove: function () {
+            var page = this;
+
+            page.stopListening();
+            page.undelegateEvents();
+            $(document).off('.' + page.cid);
+
+            page.removeBlocks();
         }
     });
 });

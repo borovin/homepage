@@ -9,6 +9,9 @@ module.exports = function(grunt) {
             build: {
                 command: 'rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public'
             },
+            test: {
+                command: './node_modules/casperjs/bin/casperjs test tests/<%- grunt.option("suite") || "*" %>.js --host=<%- grunt.option("host") || "http://localhost:8080" %>/test.html --includes=./tools/casperInclude.js'
+            },
 
             //Deploy commands
             removeApp: {
@@ -30,6 +33,7 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('build', ['config', 'shell:build']);
+    grunt.registerTask('test', ['shell:test']);
 
     grunt.registerTask('deploy', 'deploy app to remote host', function(){
 

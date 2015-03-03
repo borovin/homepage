@@ -1,2 +1,6 @@
-casper.start(casper.cli.options.host + '/test.html');
-casper.viewport(1280, 1024);
+casper.test.setUp(function () {
+
+    casper.start(casper.cli.options.host);
+    casper.viewport(1280, 1024);
+
+});
