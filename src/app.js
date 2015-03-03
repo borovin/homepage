@@ -31,10 +31,13 @@ define(function (require) {
                 }
             }
         },
-        initialize: function() {
+        initialize: function () {
+
+            window.APP = this;
+
             Backbone.history.start({pushState: true});
         },
-        navigate: function(){
+        navigate: function () {
             var app = this;
 
             return app.router.navigate.apply(app.router, arguments);
