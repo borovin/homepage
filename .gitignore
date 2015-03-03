@@ -5,6 +5,6 @@ public
 node_modules/
 build/
 config.js
-tests/ui/failures
-tests/ui/results
+tests/ui/failures/
+tests/ui/results/
 nohup.out
