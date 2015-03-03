@@ -7,3 +7,4 @@ build/
 config.js
 tests/failures
 tests/results
+nohup.out
