@@ -75,29 +75,37 @@ define(function (require, exports, module) {
             });
         },
         render: function () {
-            var render = Block.prototype.render.apply(this, arguments),
+            var page = this,
+                render = Block.prototype.render.apply(page, arguments),
                 page__content = this.el.querySelectorAll('.page__content');
 
-            this.leftContent = page__content[0];
-            this.rightContent = page__content[1];
+            page.leftContent = page__content[0];
+            page.rightContent = page__content[1];
 
-            if (this.leftContent.offsetHeight > this.rightContent.offsetHeight) {
-                this.rightContent.classList.add('page__content_fixed');
-                this.fixedContent = this.rightContent;
+            if (page.leftContent.offsetHeight > page.rightContent.offsetHeight) {
+                page.rightContent.classList.add('page__content_fixed');
+                page.fixedContent = page.rightContent;
             } else {
-                this.leftContent.classList.add('page__content_fixed');
-                this.fixedContent = this.leftContent;
+                page.leftContent.classList.add('page__content_fixed');
+                page.fixedContent = page.leftContent;
             }
+
+            page.loaded();
 
             return render;
         },
-        loading: function (start) {
+        loading: function () {
 
-            if (start || start === undefined) {
-                this.el.classList.add('loading');
-            } else {
-                this.el.classList.remove('loading');
-            }
+            var page = this;
+
+            page.el.dataset.status = 'loading';
+
+        },
+        loaded: function () {
+
+            var page = this;
+
+            page.el.dataset.status = 'loaded';
 
         }
     });

@@ -14,7 +14,7 @@
     opacity: 1;
 }
 
-#page.loading:before {
+#page[data-status="loading"]:before {
     -webkit-transform: translate3d(70%, 0, 0);
     -webkit-transition: -webkit-transform 4s, opacity 1s;
     transform: translate3d(70%, 0, 0);

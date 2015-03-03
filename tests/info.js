@@ -1,6 +1,6 @@
 casper.test.begin('Info block', function (test) {
 
-    casper.waitWhileSelector('#page.loading', function () {
+    casper.waitForSelector('#page[data-status="loaded"]', function () {
         test.assertSelectorHasText('[test="phone"]', '+79218902868');
         test.assertSelectorHasText('[test="email"]', 'a@borovin.com');
     });
