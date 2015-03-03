@@ -5,7 +5,7 @@
     <div class="page__content">
 
         <div class="page__header">
-            <h1 class="page__headerTitle">Андрей Боровин</h1>
+            <h1 class="page__headerTitle" locator="name">Андрей Боровин</h1>
         </div>
 
         <div class="resume">
@@ -26,25 +26,27 @@
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Skype:</div>
-                        <div class="resume__infoText"><%- models.info.get('skype') %></div>
+                        <div class="resume__infoText" locator="skype"><%- models.info.get('skype') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Телефон:</div>
-                        <div class="resume__infoText" test="phone"><%- models.info.get('phone') %></div>
+                        <div class="resume__infoText" locator="phone"><%- models.info.get('phone') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">e-mail:</div>
                         <div class="resume__infoText">
-                            <a href="mailto:<%- models.info.get('mail') %>" test="email"><%- models.info.get('mail') %></a>
+                            <a href="mailto:<%- models.info.get('mail') %>"
+                               locator="email"><%- models.info.get('mail') %></a>
                         </div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Github:</div>
                         <div class="resume__infoText">
-                            <a target="_blank"
+                            <a locator="githubLink"
+                               target="_blank"
                                href="https://github.com/<%- models.info.get('github') %>">github.com/<%- models.info.get('github') %></a>
                         </div>
                     </div>

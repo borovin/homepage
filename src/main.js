@@ -1,6 +1,6 @@
-require([
-    'pages/main/main'
-], function (Page) {
+define(function (require) {
 
-    new Page();
+    var App = require('app');
+
+    window.APP = new App;
 });
