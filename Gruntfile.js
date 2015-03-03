@@ -1,3 +1,5 @@
+var os = require('os');
+
 module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-shell');
@@ -10,7 +12,7 @@ module.exports = function(grunt) {
                 command: 'rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public'
             },
             test: {
-                command: './node_modules/casperjs/bin/casperjs test tests/<%- grunt.option("suite") || "*" %>.js --host=<%- grunt.option("host") || "http://localhost:8080" %>/test.html --includes=./tools/casperInclude.js'
+                command: './node_modules/casperjs/bin/casperjs test tests/<%- grunt.option("suite") || "*" %>.js --host=<%- grunt.option("host") || "http://localhost:8080" %>/test.html --includes=./tools/casperInclude.js --os=' + os.platform()
             },
 
             //Deploy commands

@@ -19,6 +19,9 @@ casper.test.begin('Info block', function (test) {
         test.assertSelectorHasText('[locator="email"]', 'a@borovin.com');
         test.assertSelectorHasText('[locator="skype"]', 'andrew.borovin');
         test.assertEquals(casper.getElementAttribute('[locator="githubLink"]', 'href'), 'https://github.com/borovin');
+
+        phantomcss.screenshot('.resume', 'resume');
+
     });
 
     casper.run(function () {
