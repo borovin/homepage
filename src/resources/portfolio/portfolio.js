@@ -12,8 +12,8 @@ define(function (require) {
                     screenUrl: 'http://borovin.github.io/dorproject/screenshots/index.png'
                 },
                 {
-                    url: 'http://borovin.github.io/dorproject/intro.html',
-                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/intro.png'
+                    url: 'http://borovin.github.io/dorproject/main.html',
+                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/main.png'
                 }
             ]
         },
