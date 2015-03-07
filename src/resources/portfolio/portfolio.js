@@ -4,7 +4,6 @@ define(function (require) {
 
     return [
         {
-            id: _.uniqueId('item-'),
             name: 'dorproject',
             title: 'Проектный институт "Дорпроект"',
             items: [
@@ -19,7 +18,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'arsenal',
             title: 'Учебный центр "Арсенал"',
             items: [
@@ -58,7 +56,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'aflowt',
             title: 'Производственная компания "Взлет"',
             items: [
@@ -81,7 +78,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'ariaf',
             title: 'Ресторан "Арияф"',
             items: [
@@ -100,7 +96,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'marva2',
             title: 'Интернет-сервис "Марва"',
             items: [
@@ -135,7 +130,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'dominanta',
             title: 'Рекламное агенство "Доминанта"',
             items: [
@@ -158,7 +152,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'oyster',
             title: 'Интернет-провайдер "Oyster"',
             items: [
@@ -173,7 +166,6 @@ define(function (require) {
             ]
         },
         {
-            id: _.uniqueId('item-'),
             name: 'vzlet',
             title: 'Сервисное обслуживание "Взлет"',
             items: [
