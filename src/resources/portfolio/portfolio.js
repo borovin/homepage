@@ -10,11 +10,11 @@ define(function (require) {
             items: [
                 {
                     url: '/projects/dorproject/home.html',
-                    screenUrl: '/portfolio/dorproject/1.jpg'
+                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/index.png'
                 },
                 {
                     url: '/projects/dorproject/divntro.html',
-                    screenUrl: '/portfolio/dorproject/2.jpg'
+                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/intro.png'
                 }
             ]
         },

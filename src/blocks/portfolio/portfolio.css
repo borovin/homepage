@@ -27,8 +27,8 @@
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4392df), color-stop(100%, #336699));
 	background-image: -webkit-linear-gradient(top, #4392df 0, #336699 100%);
 	background-image: linear-gradient(to bottom, #4392df 0, #336699 100%);
-	padding: 8px 40px 10px 15px;
-	font-size: 16px;
+	padding: 10px 40px 10px 15px;
+	font-size: 20px;
 	font-weight: bold;
 }
 

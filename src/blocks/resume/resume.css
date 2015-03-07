@@ -26,7 +26,8 @@
 
 .resume__info {
 	float: left;
-	font-size: 14px;
+	font-size: 16px;
+	font-family: 'Cuprum', sans-serif;
 }
 
 .resume__infoRow {
@@ -78,7 +79,7 @@
 }
 
 .resume__experienceTitle {
-	font-size: 16px;
+	font-size: 20px;
 	color: #fafafa;
 	text-shadow: -1px -1px #546373;
 	display: inline-block;
@@ -92,21 +93,21 @@
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #89a0ba), color-stop(100%, #6f8296));
 	background-image: -webkit-linear-gradient(top, #89a0ba 0, #6f8296 100%);
 	background-image: linear-gradient(to bottom, #89a0ba 0, #6f8296 100%);
-	padding: 8px 40px 8px 15px;
+	padding: 10px 40px 10px 15px;
 	position: relative;
 	margin-left: -15px;
 	font-weight: bold;
 }
 
 .resume__experiencePlace {
-	font-size: 16px;
-	font-family: "Trebuchet MS";
+	font-size: 18px;
+	font-family: 'Cuprum', sans-serif;
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
 	vertical-align: top;
 	margin-bottom: 5px;
 	margin-left: -15px;
-	padding: 8px 40px 8px 15px;
+	padding: 10px 40px 10px 15px;
 	background: #eee;
 }
