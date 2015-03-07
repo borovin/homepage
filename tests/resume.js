@@ -30,9 +30,6 @@ casper.test.begin('Resume', function (test) {
         })
         .then(function () {
             test.assertEquals(casper.getElementAttribute('[locator="githubLink"]', 'href'), 'https://github.com/borovin', 'github link href is ok');
-        })
-        .then(function () {
-            phantomcss.screenshot('.resume', 'resume');
         });
 
     casper.run(function () {

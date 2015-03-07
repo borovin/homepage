@@ -9,11 +9,11 @@ define(function (require) {
             title: 'Проектный институт "Дорпроект"',
             items: [
                 {
-                    url: '/projects/dorproject/home.html',
+                    url: 'http://borovin.github.io/dorproject/index.html',
                     screenUrl: 'http://borovin.github.io/dorproject/screenshots/index.png'
                 },
                 {
-                    url: '/projects/dorproject/divntro.html',
+                    url: 'http://borovin.github.io/dorproject/intro.html',
                     screenUrl: 'http://borovin.github.io/dorproject/screenshots/intro.png'
                 }
             ]
