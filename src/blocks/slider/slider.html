@@ -3,7 +3,10 @@
 
         <% _.forEach(project.items, function(item, index){ %>
         <div class="slider__item <%- index === position ? 'slider__item_state_active' : '' %>">
-            <a class="slider__itemLink" target="_blank" href="<%- item.url %>">
+            <a class="slider__itemLink"
+               target="_blank"
+               data-navigate="0"
+               href="<%- item.url %>">
                 <img alt="#" src="<%- item.screenUrl %>"/>
             </a>
         </div>

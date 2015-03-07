@@ -2,8 +2,6 @@ define(function (require) {
     var Block = require('bower_components/block/block'),
         backbone = require('bower_components/backbone/backbone');
 
-    require('router');
-
     $(document).ajaxError(function (event, error) {
         switch (error.status) {
             default:
@@ -15,6 +13,7 @@ define(function (require) {
 
     return Block.extend({
         el: 'body',
+        router: require('router'),
         events: {
             'click [href]': function (e) {
                 e.stopPropagation();

@@ -38,6 +38,7 @@
                         <div class="resume__infoTitle">e-mail:</div>
                         <div class="resume__infoText">
                             <a href="mailto:<%- models.info.get('mail') %>"
+                               data-navigate="0"
                                locator="email"><%- models.info.get('mail') %></a>
                         </div>
                     </div>
@@ -47,6 +48,7 @@
                         <div class="resume__infoText">
                             <a locator="githubLink"
                                target="_blank"
+                               data-navigate="0"
                                href="https://github.com/<%- models.info.get('github') %>">github.com/<%- models.info.get('github') %></a>
                         </div>
                     </div>
