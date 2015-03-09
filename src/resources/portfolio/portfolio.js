@@ -23,7 +23,7 @@ define(function (require) {
             items: [
                 {
                     url: 'http://borovin.github.io/arsenal/build/index.html',
-                    screenUrl: 'http://borovin.github.io/arsenal/screenshots/main.jpg'
+                    screenUrl: 'http://borovin.github.io/arsenal/screenshots/index.jpg'
                 }
             ]
         },
