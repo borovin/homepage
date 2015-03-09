@@ -22,36 +22,8 @@ define(function (require) {
             title: 'Учебный центр "Арсенал"',
             items: [
                 {
-                    url: 'http://borovin.github.io/arsenal/index.html',
-                    screenUrl: '/portfolio/arsenal/1.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/index.html',
-                    screenUrl: '/portfolio/arsenal/2.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/index.html',
-                    screenUrl: '/portfolio/arsenal/3.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/training.html',
-                    screenUrl: '/portfolio/arsenal/4.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/training.html',
-                    screenUrl: '/portfolio/arsenal/5.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/training.html',
-                    screenUrl: '/portfolio/arsenal/5.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/training.html',
-                    screenUrl: '/portfolio/arsenal/6.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/arsenal/training.html',
-                    screenUrl: '/portfolio/arsenal/7.jpg'
+                    url: 'http://borovin.github.io/arsenal/build/index.html',
+                    screenUrl: 'http://borovin.github.io/arsenal/screenshots/main.jpg'
                 }
             ]
         },
