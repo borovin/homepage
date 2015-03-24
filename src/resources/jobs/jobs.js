@@ -10,6 +10,14 @@ define(function(require, exports, module) {
         },
         {
             title: 'Front-end developer',
+            company: 'AIS Group',
+            url: 'http://aintsysgroup.com/',
+            dateFrom: '15.03.2012',
+            dateTo: '18.04.2013',
+            description: require('tpl!./ais.html')
+        },
+        {
+            title: 'Front-end developer',
             company: 'Платежная система Яндекс.Деньги',
             url: 'https://money.yandex.ru/',
             dateFrom: '25.07.2011',
