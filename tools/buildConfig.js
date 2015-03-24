@@ -14,7 +14,7 @@
 
     modules: [
         {
-            name: "main",
+            name: "app",
             exclude: ['jquery']
         }
     ]
