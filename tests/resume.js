@@ -7,9 +7,9 @@ casper.test.begin('Resume', function (test) {
 
             requirejs({
                 shim: {
-                    main: ['resources/info/mocks/get']
+                    app: ['resources/info/mocks/get']
                 }
-            }, ['main']);
+            }, ['app']);
 
         });
     });

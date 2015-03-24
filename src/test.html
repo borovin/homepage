@@ -21,6 +21,16 @@
 <script src="/config.js"></script>
 <script src="/require.config.js"></script>
 
+<script>
+    window.history.replaceState({}, document.title, '/');
+
+    requirejs({
+        shim: {
+            app: ['resources/info/mocks/get']
+        }
+    }, ['app']);
+</script>
+
 </body>
 
 </html>

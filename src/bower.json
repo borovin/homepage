@@ -23,7 +23,8 @@
     "model": "https://github.com/borovin/model.git#dev",
     "block": "https://github.com/borovin/block.git#dev",
     "router": "https://github.com/borovin/router.git#dev",
-    "get": "https://github.com/borovin/get.git#dev"
+    "get": "https://github.com/borovin/get.git#dev",
+    "jquery-mockjax": "~1.6.1"
   },
   "resolutions": {
     "lodash": "^3.5.0",
