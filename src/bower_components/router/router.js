@@ -1,109 +1,98 @@
-define(function(require) {
-    //requirements
-    var Uri = require('bower_components/uri.js/src/URI'),
-        _ = require('bower_components/lodash/lodash'),
-        makeClass = require('bower_components/makeClass/makeClass'),
-        Backbone = require('bower_components/backbone/backbone');
+define(function (require, exports, module) {
 
-    var Router = Backbone.Router;
+    var page = require('bower_components/page.js/page'),
+        queryString = require('bower_components/query-string/query-string'),
+        _ = require('bower_components/lodash/lodash');
 
-    // Cached regular expressions for matching named param parts and splatted
-    // parts of route strings.
-    var optionalParam = /\((.*?)\)/g;
-    var brackets = /\(|\)/g;
-    var namedParam    = /(\(\?)?:\w+/g;
+    var router = {};
 
-    return makeClass(Router, {
-        _extractParameters: function(routeRegExp, fragment) {
+    router.isStarted = false;
 
-            var queryParams = new Uri(fragment).search(true),
-                params = routeRegExp.exec(fragment.split('?')[0]).slice(1),
-                namedParams = {},
-                paramNames;
+    router.start = function (options) {
 
-            _.any(this.routes, function(value, key) {
-                if (routeRegExp.test(key)) {
+        router.isStarted = true;
 
-                    paramNames = _.map(routeRegExp.exec(key.replace(brackets, '')).slice(1), function(name) {
-                        return name ? name.substring(1) : name;
-                    });
+        page.start(options);
+    };
 
-                    return true;
-                }
-            });
+    router.stop = function () {
 
-            _.forEach(params, function(param, i) {
-                if (paramNames && paramNames[i]) {
-                    namedParams[paramNames[i]] = param || null;
-                }
-            });
+        router.isStarted = false;
 
-            return [_.extend(queryParams, namedParams)];
-        },
-        navigate: function(fragment, opt) {
+        page.stop();
+    };
 
-            var router = this,
-                routeRegExp,
-                currentRoute,
-                params,
-                currentParams;
+    router.clear = function () {
 
-            if (typeof fragment === 'string') {
-                return Router.prototype.navigate.call(router, fragment, opt);
+        page.callbacks = [];
+    };
+
+    router.navigate = function (path, options) {
+
+        options = _.extend({
+            trigger: true,
+            replace: false
+        }, options);
+
+        page.show(path);
+    };
+
+    router.setRoutes = function (routes, parentPathTemplate) {
+
+        if (!_.isPlainObject(routes)) {
+            return page.apply(null, arguments);
+        }
+
+        parentPathTemplate = parentPathTemplate || '';
+
+        _.forEach(routes, function (handler, pathTemplate) {
+
+            pathTemplate = parentPathTemplate + pathTemplate;
+
+            if (typeof handler === 'function') {
+
+                router.setRoute(pathTemplate, handler);
+
+            } else {
+
+                router.setRoutes(handler, pathTemplate);
+
             }
 
-            // if fragment is plain object
-            _.any(this.routes, function(value, key) {
+        });
 
-                var regExp = router._routeToRegExp(key);
+    };
 
-                if (regExp.test(Backbone.history.fragment)) {
-                    routeRegExp = regExp;
-                    currentRoute = key;
-                    return true;
+    router.setRoute = function (pathTemplate, handler) {
+
+        page(pathTemplate, function (ctx) {
+
+            var context = {
+                pathTemplate: pathTemplate,
+                params: _.extend(queryString.parse(ctx.querystring), ctx.params)
+            };
+
+            context.params = _.transform(context.params, function (result, data, key) {
+
+                result[key] = data;
+
+                if (data === 'true') {
+                    result[key] = true;
+                }
+
+                if (data === 'false') {
+                    result[key] = false;
+                }
+
+                if (!_.isNaN(Number(data))) {
+                    result[key] = Number(data)
                 }
             });
 
-            currentParams = router._extractParameters(routeRegExp, Backbone.history.fragment)[0];
+            handler(context);
+        });
 
-            params = _.extend({}, currentParams, fragment);
+    };
 
-            fragment = currentRoute
-                .replace(optionalParam, function(match){
-
-                    if (!match.match(namedParam)){
-                        return '';
-                    };
-
-                    var paramName = match.match(namedParam)[0].substring(1),
-                        param = params[paramName];
-
-                    delete params[paramName];
-
-                    if (param === null){
-                        return '';
-                    }
-
-                    return match
-                        .replace(brackets, '')
-                        .replace(namedParam, param);
-                })
-                .replace(namedParam, function(match) {
-                    var paramName = match.match(namedParam)[0].substring(1),
-                        param = params[paramName];
-
-                    delete params[paramName];
-
-                    return param;
-                });
-
-            params = _.pick(params, function(value){
-                return value !== null;
-            });
-
-            fragment = new Uri(fragment).setQuery(params).toString();
-
-            return Router.prototype.navigate.call(router, fragment, opt);
-        }
-    });
+    module.exports = router;
 });

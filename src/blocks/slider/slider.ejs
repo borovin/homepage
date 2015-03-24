@@ -1,8 +1,8 @@
 <div class="slider">
     <div class="slider__mask">
 
-        <% _.forEach(project.items, function(item, index){ %>
-        <div class="slider__item <%- index === position ? 'slider__item_state_active' : '' %>">
+        <% _.forEach(block.project.items, function(item, index){ %>
+        <div class="slider__item <%- index === block.position ? 'slider__item_state_active' : '' %>">
             <a class="slider__itemLink"
                target="_blank"
                data-navigate="0"
@@ -14,7 +14,7 @@
 
     </div>
 
-    <% if (project.items.length > 1) { %>
+    <% if (block.project.items.length > 1) { %>
     <a href="#" class="slider__control slider__next"></a>
     <a href="#" class="slider__control slider__prev"></a>
     <% } %>

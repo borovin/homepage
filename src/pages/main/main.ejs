@@ -1,5 +1,3 @@
-<% var slider = require('blocks/slider/slider') %>
-
 <div id="page">
 
     <div class="page__content">
@@ -16,30 +14,30 @@
                 <div class="resume__info">
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Город:</div>
-                        <div class="resume__infoText"><%- models.info.get('city') %></div>
+                        <div class="resume__infoText"><%- block.models.info.get('city') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Призвание:</div>
-                        <div class="resume__infoText"><%- models.info.get('profession') %></div>
+                        <div class="resume__infoText"><%- block.models.info.get('profession') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Skype:</div>
-                        <div class="resume__infoText" locator="skype"><%- models.info.get('skype') %></div>
+                        <div class="resume__infoText" locator="skype"><%- block.models.info.get('skype') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">Телефон:</div>
-                        <div class="resume__infoText" locator="phone"><%- models.info.get('phone') %></div>
+                        <div class="resume__infoText" locator="phone"><%- block.models.info.get('phone') %></div>
                     </div>
 
                     <div class="resume__infoRow">
                         <div class="resume__infoTitle">e-mail:</div>
                         <div class="resume__infoText">
-                            <a href="mailto:<%- models.info.get('mail') %>"
+                            <a href="mailto:<%- block.models.info.get('mail') %>"
                                data-navigate="0"
-                               locator="email"><%- models.info.get('mail') %></a>
+                               locator="email"><%- block.models.info.get('mail') %></a>
                         </div>
                     </div>
 
@@ -49,7 +47,7 @@
                             <a locator="githubLink"
                                target="_blank"
                                data-navigate="0"
-                               href="https://github.com/<%- models.info.get('github') %>">github.com/<%- models.info.get('github') %></a>
+                               href="https://github.com/<%- block.models.info.get('github') %>">github.com/<%- block.models.info.get('github') %></a>
                         </div>
                     </div>
 
@@ -58,7 +56,7 @@
             </div>
             <div class="resume__card">
                 <ul class="resume__experience">
-                    <% _.each(data.jobs, function(job){ %>
+                    <% _.each(block.data.jobs, function(job){ %>
                     <li class="resume__experienceItem">
                         <h3 class="resume__experienceTitle"><%- job.title %></h3>
                         <br/>
@@ -85,7 +83,7 @@
 
                 <div class="resume__experienceText">
 
-                    <%= data.resume() %>
+                    <%= block.data.resume() %>
 
                 </div>
 
@@ -103,12 +101,12 @@
         <noindex>
 
             <div class="portfolio">
-                <% _.forEach(data.portfolio, function(project){ %>
+                <% _.forEach(block.data.portfolio, function(project){ %>
 
                 <div class="portfolio__item">
                     <h3 class="portfolio__itemTitle"><%- project.title %></h3>
 
-                    <%= block(slider, {
+                    <%= block.include(require('blocks/slider/slider'), {
                         project: project
                     }) %>
 

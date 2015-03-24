@@ -44,8 +44,6 @@ define(function (require, exports, module) {
 
             var page = this;
 
-            window.PAGE = page;
-
             page.loading();
 
             return $.when(Block.prototype.initialize.apply(page, arguments)).then(function () {

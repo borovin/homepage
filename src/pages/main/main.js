@@ -3,12 +3,11 @@ define(function(require, exports, module) {
     var Block = require('kit/page/page');
 
     return Block.extend({
-        el: '#page',
-        template: require('ejs!./main.ejs'),
+        template: require('tpl!./main.ejs'),
         scrollTop: 0,
         data: {
             jobs: require('resources/jobs/jobs'),
-            resume: require('ejs!resources/resume/resume.html'),
+            resume: require('tpl!resources/resume/resume.html'),
             portfolio: require('resources/portfolio/portfolio')
         },
         models: {

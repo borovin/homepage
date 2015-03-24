@@ -1,6 +1,7 @@
 {
   "name": "get",
   "main": "get.js",
+  "description": "Function for smart get object properties",
   "authors": [
     "a@borovin.com"
   ],
@@ -12,20 +13,26 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "tools",
     "test",
-    "tests"
+    "tests",
+    "coverage",
+    "index.html",
+    "require.config.js",
+    "package.json",
+    "Gruntfile.js"
   ],
   "dependencies": {
-    "lodash": "~3.1.0"
+    "lodash": "^3.5.0"
   },
   "homepage": "https://github.com/borovin/get",
-  "_release": "f97ae11331",
+  "_release": "d24decf254",
   "_resolution": {
     "type": "branch",
-    "branch": "master",
-    "commit": "f97ae11331a1cd06c36939460b9d8bc608506b61"
+    "branch": "dev",
+    "commit": "d24decf254f632b65eb932c12987baef4d8615a8"
   },
   "_source": "https://github.com/borovin/get.git",
-  "_target": "*",
+  "_target": "dev",
   "_originalSource": "https://github.com/borovin/get.git"
 }

@@ -24,15 +24,16 @@ define(function (require, exports, module) {
 
                 block.stopListening();
 
-                deepExtend(block, data);
+                deepExtend(block, block.defaults, data);
 
                 block._ensureElement();
 
-                block.initCollections();
-                block.initModels();
+                block.trigger('initializing');
 
                 return $.when(initialize.apply(block, arguments)).then(function () {
+                    block.trigger('initialized');
                     block.render();
+                    block.trigger('rendered');
                 });
             };
 
@@ -59,14 +60,18 @@ define(function (require, exports, module) {
         render: function () {
 
             var block = this,
+                id = block.get('id'),
                 originalBlocks = _.clone(block.blocks);
 
-            if (!block.template) {
-                block.delegateEvents();
-                return;
+            block.delegateEvents();
+
+            if (block.template) {
+                block.setElement($(block.template(block)).replaceAll(block.el));
             }
 
-            block.setElement($(block.get('template', [block])).replaceAll(block.el));
+            if (id){
+                block.el.id = id;
+            }
 
             block.removeBlocks();
 
@@ -97,7 +102,7 @@ define(function (require, exports, module) {
             return __set;
         },
 
-        block: function (constructor, params) {
+        include: function (constructor, params) {
 
             var block = this,
                 id = _.uniqueId('tmp-'),
@@ -110,14 +115,6 @@ define(function (require, exports, module) {
             return placeholder;
         },
 
-        partial: function (partial, params) {
-
-            var block = this,
-                params = deepExtend({}, block, params);
-
-            return partial(params);
-        },
-
         initBlocks: function () {
 
             var block = this,
@@ -126,11 +123,27 @@ define(function (require, exports, module) {
             $blocks.each(function () {
                 var placeholder = this,
                     blockName = placeholder.getAttribute('block'),
-                    params = _.extend({}, placeholder.dataset, {
-                        el: placeholder,
-                        parentBlock: block
-                    }),
                     constructor = block.blocks[blockName];
+
+                var params = _.transform(placeholder.dataset, function (result, data, key) {
+
+                    result[key] = data;
+
+                    if (data === 'true') {
+                        result[key] = true;
+                    }
+
+                    if (data === 'false') {
+                        result[key] = false;
+                    }
+
+                    if (!_.isNaN(Number(data))) {
+                        result[key] = Number(data)
+                    }
+                });
+
+                params.el = placeholder;
+                params.parentBlock = block;
 
                 block.initBlock(constructor, params);
 
@@ -153,28 +166,6 @@ define(function (require, exports, module) {
             return child;
         },
 
-        initModels: function () {
-
-            var block = this;
-
-            block.models = _.mapValues(block.models, function (constructor, modelName) {
-                return block.get('models.' + modelName);
-            });
-
-            block.model = block.get('model');
-        },
-
-        initCollections: function () {
-
-            var block = this;
-
-            block.collections = _.mapValues(block.collections, function (constructor, collectionName) {
-                return block.get('collections.' + collectionName);
-            });
-
-            block.collection = block.get('collection');
-        },
-
         remove: function () {
 
             var block = this;
@@ -185,7 +176,9 @@ define(function (require, exports, module) {
 
             block.removeBlocks();
 
-            return View.prototype.remove.apply(block, arguments);
+            if (!block.innerTemplate){
+                View.prototype.remove.apply(block, arguments);
+            }
         },
 
         removeBlocks: function () {

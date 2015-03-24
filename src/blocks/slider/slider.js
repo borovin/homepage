@@ -3,8 +3,7 @@ define(function (require) {
 
     return Block.extend({
         position: 0,
-        projectId: null,
-        template: require('ejs!./slider.html'),
+        template: require('tpl!./slider.ejs'),
         events: {
             'click .slider__next': function(e){
                 e.preventDefault();

@@ -5,7 +5,7 @@ require.config({
     },
     map: {
         "*": {
-            ejs: 'bower_components/ejsLoader/ejsLoader',
+            tpl: 'bower_components/block/templateLoader',
             underscore: 'bower_components/lodash/lodash'
         }
     }

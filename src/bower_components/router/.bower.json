@@ -9,12 +9,9 @@
     "amd"
   ],
   "dependencies": {
-    "makeClass": "https://github.com/borovin/makeClass.git",
-    "uri.js": "~1.13",
-    "backbone": "~1.1.2",
-    "jquery": "~2.1.1",
-    "requirejs": "~2.1.15",
-    "lodash": "~3.1.0"
+    "page.js": "^1.6.1",
+    "query-string": "^1.0.0",
+    "lodash": "^3.5.0"
   },
   "keywords": [
     "amd",
@@ -35,14 +32,13 @@
     "karma.main.js"
   ],
   "homepage": "https://github.com/borovin/router",
-  "_release": "bf6f2e30e9",
+  "_release": "56d7054ae4",
   "_resolution": {
     "type": "branch",
-    "branch": "master",
-    "commit": "bf6f2e30e91e5f2e0cf609d5fb452960721ead4a"
+    "branch": "dev",
+    "commit": "56d7054ae46e114242327933142cf3870e3314bf"
   },
-  "_source": "git@github.com:borovin/router.git",
-  "_target": "*",
-  "_originalSource": "git@github.com:borovin/router.git",
-  "_direct": true
+  "_source": "https://github.com/borovin/router.git",
+  "_target": "dev",
+  "_originalSource": "https://github.com/borovin/router.git"
 }

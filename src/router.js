@@ -1,10 +1,10 @@
-define(function(require, exports, module) {
-    //requirements
-    var Router = require('bower_components/router/router');
+define(function(require) {
 
-    return new Router({
-        routes: {
-            '(/)': require('pages/main/main')
-        }
+    var router = require('bower_components/router/router');
+
+    router.setRoutes({
+        '/': require('pages/main/main')
     });
+
+    return router;
 });
