@@ -32,13 +32,13 @@
     "karma.main.js"
   ],
   "homepage": "https://github.com/borovin/router",
-  "_release": "56d7054ae4",
+  "_release": "4327563333",
   "_resolution": {
     "type": "branch",
-    "branch": "dev",
-    "commit": "56d7054ae46e114242327933142cf3870e3314bf"
+    "branch": "master",
+    "commit": "4327563333a32dde4b76865555d45f6e9583a283"
   },
   "_source": "https://github.com/borovin/router.git",
-  "_target": "dev",
+  "_target": "master",
   "_originalSource": "https://github.com/borovin/router.git"
 }

@@ -36,13 +36,13 @@
     "karma.main.js"
   ],
   "homepage": "https://github.com/borovin/model",
-  "_release": "5cf9b15fc5",
+  "_release": "70fbb0a476",
   "_resolution": {
     "type": "branch",
-    "branch": "dev",
-    "commit": "5cf9b15fc5344d6e773120e4bb3e4c2dd64a5ff2"
+    "branch": "master",
+    "commit": "70fbb0a476c62f0ccf5073a1e8f1417704f0b80f"
   },
   "_source": "https://github.com/borovin/model.git",
-  "_target": "dev",
+  "_target": "master",
   "_originalSource": "https://github.com/borovin/model.git"
 }
