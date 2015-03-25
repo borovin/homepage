@@ -20,14 +20,15 @@
     "jquery": "^2.1.3",
     "backbone": "^1.1.2",
     "requirejs": "^2.1.16",
-    "model": "https://github.com/borovin/model.git#dev",
-    "block": "https://github.com/borovin/block.git#dev",
-    "router": "https://github.com/borovin/router.git#dev",
-    "get": "https://github.com/borovin/get.git#dev",
-    "jquery-mockjax": "~1.6.1"
+    "jquery-mockjax": "^1.6.1",
+
+    "model": "https://github.com/borovin/model.git#master",
+    "block": "https://github.com/borovin/block.git#master",
+    "router": "https://github.com/borovin/router.git#master",
+    "get": "https://github.com/borovin/get.git#master"
   },
   "resolutions": {
     "lodash": "^3.5.0",
-    "get": "dev"
+    "get": "master"
   }
 }

@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         repositoryUrl: 'git@github.com:borovin/homepage.git',
         shell: {
             build: {
-                command: 'rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public'
+                command: 'rm -rf ./build && node ./node_modules/requirejs/bin/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public'
             },
             test: {
                 command: 'casperjs test tests/<%- grunt.option("suite") ? grunt.option("suite") + ".js" : "" %> --host=<%- grunt.option("host") || "http://localhost:8080" %>/test.html --includes=./tools/casperInclude.js'
