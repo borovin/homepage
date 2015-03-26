@@ -28,6 +28,16 @@ define(function (require) {
             ]
         },
         {
+            name: 'ariaf',
+            title: 'Ресторан "Арияф"',
+            items: [
+                {
+                    url: 'http://borovin.github.io/ariaf/build/index.html',
+                    screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
+                }
+            ]
+        },
+        {
             name: 'aflowt',
             title: 'Производственная компания "Взлет"',
             items: [
@@ -46,16 +56,6 @@ define(function (require) {
                 {
                     url: 'http://borovin.github.io/aflowt/build/details.html',
                     screenUrl: 'http://borovin.github.io/aflowt/screenshots/4.png'
-                }
-            ]
-        },
-        {
-            name: 'ariaf',
-            title: 'Ресторан "Арияф"',
-            items: [
-                {
-                    url: 'http://borovin.github.io/ariaf/build/index.html',
-                    screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
                 }
             ]
         },
