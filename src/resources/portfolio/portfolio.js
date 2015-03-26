@@ -54,16 +54,8 @@ define(function (require) {
             title: 'Ресторан "Арияф"',
             items: [
                 {
-                    url: '/projects/ariaf/index.html',
-                    screenUrl: '/portfolio/ariaf/1.jpg'
-                },
-                {
-                    url: '/projects/ariaf/index.html',
-                    screenUrl: '/portfolio/ariaf/2.jpg'
-                },
-                {
-                    url: '/projects/ariaf/page.html',
-                    screenUrl: '/portfolio/ariaf/3.jpg'
+                    url: 'http://borovin.github.io/ariaf/build/index.html',
+                    screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
                 }
             ]
         },
