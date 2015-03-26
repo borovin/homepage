@@ -32,20 +32,20 @@ define(function (require) {
             title: 'Производственная компания "Взлет"',
             items: [
                 {
-                    url: 'http://borovin.github.io/aflowt',
-                    screenUrl: 'http://borovin.github.io/aflowt/screens/1.png'
+                    url: 'http://borovin.github.io/aflowt/build/index.html',
+                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/1.png'
                 },
                 {
-                    url: 'http://borovin.github.io/aflowt/about.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screens/2.png'
+                    url: 'http://borovin.github.io/aflowt/build/about.html',
+                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/2.png'
                 },
                 {
-                    url: 'http://borovin.github.io/aflowt/catalog.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screens/3.png'
+                    url: 'http://borovin.github.io/aflowt/build/catalog.html',
+                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/3.png'
                 },
                 {
-                    url: 'http://borovin.github.io/aflowt/details.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screens/4.png'
+                    url: 'http://borovin.github.io/aflowt/build/details.html',
+                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/4.png'
                 }
             ]
         },
