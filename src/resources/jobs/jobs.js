@@ -1,7 +1,7 @@
 define(function(require, exports, module) {
     return [
         {
-            title: 'Front-end developer',
+            title: 'Lead Front-end Developer',
             company: 'Кристалл Сервис',
             url: 'http://www.crystals.ru/',
             dateFrom: '19.04.2013',
@@ -9,7 +9,7 @@ define(function(require, exports, module) {
             description: require('tpl!./crystals.html')
         },
         {
-            title: 'Front-end developer',
+            title: 'Lead Front-end Developer',
             company: 'AIS Group',
             url: 'http://aintsysgroup.com/',
             dateFrom: '15.03.2012',
@@ -17,7 +17,7 @@ define(function(require, exports, module) {
             description: require('tpl!./ais.html')
         },
         {
-            title: 'Front-end developer',
+            title: 'Front-end Developer',
             company: 'Платежная система Яндекс.Деньги',
             url: 'https://money.yandex.ru/',
             dateFrom: '25.07.2011',
@@ -25,7 +25,7 @@ define(function(require, exports, module) {
             description: require('tpl!./yandexMoney.html')
         },
         {
-            title: 'Front-end developer',
+            title: 'Front-end Developer',
             company: 'Geometria.ru',
             url: 'http://geometria.ru/',
             dateFrom: '17.02.2010',
@@ -33,7 +33,7 @@ define(function(require, exports, module) {
             description: require('tpl!./geometria.html')
         },
         {
-            title: 'Front-end developer',
+            title: 'Front-end Developer',
             company: 'Инлайн',
             url: 'http://inline-ltd.ru/',
             dateFrom: '01.07.2009',
