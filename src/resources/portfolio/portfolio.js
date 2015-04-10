@@ -4,6 +4,40 @@ define(function (require) {
 
     return [
         {
+            name: 'prodavayka',
+            title: 'Сервис автоматизации товародвижения "Продавайка"',
+            items: [
+                {
+                    url: 'http://prodavayka.borovin.com',
+                    screenUrl: 'http://borovin.com/img/prodavayka/main.png'
+                },
+                {
+                    url: 'http://prodavayka.borovin.com',
+                    screenUrl: 'http://borovin.com/img/prodavayka/modal.png'
+                }
+            ]
+        },
+        {
+            name: 'arsenal',
+            title: 'Учебный центр "Арсенал"',
+            items: [
+                {
+                    url: 'http://borovin.github.io/arsenal/build/index.html',
+                    screenUrl: 'http://borovin.github.io/arsenal/screenshots/index.jpg'
+                }
+            ]
+        },
+        {
+            name: 'ariaf',
+            title: 'Ресторан "Арияф"',
+            items: [
+                {
+                    url: 'http://borovin.github.io/ariaf/build/index.html',
+                    screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
+                }
+            ]
+        },
+        {
             name: 'dorproject',
             title: 'Проектный институт "Дорпроект"',
             items: [
