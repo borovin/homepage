@@ -4,3 +4,13 @@
 @import "blocks/resume/resume.css";
 @import "blocks/slider/slider.css";
 @import "blocks/portfolio/portfolio.css";
+
+@media print {
+    .page__content {
+        padding: 30px;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: static !important;
+    }
+}
