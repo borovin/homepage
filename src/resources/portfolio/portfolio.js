@@ -18,6 +18,20 @@ define(function (require) {
             ]
         },
         {
+            name: 'dorproject',
+            title: 'Проектный институт "Дорпроект"',
+            items: [
+                {
+                    url: 'http://borovin.github.io/dorproject/build/index.html',
+                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/index.jpg'
+                },
+                {
+                    url: 'http://borovin.github.io/dorproject/build/main.html',
+                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/main.jpg'
+                }
+            ]
+        },
+        {
             name: 'arsenal',
             title: 'Учебный центр "Арсенал"',
             items: [
@@ -34,20 +48,6 @@ define(function (require) {
                 {
                     url: 'http://borovin.github.io/ariaf/build/index.html',
                     screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
-                }
-            ]
-        },
-        {
-            name: 'dorproject',
-            title: 'Проектный институт "Дорпроект"',
-            items: [
-                {
-                    url: 'http://borovin.github.io/dorproject/build/index.html',
-                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/index.jpg'
-                },
-                {
-                    url: 'http://borovin.github.io/dorproject/build/main.html',
-                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/main.jpg'
                 }
             ]
         },
