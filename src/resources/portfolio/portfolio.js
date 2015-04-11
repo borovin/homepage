@@ -52,26 +52,6 @@ define(function (require) {
             ]
         },
         {
-            name: 'arsenal',
-            title: 'Учебный центр "Арсенал"',
-            items: [
-                {
-                    url: 'http://borovin.github.io/arsenal/build/index.html',
-                    screenUrl: 'http://borovin.github.io/arsenal/screenshots/index.jpg'
-                }
-            ]
-        },
-        {
-            name: 'ariaf',
-            title: 'Ресторан "Арияф"',
-            items: [
-                {
-                    url: 'http://borovin.github.io/ariaf/build/index.html',
-                    screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
-                }
-            ]
-        },
-        {
             name: 'aflowt',
             title: 'Производственная компания "Взлет"',
             items: [
