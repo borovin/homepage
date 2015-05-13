@@ -3,20 +3,20 @@ define(function (require) {
     var _ = require('bower_components/lodash/lodash');
 
     return [
-        //{
-        //    name: 'prodavayka',
-        //    title: 'Сервис автоматизации товародвижения "Продавайка"',
-        //    items: [
-        //        {
-        //            url: 'http://prodavayka.borovin.com',
-        //            screenUrl: 'http://borovin.com/img/prodavayka/main.png'
-        //        },
-        //        {
-        //            url: 'http://prodavayka.borovin.com',
-        //            screenUrl: 'http://borovin.com/img/prodavayka/modal.png'
-        //        }
-        //    ]
-        //},
+        {
+            name: 'prodavayka',
+            title: 'Сервис автоматизации товародвижения "Продавайка"',
+            items: [
+                {
+                    url: 'http://prodavayka.borovin.com',
+                    screenUrl: 'http://borovin.com/img/prodavayka/main.png'
+                },
+                {
+                    url: 'http://prodavayka.borovin.com',
+                    screenUrl: 'http://borovin.com/img/prodavayka/modal.png'
+                }
+            ]
+        },
         {
             name: 'dorproject',
             title: 'Проектный институт "Дорпроект"',
