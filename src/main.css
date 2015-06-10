@@ -13,4 +13,18 @@
         box-sizing: border-box;
         position: static !important;
     }
+
+    .page__content_works {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .page__content {
+        padding: 30px;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: static !important;
+    }
 }
