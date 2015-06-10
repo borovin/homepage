@@ -2,7 +2,7 @@ define(function(require, exports, module) {
     return [
         {
             title: 'Lead Front-end Developer',
-            company: 'Кристалл Сервис',
+            company: 'Crystal Services',
             url: 'http://www.crystals.ru/',
             dateFrom: '19.04.2013',
             dateTo: '18.12.2014',
@@ -18,7 +18,7 @@ define(function(require, exports, module) {
         },
         {
             title: 'Front-end Developer',
-            company: 'Платежная система Яндекс.Деньги',
+            company: 'Yandex.Money',
             url: 'https://money.yandex.ru/',
             dateFrom: '25.07.2011',
             dateTo: '14.03.2012',
@@ -34,14 +34,14 @@ define(function(require, exports, module) {
         },
         {
             title: 'Front-end Developer',
-            company: 'Инлайн',
+            company: 'Inline',
             url: 'http://inline-ltd.ru/',
             dateFrom: '01.07.2009',
             dateTo: '16.02.2010',
             description: require('tpl!./inline.html')
         },
         {
-            title: 'Html-верстальщик',
+            title: 'Html-coder',
             company: 'Devellab',
             url: 'http://devellab.ru/',
             dateFrom: '01.02.2009',
@@ -49,8 +49,8 @@ define(function(require, exports, module) {
             description: require('tpl!./devellab.html')
         },
         {
-            title: 'Html-верстальщик',
-            company: 'СПбАльянс',
+            title: 'Html-coder',
+            company: 'SpbAlliance',
             dateFrom: '01.03.2008',
             dateTo: '01.02.2009',
             description: require('tpl!./spballiance.html')

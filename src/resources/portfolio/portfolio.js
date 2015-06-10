@@ -5,7 +5,7 @@ define(function (require) {
     return [
         {
             name: 'prodavayka',
-            title: 'Сервис автоматизации товародвижения "Продавайка"',
+            title: 'Retail automation system "Prodavayka"',
             items: [
                 {
                     url: 'http://prodavayka.borovin.com',
@@ -19,7 +19,7 @@ define(function (require) {
         },
         {
             name: 'dorproject',
-            title: 'Проектный институт "Дорпроект"',
+            title: '"Dorproject" working group',
             items: [
                 {
                     url: 'http://borovin.github.io/dorproject/build/index.html',
@@ -33,7 +33,7 @@ define(function (require) {
         },
         {
             name: 'arsenal',
-            title: 'Учебный центр "Арсенал"',
+            title: 'Training center "Arsenal"',
             items: [
                 {
                     url: 'http://borovin.github.io/arsenal/build/index.html',
@@ -43,7 +43,7 @@ define(function (require) {
         },
         {
             name: 'ariaf',
-            title: 'Ресторан "Арияф"',
+            title: 'Restaurant "Ariaf"',
             items: [
                 {
                     url: 'http://borovin.github.io/ariaf/build/index.html',
@@ -53,7 +53,7 @@ define(function (require) {
         },
         {
             name: 'aflowt',
-            title: 'Производственная компания "Взлет"',
+            title: '"Aflowt" working group',
             items: [
                 {
                     url: 'http://borovin.github.io/aflowt/build/index.html',
@@ -75,7 +75,7 @@ define(function (require) {
         },
         {
             name: 'marva2',
-            title: 'Интернет-сервис "Марва"',
+            title: 'Live-chat service "Marva"',
             items: [
                 {
                     url: '/projects/marva2/about.html',
@@ -109,7 +109,7 @@ define(function (require) {
         },
         {
             name: 'dominanta',
-            title: 'Рекламное агенство "Доминанта"',
+            title: 'Advertising agency "Dominanta"',
             items: [
                 {
                     url: '/projects/dominanta/address.html',
@@ -131,7 +131,7 @@ define(function (require) {
         },
         {
             name: 'oyster',
-            title: 'Интернет-провайдер "Oyster"',
+            title: 'Internet provider "Oyster"',
             items: [
                 {
                     url: '/projects/oyster/index.html',

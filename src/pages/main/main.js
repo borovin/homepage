@@ -9,9 +9,6 @@ define(function(require, exports, module) {
             jobs: require('resources/jobs/jobs'),
             resume: require('tpl!resources/resume/resume.html'),
             portfolio: require('resources/portfolio/portfolio')
-        },
-        models: {
-            info: require('resources/info/model')
         }
     });
 });
