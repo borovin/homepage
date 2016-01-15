@@ -9,11 +9,11 @@ define(function (require) {
             items: [
                 {
                     url: 'http://prodavayka.borovin.com',
-                    screenUrl: 'http://borovin.com/img/prodavayka/main.png'
+                    screenUrl: '/img/prodavayka/main.png'
                 },
                 {
                     url: 'http://prodavayka.borovin.com',
-                    screenUrl: 'http://borovin.com/img/prodavayka/modal.png'
+                    screenUrl: '/img/prodavayka/modal.png'
                 }
             ]
         },

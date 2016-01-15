@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "ln -snf ./src/ public && grunt config && node server.js",
+    "start": "ln -snf ./src/ public && node server.js",
     "build": "grunt build",
     "test": "grunt test"
   },

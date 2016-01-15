@@ -10,10 +10,3 @@ require.config({
         }
     }
 });
-
-if (CONFIG.clientVersion) {
-    require.config({
-        urlArgs: 'version=' + CONFIG.clientVersion
-    });
-}
-
