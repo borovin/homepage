@@ -4,30 +4,16 @@ define(function (require) {
 
     return [
         {
-            name: 'prodavayka',
-            title: 'Retail automation system "Prodavayka"',
-            items: [
-                {
-                    url: 'http://prodavayka.borovin.com',
-                    screenUrl: '/img/prodavayka/main.png'
-                },
-                {
-                    url: 'http://prodavayka.borovin.com',
-                    screenUrl: '/img/prodavayka/modal.png'
-                }
-            ]
-        },
-        {
             name: 'dorproject',
             title: '"Dorproject" working group',
             items: [
                 {
-                    url: 'http://borovin.github.io/dorproject/build/index.html',
-                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/index.jpg'
+                    url: 'https://borovin.github.io/dorproject/build/index.html',
+                    screenUrl: 'https://borovin.github.io/dorproject/screenshots/index.jpg'
                 },
                 {
-                    url: 'http://borovin.github.io/dorproject/build/main.html',
-                    screenUrl: 'http://borovin.github.io/dorproject/screenshots/main.jpg'
+                    url: 'https://borovin.github.io/dorproject/build/main.html',
+                    screenUrl: 'https://borovin.github.io/dorproject/screenshots/main.jpg'
                 }
             ]
         },
@@ -36,8 +22,8 @@ define(function (require) {
             title: 'Training center "Arsenal"',
             items: [
                 {
-                    url: 'http://borovin.github.io/arsenal/build/index.html',
-                    screenUrl: 'http://borovin.github.io/arsenal/screenshots/index.jpg'
+                    url: 'https://borovin.github.io/arsenal/build/index.html',
+                    screenUrl: 'https://borovin.github.io/arsenal/screenshots/index.jpg'
                 }
             ]
         },
@@ -46,8 +32,8 @@ define(function (require) {
             title: 'Restaurant "Ariaf"',
             items: [
                 {
-                    url: 'http://borovin.github.io/ariaf/build/index.html',
-                    screenUrl: 'http://borovin.github.io/ariaf/screenshots/1.png'
+                    url: 'https://borovin.github.io/ariaf/build/index.html',
+                    screenUrl: 'https://borovin.github.io/ariaf/screenshots/1.png'
                 }
             ]
         },
@@ -56,20 +42,20 @@ define(function (require) {
             title: '"Aflowt" working group',
             items: [
                 {
-                    url: 'http://borovin.github.io/aflowt/build/index.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/1.png'
+                    url: 'https://borovin.github.io/aflowt/build/index.html',
+                    screenUrl: 'https://borovin.github.io/aflowt/screenshots/1.png'
                 },
                 {
-                    url: 'http://borovin.github.io/aflowt/build/about.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/2.png'
+                    url: 'https://borovin.github.io/aflowt/build/about.html',
+                    screenUrl: 'https://borovin.github.io/aflowt/screenshots/2.png'
                 },
                 {
-                    url: 'http://borovin.github.io/aflowt/build/catalog.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/3.png'
+                    url: 'https://borovin.github.io/aflowt/build/catalog.html',
+                    screenUrl: 'https://borovin.github.io/aflowt/screenshots/3.png'
                 },
                 {
-                    url: 'http://borovin.github.io/aflowt/build/details.html',
-                    screenUrl: 'http://borovin.github.io/aflowt/screenshots/4.png'
+                    url: 'https://borovin.github.io/aflowt/build/details.html',
+                    screenUrl: 'https://borovin.github.io/aflowt/screenshots/4.png'
                 }
             ]
         },
@@ -78,32 +64,32 @@ define(function (require) {
             title: 'Live-chat service "Marva"',
             items: [
                 {
-                    url: '/projects/marva2/about.html',
-                    screenUrl: '/portfolio/marva2/1.jpg'
+                    url: '/src/projects/marva2/about.html',
+                    screenUrl: '/src/portfolio/marva2/1.jpg'
                 },
                 {
-                    url: '/projects/marva2/clients.html',
-                    screenUrl: '/portfolio/marva2/2.jpg'
+                    url: '/src/projects/marva2/clients.html',
+                    screenUrl: '/src/portfolio/marva2/2.jpg'
                 },
                 {
-                    url: '/projects/ariaf/features.html',
-                    screenUrl: '/portfolio/marva2/3.jpg'
+                    url: '/src/projects/ariaf/features.html',
+                    screenUrl: '/src/portfolio/marva2/3.jpg'
                 },
                 {
-                    url: '/projects/ariaf/index.html',
-                    screenUrl: '/portfolio/marva2/4.jpg'
+                    url: '/src/projects/ariaf/index.html',
+                    screenUrl: '/src/portfolio/marva2/4.jpg'
                 },
                 {
-                    url: '/projects/ariaf/partners.html',
-                    screenUrl: '/portfolio/marva2/5.jpg'
+                    url: '/src/projects/ariaf/partners.html',
+                    screenUrl: '/src/portfolio/marva2/5.jpg'
                 },
                 {
-                    url: '/projects/ariaf/product_table.html',
-                    screenUrl: '/portfolio/marva2/6.jpg'
+                    url: '/src/projects/ariaf/product_table.html',
+                    screenUrl: '/src/portfolio/marva2/6.jpg'
                 },
                 {
-                    url: '/projects/ariaf/trial.html',
-                    screenUrl: '/portfolio/marva2/7.jpg'
+                    url: '/src/projects/ariaf/trial.html',
+                    screenUrl: '/src/portfolio/marva2/7.jpg'
                 }
             ]
         },
@@ -112,20 +98,20 @@ define(function (require) {
             title: 'Advertising agency "Dominanta"',
             items: [
                 {
-                    url: '/projects/dominanta/address.html',
-                    screenUrl: '/portfolio/dominanta/1.jpg'
+                    url: '/src/projects/dominanta/address.html',
+                    screenUrl: '/src/portfolio/dominanta/1.jpg'
                 },
                 {
-                    url: '/projects/dominanta/address.html',
-                    screenUrl: '/portfolio/dominanta/2.jpg'
+                    url: '/src/projects/dominanta/address.html',
+                    screenUrl: '/src/portfolio/dominanta/2.jpg'
                 },
                 {
-                    url: '/projects/dominanta/indexday.html',
-                    screenUrl: '/portfolio/dominanta/3.jpg'
+                    url: '/src/projects/dominanta/indexday.html',
+                    screenUrl: '/src/portfolio/dominanta/3.jpg'
                 },
                 {
-                    url: '/projects/dominanta/indexnight.html',
-                    screenUrl: '/portfolio/dominanta/4.jpg'
+                    url: '/src/projects/dominanta/indexnight.html',
+                    screenUrl: '/src/portfolio/dominanta/4.jpg'
                 }
             ]
         },
@@ -134,50 +120,50 @@ define(function (require) {
             title: 'Internet provider "Oyster"',
             items: [
                 {
-                    url: '/projects/oyster/index.html',
-                    screenUrl: '/portfolio/oyster/1.jpg'
+                    url: '/src/projects/oyster/index.html',
+                    screenUrl: '/src/portfolio/oyster/1.jpg'
                 },
                 {
-                    url: '/projects/oyster/inside.html',
-                    screenUrl: '/portfolio/oyster/2.jpg'
+                    url: '/src/projects/oyster/inside.html',
+                    screenUrl: '/src/portfolio/oyster/2.jpg'
                 }
             ]
         },
         {
             name: 'vzlet',
-            title: 'Сервисное обслуживание "Взлет"',
+            title: '"Aflowt" support service',
             items: [
                 {
-                    url: '/projects/vzlet/index.html',
-                    screenUrl: '/portfolio/vzlet/1.jpg'
+                    url: '/src/projects/vzlet/index.html',
+                    screenUrl: '/src/portfolio/vzlet/1.jpg'
                 },
                 {
-                    url: '/projects/vzlet/registration.html',
-                    screenUrl: '/portfolio/vzlet/2.jpg'
+                    url: '/src/projects/vzlet/registration.html',
+                    screenUrl: '/src/portfolio/vzlet/2.jpg'
                 },
                 {
-                    url: '/projects/vzlet/moderation.html',
-                    screenUrl: '/portfolio/vzlet/3.jpg'
+                    url: '/src/projects/vzlet/moderation.html',
+                    screenUrl: '/src/portfolio/vzlet/3.jpg'
                 },
                 {
-                    url: '/projects/vzlet/podbor.html',
-                    screenUrl: '/portfolio/vzlet/4.jpg'
+                    url: '/src/projects/vzlet/podbor.html',
+                    screenUrl: '/src/portfolio/vzlet/4.jpg'
                 },
                 {
-                    url: '/projects/vzlet/requestList.html',
-                    screenUrl: '/portfolio/vzlet/5.jpg'
+                    url: '/src/projects/vzlet/requestList.html',
+                    screenUrl: '/src/portfolio/vzlet/5.jpg'
                 },
                 {
-                    url: '/projects/vzlet/requestPage.html',
-                    screenUrl: '/portfolio/vzlet/6.jpg'
+                    url: '/src/projects/vzlet/requestPage.html',
+                    screenUrl: '/src/portfolio/vzlet/6.jpg'
                 },
                 {
-                    url: '/projects/vzlet/settings.html',
-                    screenUrl: '/portfolio/vzlet/7.jpg'
+                    url: '/src/projects/vzlet/settings.html',
+                    screenUrl: '/src/portfolio/vzlet/7.jpg'
                 },
                 {
-                    url: '/projects/vzlet/userPage.html',
-                    screenUrl: '/portfolio/vzlet/8.jpg'
+                    url: '/src/projects/vzlet/userPage.html',
+                    screenUrl: '/src/portfolio/vzlet/8.jpg'
                 }
             ]
         }
