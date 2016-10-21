@@ -72,23 +72,23 @@ define(function (require) {
                     screenUrl: '/src/portfolio/marva2/2.jpg'
                 },
                 {
-                    url: '/src/projects/ariaf/features.html',
+                    url: '/src/projects/marva2/features.html',
                     screenUrl: '/src/portfolio/marva2/3.jpg'
                 },
                 {
-                    url: '/src/projects/ariaf/index.html',
+                    url: '/src/projects/marva2/index.html',
                     screenUrl: '/src/portfolio/marva2/4.jpg'
                 },
                 {
-                    url: '/src/projects/ariaf/partners.html',
+                    url: '/src/projects/marva2/partners.html',
                     screenUrl: '/src/portfolio/marva2/5.jpg'
                 },
                 {
-                    url: '/src/projects/ariaf/product_table.html',
+                    url: '/src/projects/marva2/product_table.html',
                     screenUrl: '/src/portfolio/marva2/6.jpg'
                 },
                 {
-                    url: '/src/projects/ariaf/trial.html',
+                    url: '/src/projects/marva2/trial.html',
                     screenUrl: '/src/portfolio/marva2/7.jpg'
                 }
             ]
