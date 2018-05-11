@@ -1,0 +1,121 @@
+.b-topMenu {
+    clear:both;
+    padding:20px 0;
+    z-index:10;
+}
+
+.b-topMenu ul {
+    list-style:none;
+    height:49px;
+    width:984px;
+    margin:0 auto;
+    background:url("../img/topMenu.png") 0 0 no-repeat;
+    padding:0;
+}
+
+.b-topMenu li {
+    float:left;
+    margin:0 0 0 12px;
+    -margin-left:6px;
+    height:49px;
+    line-height:49px;
+}
+
+.b-topMenu li.right {
+    float:right;
+    margin:0 12px 0 0;
+    -margin-right:6px;
+}
+
+.b-topMenu li a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    font-family:Helvetica;
+    font-size:15px;
+    text-shadow: #4477ac -1px -1px 1px;
+    padding:0 15px;
+    height:32px;
+    line-height:32px;
+    border-radius:4px;
+    -top:8px;
+}
+
+.mac .b-topMenu li a {
+    line-height:34px;
+}
+
+.b-topMenu li a:hover {
+    background: #588cc1;
+    background: -moz-linear-gradient(100% 100% 90deg, #4e80b3, #6aa3dc);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6aa3dc), to(#4e80b3)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#6aa3dc, #4e80b3); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#4e80b3, #6aa3dc);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#6aa3dc,endColorstr=#4e80b3,GradientType=0);
+}
+
+.b-topMenu li a:active {
+    border:1px solid #2c5986;
+    height:30px;
+    line-height:30px;
+    padding:0 14px;
+    background: #588cc1;
+    background: -moz-linear-gradient(100% 100% 90deg, #326395, #4682bf);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4682bf), to(#326395)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#4682bf, #326395); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#326395, #4682bf);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#4682bf,endColorstr=#326395,GradientType=0);
+}
+
+.b-topMenu li.loginLink a {
+    background:#ffc500;
+    text-shadow: #dcaf00 -1px -1px 1px;
+    background: -moz-linear-gradient(100% 100% 90deg, #ffb500, #ffd800);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffd800), to(#ffb500)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#ffd800, #ffb500); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#ffb500, #ffd800);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ffd800,endColorstr=#ffb500,GradientType=0);
+    *zoom: 1;
+}
+
+.b-topMenu li.loginLink a:hover {
+    background:#fed044;
+    background: -moz-linear-gradient(100% 100% 90deg, #ffc539, #fbe55b);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbe55b), to(#ffc539)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#fbe55b, #ffc539); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#ffc539, #fbe55b);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#fbe55b,endColorstr=#ffc539,GradientType=0);
+}
+
+.b-topMenu li.loginLink a:active {
+    background:url("../img/loginButton.png") 0 0 no-repeat;
+    color:#ffe999;
+    border:none;
+    height:32px;
+    line-height:32px;
+    padding:0 15px;
+}
+
+.mac .b-topMenu li.loginLink a:active {
+    line-height:34px;
+}
+
+.b-topMenu li.active a {
+    color:#3990de;
+    background:#fff;
+    background: -moz-linear-gradient(100% 100% 90deg, #e4f2ff, #ffffff);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#e4f2ff)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#ffffff, #e4f2ff); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#e4f2ff, #ffffff);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ffffff,endColorstr=#e4f2ff,GradientType=0);
+    text-shadow:none;
+}
+
+.b-topMenu .manPhoto{
+    position:absolute;
+    top:10px;
+    left:-150px;
+}

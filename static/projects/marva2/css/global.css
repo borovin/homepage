@@ -1,0 +1,91 @@
+.g-imgLeft {
+    float: left;
+    max-width: 50%;
+    padding: 0 20px 10px 0;
+}
+
+.g-imgRight {
+    float: right;
+    max-width: 50%;
+    padding: 0 0 10px 20px;
+}
+
+.g-overflowHidden {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+.g-clearBoth {
+    clear: both;
+}
+
+.g-dashed{
+    text-decoration:none;
+    border-bottom:1px dashed;
+}
+
+.g-headerDecor{
+    position:absolute;
+    width:916px;
+    -height:100%;
+    background:url("../img/bg2.png") 0 0 no-repeat;
+    left:50%;
+    margin-left:-460px;
+    top:15px;
+    bottom:0;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/bg2.png", sizingMethod="crop");
+}
+
+.g-avatar{
+    background:#f8f8f8;
+    border-radius:5px;
+    border-right:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    padding:8px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+
+.g-avatar img{
+    vertical-align:top;
+}
+
+.g-hintLink{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    width:15px;
+    height:15px;
+    background:url("../img/hintLink.png") 0 0 no-repeat;
+    margin:0 5px;
+}
+
+.g-textBox{
+    padding:20px 0;
+}
+
+.g-textCol1{
+    float:left;
+    width:50%;
+}
+
+.g-quote{
+    font-style:italic;
+    color:#a1a1a1;
+    border-left:2px solid #a1a1a1;
+    padding:5px 15px;
+    margin:0 0 20px 15px;
+    line-height:18px;
+}
+
+.g-leftImg{
+    float:left;
+    margin:0 15px 5px 0;
+    max-width:40%;
+}

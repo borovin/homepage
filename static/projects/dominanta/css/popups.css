@@ -1,0 +1,290 @@
+div#layer {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	opacity: 0.4;
+	z-index: 30;
+	display: none;
+	position: absolute;
+}
+
+div#adrpopup {
+	top: 0;
+	left: 50%;
+	margin:40px 0 40px -390px;
+	width: 780px;
+	z-index: 40;
+	display: none;
+	background:#ECF0F3;
+	position: absolute;
+}
+
+div#adrpopup h5, div#clpopup h5 {
+	background: #FFFFFF none repeat scroll 0 0;
+	border-bottom: 1px solid #CDCDCD;
+	color: #414141;
+	font-size: 23px;
+	font-weight: normal;
+	letter-spacing: -0.02em;
+	padding: 10px 17px;
+}
+
+div#clpopup h5 span {
+	color: #a4a4a4;
+}
+
+div#adrpopup div#close, div#clpopup div#close {
+	color: #5C5C5C;
+	font-size: 17px;
+	right: 20px;
+	position: absolute;
+	top: 13px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+div#adrpopup div.content {
+	overflow:hidden;
+	position:relative;
+}
+
+div#adrpopup div.images {
+	float: left;
+	width: 446px;
+	padding: 0 0 0 5px;
+}
+
+div#adrpopup div.images ul {
+	padding-top: 5px;
+}
+
+div#adrpopup div.images ul li {
+	float: left;
+	background: #bebebc;
+	color: #fff;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+div#adrpopup div.images ul li.active {
+	cursor: default;
+	background: #0072bb;
+}
+
+div#adrpopup div.images img {
+}
+
+div#adrpopup div.info {
+	margin-left: 470px;
+	padding: 33px 20px 0 0;
+}
+
+div#adrpopup h6 {
+	font-size: 16px;
+	padding-bottom: 12px;
+	color: #414141;
+}
+
+div#adrpopup div.info table {
+	margin-bottom: 20px;
+	color: #414141;
+}
+
+div#adrpopup div.info table th {
+	text-align: left;
+	width: 150px;
+	padding: 0 10px 8px 0;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+div#adrpopup div.info table td {
+	vertical-align: top;
+	padding: 0 10px 5px 0;
+	font-size: 11px;
+}
+
+div#adrpopup div.info table th.empty {
+	color: #c7c7c7;
+}
+
+div#adrpopup p {
+	padding: 0 0 10px 0;
+	color: #414141;
+	line-height: 18px;
+}
+
+div#vacant {
+	border-top: 1px solid #CDCDCD;
+	background: #fff;
+	padding: 10px 20px 20px;
+	position: relative;
+}
+
+div#vacant h6 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #414141;
+}
+
+div#vacant h6 span {
+	float:right;
+	height:15px;
+	font-size:12px;
+	color:#414141;
+	padding:0 15px 0 5px;
+	margin-top:5px;
+}
+
+div#vacant h6 span.lyellow {
+	border-left:15px solid #FFE482;
+}
+
+div#vacant h6 span.lgreen {
+	border-left:15px solid #A2E361;
+}
+
+div#vacant h6 span.lred {
+	border-left:15px solid #BB002C;
+}
+div#vacant div#leftarr, div#vacant div#rightarr {
+	position: absolute;
+	width: 9px;
+	height: 19px;
+	background: url(../im/arr.png) 0 0 no-repeat;
+	top: 52px;
+	left: 20px;
+	cursor: pointer;
+}
+
+div#vacant div#rightarr {
+	background-position: right 0;
+	left: 760px;
+}
+
+div#mounth {
+	overflow: hidden;
+	height: 30px;
+	width: 720px;
+	position: relative;
+	margin-left: 15px;
+}
+
+div#mounthinner {
+	position: relative;
+}
+
+div#mounthinner div {
+	color: #FFFFFF;
+	cursor: default;
+	float: left;
+	font-size: 11px;
+	height: 29px;
+	margin-right: 1px;
+	padding: 1px 2px 0;
+	width: 55px;
+}
+
+div#mounthinner div.red {
+	background: #bb002c;
+}
+
+div#mounthinner div.green {
+	background: #a2e361;
+}
+
+div#mounthinner div.yellow {
+	background: #ffe482;
+}
+
+div#clpopup {
+	width: 600px;
+	top: 40px;
+	left: 50%;
+	margin-left: -300px;
+	z-index: 40;
+	display: none;
+	position: absolute;
+}
+
+div#clpopup div.content {
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	margin-bottom: 1px;
+	background: #fff;
+}
+
+div#clpopup img {
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+}
+
+div#clpopup div#pager {
+	padding: 0 30px;
+	border-bottom: 1px solid #CDCDCD;
+	position: relative;
+	background: #fff;
+}
+
+div#clpopup div#leftarr, div#clpopup div#rightarr {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: url(../im/arr1.png) 0 0 no-repeat;
+	top: 8px;
+	left: 10px;
+	cursor: pointer;
+}
+
+div#clpopup div#rightarr {
+	background-position: right 0;
+	left: 580px;
+}
+
+div#clpopup div#pages {
+	position: relative;
+	height: 25px;
+}
+
+div#clpopup div.page {
+	float: left;
+	width: 80px;
+	text-align: center;
+	color: #fff;
+	background: #bebebc;
+	height: 100%;
+	margin-right: 4px;
+	line-height: 24px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+div#clpopup div.page.active {
+	background: #0072bb;
+	cursor: default;
+}
+
+div#clpopup div.page:hover {
+	background: #0072bb;
+}
+
+div#clpopup div.info {
+	padding: 20px;
+	text-align: right;
+	margin-bottom: 40px;
+	background: #fff;
+}
+
+div#clpopup div.info span {
+	float: left;
+	color: #a3a3a3;
+}
+
+div#clpopup div.info a {
+	color: #70848f;
+}

@@ -1,0 +1,78 @@
+.b-languageSelect {
+    float:right;
+    top:-2px;
+    width:120px;
+    z-index:100;
+}
+
+.b-languageSelect ul {
+    width:100%;
+    list-style:none;
+    padding:5px 0;
+    position:absolute;
+    border-radius:4px;
+}
+
+.b-languageSelect li {
+    display: none;
+}
+
+.b-languageSelect li.active {
+    display: block;
+}
+
+.b-languageSelect li a {
+    display:block;
+    text-decoration:none;
+    height:25px;
+    line-height:24px;
+    padding:0 10px;
+    *padding-bottom:1px;
+}
+
+.b-languageSelect li a img {
+    margin:0 8px 0 0;
+    vertical-align:middle;
+}
+
+.b-languageSelect li a span {
+    vertical-align:middle;
+}
+
+.b-languageSelect.expand{
+}
+
+.b-languageSelect.expand ul {
+    background:#fff;
+    -moz-box-shadow: 0 0 2px #b3b3b3;
+    -webkit-box-shadow: 0 0 2px #b3b3b3;
+    box-shadow: 0 0 2px #b3b3b3;
+}
+
+.b-languageSelect.expand li {
+    display:block;
+}
+
+.b-languageSelect.expand .g-dashed {
+    border:none;
+}
+
+.b-languageSelect.expand li a:hover {
+    color:#fff;
+    background: #588cc1;
+    background: -moz-linear-gradient(100% 100% 90deg, #8abeea, #a1cff6);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a1cff6), to(#8abeea)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#a1cff6, #8abeea); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#8abeea, #a1cff6);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#a1cff6,endColorstr=#8abeea,GradientType=0);
+}
+
+.b-languageSelect.expand li.active a {
+    color:#fff;
+    background: #588cc1;
+    background: -moz-linear-gradient(100% 100% 90deg, #8abeea, #a1cff6);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a1cff6), to(#8abeea)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#a1cff6, #8abeea); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#8abeea, #a1cff6);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#a1cff6,endColorstr=#8abeea,GradientType=0);
+}

@@ -1,0 +1,365 @@
+.b-button {
+    text-decoration:none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align:middle;
+    cursor:pointer;
+    border:none;
+    position:relative;
+    padding:0;
+    margin:0;
+    overflow:visible;
+    color:#fff;
+}
+
+.b-button:hover {
+    color:#fff;
+}
+
+.b-button .buttonInner{
+    display:block;
+    -display:inline;
+    -zoom:1;
+    cursor:pointer;
+    font-family:Arial;
+}
+
+button .b-button{
+    top:-2px;
+    margin-right:-6px;
+    *top:0;
+    *left:-3px;
+}
+
+.webkit button .b-button{
+    margin-right:-5px;
+}
+
+.opera button .b-button{
+    top:-1px;
+    margin-right:-3px;
+}
+
+/* button_1 */
+
+.b-button_1 {
+    font-size:21px;
+    font-weight:bold;
+    text-shadow: #d99c00 -1px -1px 1px;
+    background:url("../img/button1.png") 0 0 no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_1 .buttonInner {
+    background:url("../img/button1.png") right 0 no-repeat;
+    height:52px;
+    line-height:50px;
+    padding:0 30px 0 20px;
+    left:10px;
+}
+
+.b-button_1:hover, button:hover .b-button_1{
+    background-position:0 -52px;
+}
+
+.b-button_1:hover .buttonInner, button:hover .b-button_1 .buttonInner {
+    background-position:right -52px;
+}
+
+.b-button_1.clicked, button.clicked .b-button_1 {
+    background-position:0 -104px;
+}
+
+.b-button_1.clicked .buttonInner, button.clicked .b-button_1 .buttonInner {
+    background-position:right -104px;
+    color:#fde5a3;
+}
+
+/* button_2 */
+
+.b-button_2 {
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow: #d99c00 -1px -1px 1px;
+    background:url("../img/button2.png") 0 0 no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_2 .buttonInner {
+    background:url("../img/button2.png") right 0 no-repeat;
+    height:30px;
+    line-height:30px;
+    padding:0 15px 0 10px;
+    left:5px;
+}
+
+.b-button_2:hover, button:hover .b-button_2 {
+    background-position:0 -30px;
+}
+
+.b-button_2:hover .buttonInner, button:hover .b-button_2 .buttonInner {
+    background-position:right -30px;
+}
+
+.b-button_2.clicked, button.clicked .b-button_2 {
+    background-position:0 -60px;
+}
+
+.b-button_2.clicked .buttonInner, button.clicked .b-button_2 .buttonInner {
+    background-position:right -60px;
+    color:#fde5a1;
+}
+
+/* button_3 */
+
+.b-button_3 {
+    font-size:13px;
+    font-weight:bold;
+    background:url("../img/button3.png") 0 -126px no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_3 .buttonInner {
+    background:url("../img/button3.png") right -126px no-repeat;
+    height:42px;
+    line-height:42px;
+    padding:0 15px 0 10px;
+    left:5px;
+    text-shadow: #8ba20f -1px -1px 1px;
+}
+
+.b-button_3:hover, button:hover .b-button_3 {
+    background-position:0 -168px;
+}
+
+.b-button_3:hover .buttonInner, button:hover .b-button_3 .buttonInner {
+    background-position:right -168px;
+}
+
+.b-button_3.clicked, button.clicked .b-button_3 {
+    background-position:0 -210px;
+}
+
+.b-button_3.clicked .buttonInner, button.clicked .b-button_3 .buttonInner {
+    background-position:right -210px;
+    color:#d7e48f;
+}
+
+/* button_4*/
+
+.b-button_4 {
+    font-size:13px;
+    font-weight:bold;
+    background:url("../img/button3.png") 0 -378px no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_4 .buttonInner {
+    background:url("../img/button3.png") right -378px no-repeat;
+    height:42px;
+    line-height:42px;
+    padding:0 15px 0 10px;
+    left:5px;
+    text-shadow: #89689a -1px -1px 1px;
+}
+
+.b-button_4:hover, button:hover .b-button_4 {
+    background-position:0 -420px;
+}
+
+.b-button_4:hover .buttonInner, button:hover .b-button_4 .buttonInner {
+    background-position:right -420px;
+}
+
+.b-button_4.clicked, button.clicked .b-button_4 {
+    background-position:0 -462px;
+}
+
+.b-button_4.clicked .buttonInner, button.clicked .b-button_4 .buttonInner {
+    background-position:right -462px;
+    color:#e5d9ea;
+}
+
+/* button_5*/
+
+.b-button_5 {
+    font-size:13px;
+    font-weight:bold;
+    background:url("../img/button3.png") 0 -504px no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_5 .buttonInner {
+    background:url("../img/button3.png") right -504px no-repeat;
+    height:42px;
+    line-height:42px;
+    padding:0 15px 0 10px;
+    left:5px;
+    text-shadow: #858585 -1px -1px 1px;
+}
+
+.b-button_5:hover, button:hover .b-button_5 {
+    background-position:0 -546px;
+}
+
+.b-button_5:hover .buttonInner, button:hover .b-button_5 .buttonInner {
+    background-position:right -546px;
+}
+
+.b-button_5.clicked, button.clicked .b-button_5 {
+    background-position:0 -588px;
+}
+
+.b-button_5.clicked .buttonInner, button.clicked .b-button_5 .buttonInner {
+    background-position:right -588px;
+    color:#dadbd9;
+}
+
+/* button_6*/
+
+.b-button_6 {
+    font-size:13px;
+    font-weight:bold;
+    background:url("../img/button3.png") 0 0 no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_6 .buttonInner {
+    background:url("../img/button3.png") right 0 no-repeat;
+    height:42px;
+    line-height:42px;
+    padding:0 15px 0 10px;
+    left:5px;
+    text-shadow: #bf9500 -1px -1px 1px;
+}
+
+.b-button_6:hover, button:hover .b-button_6 {
+    background-position:0 -42px;
+}
+
+.b-button_6:hover .buttonInner, button:hover .b-button_6 .buttonInner {
+    background-position:right -42px;
+}
+
+.b-button_6.clicked, button.clicked .b-button_6 {
+    background-position:0 -84px;
+}
+
+.b-button_6.clicked .buttonInner, button.clicked .b-button_6 .buttonInner {
+    background-position:right -84px;
+    color:#feecba;
+}
+
+/* button_7*/
+
+.b-button_7 {
+    font-size:13px;
+    font-weight:bold;
+    background:url("../img/button3.png") 0 -252px no-repeat;
+    margin:0 30px 0 0;
+}
+
+.b-button_7 .buttonInner {
+    background:url("../img/button3.png") right -252px no-repeat;
+    height:42px;
+    line-height:42px;
+    padding:0 15px 0 10px;
+    left:5px;
+    text-shadow: #678fb5 -1px -1px 1px;    
+}
+
+.b-button_7:hover, button:hover .b-button_7 {
+    background-position:0 -294px;
+}
+
+.b-button_7:hover .buttonInner, button:hover .b-button_7 .buttonInner {
+    background-position:right -294px;
+}
+
+.b-button_7.clicked, button.clicked .b-button_7 {
+    background-position:0 -336px;
+}
+
+.b-button_7.clicked .buttonInner, button.clicked .b-button_7 .buttonInner {
+    background-position:right -336px;
+    color:#cee3f2;
+}
+
+/**/
+
+.b-button_8 {
+    font-size:18px;
+    margin:0 5px 0 0;
+    background:url("../img/button4.png") 0 0 no-repeat;
+    height:47px;
+    top:0 !important;
+}
+
+.b-button_8 .buttonInner {
+    background:url("../img/button4.png") right 0 no-repeat;
+    height:47px;
+    line-height:47px;
+    padding:0 25px 0 20px;
+    left:5px;
+    text-shadow: #9bb512 -1px -1px 1px;
+    font-weight:bold;
+}
+
+.b-button_8:hover, button:hover .b-button_8 {
+    background-position:0 -47px;
+}
+
+.b-button_8:hover .buttonInner, button:hover .b-button_8 .buttonInner {
+    background-position:right -47px;
+}
+
+.b-button_8.clicked, button.clicked .b-button_8 {
+    background-position:0 -94px;
+}
+
+.b-button_8.clicked .buttonInner, button.clicked .b-button_8 .buttonInner {
+    background-position:right -94px;
+    color:#cee3f2;
+}
+
+/**/
+
+.b-button_9 {
+    font-size:19px;
+    margin:0 5px 0 0;
+    background:url("../img/button5.png") 0 0 no-repeat;
+    height:45px;
+    -background:#2f5277;
+}
+
+.b-button_9 .buttonInner {
+    background:url("../img/button5.png") right 0 no-repeat;
+    height:45px;
+    line-height:45px;
+    padding:0 25px 0 16px;
+    left:9px;
+    text-shadow: #477bb0 -1px -1px 1px;
+    font-weight:bold;
+    -background:#2f5277;
+    -left:0;
+    -padding-left:25px;
+}
+
+.b-button_9:hover, button:hover .b-button_9 {
+    background-position:0 -45px;
+}
+
+.b-button_9:hover .buttonInner, button:hover .b-button_9 .buttonInner {
+    background-position:right -45px;
+}
+
+.b-button_9.clicked, button.clicked .b-button_9 {
+    background-position:0 -90px;
+}
+
+.b-button_9.clicked .buttonInner, button.clicked .b-button_9 .buttonInner {
+    background-position:right -90px;
+    color:#b2c8de;
+}

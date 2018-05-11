@@ -1,0 +1,116 @@
+div#content {
+    height: 100%;
+    overflow-y: visible;
+	overflow-x:hidden;
+}
+
+div#main {
+    height:1px;
+	overflow:visible;
+}
+
+div#center div.post {
+	padding-bottom:10px;
+}
+
+div#right div.post {
+	padding-bottom:10px;
+}
+
+div.column {
+    margin-right: -1px;
+}
+
+/*
+opacity
+*/
+
+element{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+
+/*
+png fix
+*/
+
+/*
+ * submenu
+ */
+
+ul#mainmenu li span.tr {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/submenubr.png", sizingMethod = "crop");
+}
+
+ul#mainmenu li span.tl {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/submenubl.png", sizingMethod = "crop");
+}
+
+ul#mainmenu div.sub span.br {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/corner1br.png", sizingMethod = "crop");
+}
+
+ul#mainmenu div.sub span.bl {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/corner1bl.png", sizingMethod = "crop");
+}
+
+ul#mainmenu div.sub span.tr {
+	background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/corner1tr.png", sizingMethod = "crop");
+}
+
+ul#mainmenu ul.submain a:hover, ul#mainmenu ul.submain li.active a {
+	color: #ff7f7f;
+}
+
+ul#mainmenu ul.submain li a {
+	white-space:normal;
+}
+
+span.circle {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/circle.png", sizingMethod = "crop");
+}
+
+div.image span.corner {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/corner.png", sizingMethod = "crop");
+}
+
+a.logo {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/logo.png", sizingMethod = "crop");
+}
+
+div#search {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/search.png", sizingMethod = "crop");
+	padding-top:3px;
+}
+
+div.dealer.last {
+    margin-right:-20px;
+}
+
+div.dealer div.search {
+	padding-top:3px;
+}
+
+/*
+element:hover
+*/
+
+element {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+element.hover{}

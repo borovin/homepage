@@ -1,0 +1,76 @@
+.b-paginator{
+    float:left;
+    *zoom:1;
+}
+
+.b-paginator .navLinks{
+    overflow:hidden;
+    padding-bottom:10px;
+    font-size:14px;
+    *zoom:1;
+}
+
+.b-paginator .navLinks a{
+    text-decoration:none;
+}
+
+.b-paginator .navLinks a.disable{
+    color:#929292;
+}
+
+.b-paginator .navLinks a.disable .linkText{
+    text-decoration:none;
+}
+
+.b-paginator .navLinks a .hint{
+    color:#929292;
+    font-size:12px;
+}
+
+.b-paginator .navLinks a .linkText{
+    text-decoration:underline;
+    padding:0 5px;
+}
+
+.b-paginator .navLinks .prevLink{
+    float:left;
+}
+
+.b-paginator .navLinks .nextLink{
+    float:right;
+    *float:left;
+    *padding-left:60px;
+}
+
+.b-paginator .pageLinks{
+    clear:both;
+}
+
+.b-paginator .pageLinks a{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align:top;
+    padding:5px 10px;
+    text-decoration:none;
+    border-radius:4px;
+}
+
+.b-paginator .pageLinks a.active{
+    color:#fff;
+    background:#4882bc;
+    background: -moz-linear-gradient(100% 100% 90deg, #3a70a6, #5d9dde);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5d9dde), to(#3a70a6)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#5d9dde, #3a70a6); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#3a70a6, #5d9dde);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#5d9dde,endColorstr=#3a70a6,GradientType=0);
+}
+
+
+.b-paginator .pageLinks .separator{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align:top;
+    padding:5px 10px;
+}

@@ -1,0 +1,117 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    position:relative;
+}
+
+/* Reset styles */
+
+div, li, img, span, b, a, ul, ol, input, p, h1, h2, h3, h4, h5, h6, dl, dd, dt, form, fieldset, button {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul {
+    padding:0 0 20px 15px;
+}
+
+ul li {
+}
+
+ol{
+    padding-left:40px;
+}
+
+ol li {
+    padding-bottom:5px;
+}
+
+p {
+    padding-bottom:20px;
+    line-height:18px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: none;
+}
+
+a {
+    color: #358ddb;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#53a1f0;
+}
+
+form {
+}
+
+/* Headings */
+
+h1 {
+    font-size: 21px;
+    padding-bottom: 15px;
+    color:#396ea4;
+    font-style:italic;
+    font-weight:normal;
+}
+
+h2 {
+    font-size: 21px;
+    padding-bottom: 15px;
+    color:#000;
+    font-weight:normal;
+}
+
+h3 {
+    font-size: 14px;
+    padding-bottom: 15px;
+    text-transform:uppercase;
+}
+
+h4 {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+button{
+    border:none;
+    background:none;
+    padding:0;
+    overflow:visible;
+    cursor:pointer;
+}
+
+.gecko.mac button{
+    top:-1px;
+}
+
+input, textarea{
+    outline:none;
+}

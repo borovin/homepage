@@ -1,0 +1,78 @@
+.b-contact{
+    color:#fff;
+    background:url("../img/bg3.png") 0 bottom repeat-x #619cd8;
+    padding:30px 0;
+    overflow:hidden;
+    display:none;
+    *zoom:1;
+}
+
+.b-contact .contactDecor{
+    background:url("../img/bg4.png") 0 0 no-repeat;
+    position:absolute;
+    width:1241px;
+    height:331px;
+    bottom:0;
+    left:50%;
+    margin-left:-620px;
+    -background: none !important;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/bg4.png", sizingMethod = "crop");
+}
+
+.b-contact .contactInfo{
+    float:left;
+    width:450px;
+}
+
+.b-contact .contactInfo h4{
+    padding-bottom:25px;
+}
+
+.b-contact h4{
+    font-size:21px;
+    text-shadow:1px -1px -1px #5786b7;
+}
+
+.b-contact .b-form{
+    overflow:hidden;
+    -zoom:1;
+}
+
+.b-contact .b-form .field{
+    padding-bottom:8px;
+}
+
+.b-contact .b-form .inputOuter{
+    background:none;
+}
+
+.b-contact .b-form .inputInner{
+    background:none #fff;
+    padding:0 10px;
+    left:0;
+    border-radius:4px;
+}
+
+.b-contact .b-form .inputInner label{
+    left:10px;
+}
+
+.b-contact .b-form input{
+    width:350px;
+}
+
+.b-contact .b-form textarea{
+    width:490px;
+    height:80px;
+    margin-right:-8px;
+}
+
+.b-contact .buttons{
+    padding:5px 0;
+}
+
+.b-contact .b-button{
+    margin-right:0;
+    margin-left:-3px;
+    *left:0;
+}

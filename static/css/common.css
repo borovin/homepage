@@ -1,0 +1,250 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-size: 13px;
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #fafafa;
+}
+
+#__next {
+    height: 100%;
+}
+
+a{
+    color: #336699;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Cuprum', sans-serif;
+}
+
+h1{
+    font-size: 27px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 15px;
+}
+
+#page {
+    height: 100%;
+    overflow: auto;
+}
+
+#page:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background-color: #d40000;
+    z-index: 300;
+    -webkit-transition: -webkit-transform 0, opacity 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transition: transform 0, opacity 0;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+#page[data-status="loading"]:before {
+    -webkit-transform: translate3d(70%, 0, 0);
+    -webkit-transition: -webkit-transform 4s, opacity 1s;
+    transform: translate3d(70%, 0, 0);
+    transition: transform 4s, opacity 1s;
+    opacity: 1;
+}
+
+.page__content {
+    padding: 30px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+.page__content_fixed {
+    position: fixed;
+    top: 0;
+}
+
+.page__content:last-child {
+    background-color: #f4f4f4;
+    float: right;
+}
+
+.page__header {
+    padding: 0 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page__headerTitle {
+    font-size: 36px;
+    padding: 0 0 20px;
+    white-space: nowrap;
+    color: #444;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio {
+    padding: 0;
+}
+
+.portfolio__item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio__itemTitle {
+    color: #fafafa;
+    text-shadow: -1px -1px #24517c;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    background: #477eb3;
+    background-image: -moz-linear-gradient(top, #4392df 0, #336699 100%);
+    background-image: -ms-linear-gradient(top, #4392df 0, #336699 100%);
+    background-image: -o-linear-gradient(top, #4392df 0, #336699 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4392df), color-stop(100%, #336699));
+    background-image: -webkit-linear-gradient(top, #4392df 0, #336699 100%);
+    background-image: linear-gradient(to bottom, #4392df 0, #336699 100%);
+    padding: 10px 40px 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.portfolio__item .slider__control{
+    display: none;
+}
+
+.portfolio__item:hover .slider__control{
+    display: block;
+}
+
+.resume {
+
+}
+
+.resume__photo {
+    float: left;
+    position: relative;
+}
+
+.resume__photo img {
+    height: 200px;
+    vertical-align: top;
+}
+
+.resume__infoRow {
+    margin: 0;
+    padding: 0;
+}
+
+.resume__infoTitle {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    background-color: #5C6BC0;
+    color: #fff;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.resume__infoText {
+    vertical-align: middle;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 20px 0 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.resume__experience {
+    margin: 0;
+    padding: 0 0 40px 15px;
+    list-style: none;
+}
+
+.resume__experienceItem {
+    padding-bottom: 10px;
+}
+
+.slider{
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.slider__mask{
+}
+
+.slider__item{
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+
+.slider__item_state_active {
+    z-index: 10;
+}
+
+.slider__item_state_next{
+    z-index: 1;
+}
+
+.slider__item img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider__itemLink {
+    display: block;
+    height: 100%;
+}
+
+@media print {
+    .page__content {
+        padding: 30px;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: static !important;
+    }
+
+    .page__content_projects {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .page__content {
+        padding: 30px;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: static !important;
+        height: auto;
+    }
+}

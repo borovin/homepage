@@ -1,0 +1,104 @@
+.b-clients_main, .b-partnerCase {
+    border:3px solid #e6e6e6;
+}
+
+.b-rightMenu1 ul, .b-rightMenu2 ul, .b-languageSelect.expand ul{
+    border:2px solid #e6e6e6;
+}
+
+.b-partnerCase .case5{
+    *margin-right:-1px;
+}
+
+.b-rightMenu1 li.active{
+    margin:0 -2px 0 -4px;
+}
+
+.b-productsCase .case{
+    border:3px solid #e6e6e6;
+    width:312px;
+}
+
+.b-table tbody .even td{
+    background:#f5f5f5;
+}
+
+.b-contact .b-button{
+    margin-left:0;
+    left:0;
+}
+
+.b-tooltip .borderTop{
+    background:none;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/tooltipTop1.png", sizingMethod = "crop");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/tooltipTop1.png", sizingMethod = "crop");
+}
+
+.b-tooltip .borderBottom{
+    background:none;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/tooltipBottom1.png", sizingMethod = "crop");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/tooltipBottom1.png", sizingMethod = "crop");
+}
+
+.b-tooltip .tooltipContent{
+    background:none;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/tooltipBg1.png", sizingMethod = "scale");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/tooltipBg1.png", sizingMethod = "scale");
+    *zoom:1;
+}
+
+.b-hint .borderTop{
+    background:none;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/hintTop1.png", sizingMethod = "crop");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/hintTop1.png", sizingMethod = "crop");
+}
+
+.b-hint .borderBottom{
+    background:none;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/hintBottom1.png", sizingMethod = "crop");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/hintBottom1.png", sizingMethod = "crop");
+}
+
+.b-hint .hintText{
+    background:none;
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/hintBg1.png", sizingMethod = "scale");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/hintBg1.png", sizingMethod = "scale");
+    *zoom:1;
+}
+
+.b-topMenu li.loginLink a:active {
+    background:#ffc500 !important;
+}
+
+/*
+opacity
+*/
+
+element{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+
+/*
+png fix
+*/
+
+element {
+    background: url(../im/pixel.gif) 0 0 repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/img.png", sizingMethod = "crop");
+}
+
+/*
+element:hover
+*/
+
+element {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+element.hover{}

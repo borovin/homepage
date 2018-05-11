@@ -1,0 +1,17 @@
+.b-topContacts{
+    white-space:nowrap;
+    float:left;
+    top:5px;
+}
+
+.b-topContacts .phone{
+    vertical-align:middle;
+    margin:0 20px 0 0;
+    color:#60a6e5;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.b-topContacts .moreContactsLink{
+    vertical-align:middle;
+}

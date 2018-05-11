@@ -1,0 +1,15 @@
+.b-list{
+    list-style:none;
+    padding-left:15px;
+}
+
+.b-list li{
+    background:url("../img/mark1.png") 0 0 no-repeat;
+    padding-left:22px;
+    padding-bottom:5px;
+}
+
+.b-list_1 li{
+    background:url("../img/mark3.png") 0 2px no-repeat;
+    padding-left:18px;
+}

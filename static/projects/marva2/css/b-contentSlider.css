@@ -1,0 +1,27 @@
+.b-contentSlider{
+    overflow:hidden;
+    padding-left:12px;
+    margin-left:-12px;
+    width:100%;
+}
+
+.b-contentSlider .sliderItem{
+    display:none;
+    width:100%;
+}
+
+.b-contentSlider .activeItem{
+    display:block;
+}
+
+.b-contentSlider .prevItem{
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.b-contentSlider .nextItem{
+    display:block;
+    left:686px;
+}

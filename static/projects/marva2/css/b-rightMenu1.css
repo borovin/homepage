@@ -1,0 +1,71 @@
+.b-rightMenu1{
+    float:right;
+    width:230px;
+    margin:-100px 0 0;
+    *zoom:1;
+}
+
+.b-rightMenu1 ul{
+    list-style:none;
+    padding:0;
+    -moz-box-shadow: 0 0 2px #b3b3b3;
+    -webkit-box-shadow: 0 0 2px #b3b3b3;
+    box-shadow: 0 0 2px #b3b3b3;
+    border-radius:5px;
+    background:#fff;
+    float:left;
+    width:100%;
+}
+
+.b-rightMenu1 li{
+    *zoom:1;
+}
+
+.b-rightMenu1 li a{
+    display:block;
+    height:18px;
+    line-height:18px;
+    padding:17px 20px;
+    background:url("../img/li1.png") 0 -104px repeat-x;
+    border-bottom:1px solid #ededed;
+    font-weight:bold;
+    color:#000;
+    text-decoration:none;
+    *zoom:1;
+}
+
+.b-rightMenu1 li:first-child a{
+    border-radius:5px 5px 0 0;
+}
+
+.b-rightMenu1 li:last-child a{
+    border-radius:0 0 5px 5px;
+}
+
+.b-rightMenu1 li.active{
+    background:url("../img/li1.png") 0 0 no-repeat;
+    margin:0 -2px;
+    border-radius:2px 0 0 2px;
+}
+
+.b-rightMenu1 li:first-child.active{
+    margin-top:7px;
+}
+
+.b-rightMenu1 li:last-child.active{
+    margin-bottom:7px;
+}
+
+.b-rightMenu1 li a:hover{
+    background:#fff;
+}
+
+.b-rightMenu1 li.active a{
+    background:url("../img/li1.png") 0 -52px repeat-x;
+    margin-left:10px;
+    padding-left:10px;
+    color:#fff;
+    text-decoration:none;
+    border:none;
+    border-radius:0 2px 2px 0;
+}

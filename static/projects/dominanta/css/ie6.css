@@ -1,0 +1,195 @@
+div#layer{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+
+div#vacant {
+	height:1px;
+	overflow:visible
+}
+
+div#clpopup div#pager{
+	zoom:1;
+}
+
+ul#leftmenu li a span {
+    display:none;
+}
+
+div#addressgrid a.arrblue{
+	float:right;
+	margin:-20px 30px 0 0;
+}
+
+/*
+day menu
+*/
+ul#leftmenu li#company a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/licompany.png", sizingMethod = "crop");
+}
+
+ul#leftmenu li#address a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/liaddress.png", sizingMethod = "crop");
+}
+ul#leftmenu li#clients a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/liclients.png", sizingMethod = "crop");
+}
+ul#leftmenu li#contacts a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/licontacts.png", sizingMethod = "crop");
+}
+ul#leftmenu li#press a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/lipress.png", sizingMethod = "crop");
+}
+/*
+night menu
+*/
+body#night ul#leftmenu li#company a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/licompanyn.png", sizingMethod = "crop");
+	width:126px;
+}
+
+body#night ul#leftmenu li#address a {
+	width:209px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/liaddressn.png", sizingMethod = "crop");
+}
+body#night ul#leftmenu li#clients a {
+	width:101px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/liclientsn.png", sizingMethod = "crop");
+}
+body#night ul#leftmenu li#contacts a {
+	width:240px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/licontactsn.png", sizingMethod = "crop");
+}
+body#night ul#leftmenu li#press a {
+	width:133px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/lipressn.png", sizingMethod = "crop");
+}
+/*
+active menu
+*/
+ul#leftmenu li#company.active a {
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/licompanyn.png", sizingMethod = "crop");
+	width:126px;
+}
+
+ul#leftmenu li#address.active a {
+	width:209px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/liaddressn.png", sizingMethod = "crop");
+}
+ul#leftmenu li#clients.active a {
+	width:101px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/liclientsn.png", sizingMethod = "crop");
+}
+ul#leftmenu li#contacts.active a {
+	width:240px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/licontactsn.png", sizingMethod = "crop");
+}
+ul#leftmenu li#press.active a {
+	width:133px;
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/lipressn.png", sizingMethod = "crop");
+}
+/*
+partners
+*/
+div#partners a.partner {
+	margin: 0 10px;
+}
+
+body#night div#partners a.partner {
+    background: url(../im/partsieb.png) 0 0 no-repeat;
+}
+
+body#night div#partners a#p1 {
+    background-position: 0 0;
+}
+
+body#night div#partners a#p1:hover {
+    background-position: 0 -78px;
+}
+
+body#night div#partners a#p2 {
+    background-position: -70px 0;
+}
+
+body#night div#partners a#p2:hover {
+    background-position: -70px -78px;
+}
+
+body#night div#partners a#p3 {
+    background-position: -137px 0;
+}
+
+body#night div#partners a#p3:hover {
+    background-position: -137px -78px;
+}
+
+body#night div#partners a#p4 {
+    background-position: -204px 0;
+}
+
+body#night div#partners a#p4:hover {
+    background-position: -204px -78px;
+}
+
+a.logo{
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/logo.png", sizingMethod = "crop");
+}
+
+body#night a.logo{
+    background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/logow.png", sizingMethod = "crop");
+}
+
+div#header address {
+	background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/contacts.png", sizingMethod = "crop");
+}
+
+body#night div#header address {
+	background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/phonew.png", sizingMethod = "crop");
+}
+
+div.light {
+	background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/light.png", sizingMethod = "crop");
+}
+
+div#manager {
+	background: url(../im/pixel.gif) 0 0 repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="im/manager.png", sizingMethod = "crop");
+}
+
+/*
+element:hover
+*/
+
+* html tr {
+  unicode-bidi: expression(
+    runtimeStyle.unicodeBidi = 'normal',
+    onmouseover = function()
+      {className += ' hover';},
+    onmouseout = function()
+      {className = className.replace(' hover','');}
+    );
+}
+
+
+div#addressgrid table tr.hover{
+    background:#cee4f2;
+}

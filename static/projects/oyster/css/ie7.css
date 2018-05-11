@@ -1,0 +1,8 @@
+div#search input.button {
+	top:1px;
+	padding-bottom:3px;
+}
+
+body#inside div#main {
+	overflow:hidden;
+}

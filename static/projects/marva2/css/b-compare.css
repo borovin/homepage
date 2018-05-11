@@ -1,0 +1,57 @@
+.b-compare{
+    padding:0 0 50px;
+}
+
+.b-compare h3{
+    font-size:25px;
+    padding-bottom:20px;
+    text-transform:none;
+}
+
+.b-compare h3 a{
+    color:#358ddb;
+    border-bottom:1px dashed;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.b-compare .hint{
+    color:#7c7c7c;
+}
+
+.b-compare .tableControl{
+    float:right;
+    padding:4px 0;
+    z-index:100;
+    margin-top:-50px;
+}
+
+.b-compare .tableControl a{
+    text-decoration:none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding:0 10px;
+    margin:0 0 0 10px;
+    height:24px;
+    line-height:23px;
+}
+
+.b-compare .tableControl a span{
+    border-bottom:1px dotted;
+}
+
+.b-compare .tableControl .active{
+    color:#fff;
+    background:#fff;
+    background: -moz-linear-gradient(100% 100% 90deg, #3b70a6, #5d9cdd);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5d9cdd), to(#3b70a6)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(#5d9cdd, #3b70a6); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#3b70a6, #5d9cdd);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#5d9cdd,endColorstr=#3b70a6,GradientType=0);
+    border-radius:4px;
+}
+
+.b-compare .tableControl .active span{
+    border:none;
+}

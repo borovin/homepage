@@ -1,0 +1,176 @@
+.b-intro{
+    overflow:hidden;
+    clear:both;
+}
+
+.b-intro h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    letter-spacing:-0.03em;
+    font-weight:bold;
+    font-style:normal;
+    color:#000;
+}
+
+.b-intro p.main{
+    color:#4881bb;
+    font-size:21px;
+    padding-bottom:30px;
+    line-height:normal;
+}
+
+.b-intro_main{
+    margin:0 0 40px 50px;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/faces.png", sizingMethod="crop");
+    -padding-left:360px;
+    -height:300px;
+}
+
+.b-intro_main .introImage{
+    float:left;
+    margin:0 50px 0 0;
+    -display:none;
+}
+
+.b-intro_main .text{
+    font-family:Helvetica;
+    font-weight:bold;
+    padding:10px 0 20px;
+}
+
+.b-intro_main .font1{
+    color:#318ad8;
+    font-size:110px;
+    float:left;
+    height:110px;
+    line-height:95px;
+    margin-left:-5px;
+}
+
+.mac .b-intro_main .font1{
+    line-height:108px;
+    margin-left:0;
+}
+
+.mac.webkit .b-intro_main .font1{
+    line-height:95px;
+    margin-left:0;
+}
+
+.b-intro_main .font2{
+    color:#318ad8;
+    font-size:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+}
+
+.b-intro_main .font3{
+    font-size:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    left:10px;
+}
+
+.b-intro_main .font4{
+    color:#318ad8;
+    font-size:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+}
+
+.b-intro_main .font5{
+    display:block;
+    clear:both;
+    font-size:30px;
+    height:30px;
+    line-height:30px;
+    padding-bottom:5px;
+}
+
+.b-intro_main .font6{
+    color:#318ad8;
+    font-size:60px;
+    height:60px;
+    line-height:60px;
+}
+
+/**/
+
+.b-intro_partners{
+    padding:0 250px 30px 0;
+}
+
+.b-intro_partners .label{
+    position:absolute;
+    right:30px;
+    top:0;
+}
+
+/**/
+
+.b-intro_trial{
+    padding:0 150px 80px 0;
+}
+
+/**/
+
+.b-intro_products{
+    padding:0 350px 130px 0;
+}
+
+/**/
+
+.b-intro_about img{
+    float:right;
+    margin:5px 60px 0 30px;
+}
+
+.b-intro_about p{
+    margin-right:280px;
+}
+
+/**/
+
+.b-intro_clients {
+    padding-bottom:50px;
+}
+
+.b-intro_clients p{
+    margin-right:120px;
+}
+
+/**/
+
+.b-intro_features {
+    padding:0 30px 0 0;
+}
+
+/**/
+
+.b-intro_news {
+    padding-right:300px;
+}
+
+/**/
+
+.b-intro_404{
+    background:url("../img/404.png") 0 0 no-repeat;
+    padding:70px 0 0 250px;
+    height:262px;
+    margin:30px 0 0;
+    float:left;
+    width:710px;
+    -background:none;
+    -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/404.png", sizingMethod = "crop");
+}
+
+.b-intro_404 p.main{
+    font-weight:bold;
+    font-size:28px;
+}
+
+

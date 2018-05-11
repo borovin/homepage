@@ -1,0 +1,36 @@
+.b-tooltip{
+    width:437px;
+    font-size:11px;
+    display:none;
+    position:absolute;
+    margin-left:-218px;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.b-tooltip .j-tooltipContent{
+    display:block;
+}
+
+.b-tooltip .borderTop{
+    height:15px;
+    background:url("../img/tooltipTop1.png") 0 0 no-repeat;
+}
+
+.b-tooltip .tooltipContent{
+    background:url("../img/tooltipBg1.png") 0 0 repeat-y;
+    padding:0 25px 10px 15px;
+    *zoom:1;
+}
+
+.b-tooltip .borderBottom{
+    height:30px;
+    background:url("../img/tooltipBottom1.png") 0 0 no-repeat;
+}
+
+.b-tooltip .b-feedback p{
+    font-size:11px;
+    line-height:normal;
+    padding-right:0;
+}
