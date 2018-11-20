@@ -67,910 +67,62 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./components/Experience/Experience.css":
+/******/ ([
+/* 0 */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"card": "app-Experience__card"
-};
+module.exports = require("react");
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports) {
 
-/***/ "./components/Experience/Experience.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+module.exports = require("@material-ui/core");
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Experience; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Experience_css__ = __webpack_require__("./components/Experience/Experience.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Experience_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Experience_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_material_ui__ = __webpack_require__("material-ui");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_material_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_material_ui__);
-var _jsxFileName = "C:\\hub\\homepage\\components\\Experience\\Experience.js";
+/***/ }),
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
 
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Experience =
-/*#__PURE__*/
-function (_PureComponent) {
-  _inherits(Experience, _PureComponent);
-
-  function Experience() {
-    _classCallCheck(this, Experience);
-
-    return _possibleConstructorReturn(this, (Experience.__proto__ || Object.getPrototypeOf(Experience)).apply(this, arguments));
-  }
-
-  _createClass(Experience, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        }
-      }, this.props.jobs.map(function (job, i) {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_material_ui__["Card"], {
-          key: "job-".concat(i),
-          className: __WEBPACK_IMPORTED_MODULE_1__Experience_css___default.a.card,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 14
-          }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_material_ui__["CardHeader"], {
-          title: job.url ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-            href: job.url,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 16
-            }
-          }, job.company) : job.company,
-          subheader: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 17
-            }
-          }, job.dateFrom, " - ", job.dateTo),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 15
-          }
-        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_material_ui__["CardContent"], {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-          }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_material_ui__["Typography"], {
-          component: "p",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 20
-          }
-        }, job.Description)));
-      }));
-    }
-  }]);
-
-  return Experience;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"]);
-
-Object.defineProperty(Experience, "defaultProps", {
-  configurable: true,
-  enumerable: true,
-  writable: true,
-  value: {
-    jobs: []
-  }
-});
+module.exports = __webpack_require__(6);
 
 
 /***/ }),
-
-/***/ "./components/ProjectSlider/ProjectSlider.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectSlider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "C:\\hub\\homepage\\components\\ProjectSlider\\ProjectSlider.js";
-
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-var ProjectSlider =
-/*#__PURE__*/
-function (_PureComponent) {
-  _inherits(ProjectSlider, _PureComponent);
-
-  function ProjectSlider() {
-    _classCallCheck(this, ProjectSlider);
-
-    return _possibleConstructorReturn(this, (ProjectSlider.__proto__ || Object.getPrototypeOf(ProjectSlider)).apply(this, arguments));
-  }
-
-  _createClass(ProjectSlider, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "slider",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "slider__mask",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        }
-      }, this.props.project.items.map(function (item, i) {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          key: "item-".concat(i),
-          className: "slider__item",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 14
-          }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-          className: "slider__itemLink",
-          target: "_blank",
-          "data-navigate": "0",
-          href: item.url,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 15
-          }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-          alt: "#",
-          src: item.screenUrl,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-          }
-        })));
-      })));
-    }
-  }]);
-
-  return ProjectSlider;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"]);
-
-Object.defineProperty(ProjectSlider, "defaultProps", {
-  configurable: true,
-  enumerable: true,
-  writable: true,
-  value: {
-    project: {}
-  }
-});
-
-
-/***/ }),
-
-/***/ "./components/Resume/Resume.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Resume; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_material_ui__ = __webpack_require__("material-ui");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_material_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_material_ui__);
-var _jsxFileName = "C:\\hub\\homepage\\components\\Resume\\Resume.js";
-
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var Resume =
-/*#__PURE__*/
-function (_PureComponent) {
-  _inherits(Resume, _PureComponent);
-
-  function Resume() {
-    _classCallCheck(this, Resume);
-
-    return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
-  }
-
-  _createClass(Resume, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_material_ui__["Card"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_material_ui__["CardHeader"], {
-        title: "Professional knowledge and skills",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_material_ui__["CardContent"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_material_ui__["Typography"], {
-        component: "p",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        }
-      }, "HTML5/CSS3 - coding with ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "https://en.bem.info/method/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }, "BEM methodology"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }), "Strong knowledge of Javascript: native, HTML5-API, Javascript frameworks (BackboneJS, ReactJS), Javascript OOP, AMD/ES6 modules (RequireJS, BabelJS), JS-templates (EJS, Handlebars), WebSockets, Local Storage, CORS.", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }), "Unit-testing: Jest, Jasmine, Karma, Code coverage (Istanbul)", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      }), "Acceptance-testing: Selenium, CodeceptJS, WebdriverIO, CasperJs", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
-      }), "Front-end optimization, code refactoring. Working with GIT (Gitflow). Working with Continuous Static Analysis (", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "https://codacy.com/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        }
-      }, "codacy"), ",", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "https://codeclimate.com/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, "codeclimate"), ") and Continuous Integration tools (", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "https://www.jetbrains.com/teamcity/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        }
-      }, "teamcity"), ",", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "https://circleci.com/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        }
-      }, "circleci"), ",", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "https://travis-ci.org/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        }
-      }, "Travis CI"), ") Experience in UX and UI design (", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "http://www.google.com/design/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        }
-      }, "Material Design"), "). Certified Scrum-Master.")));
-    }
-  }]);
-
-  return Resume;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"]);
-
-
-
-/***/ }),
-
-/***/ "./pages/index.js":
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MainPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__resources_jobs__ = __webpack_require__("./resources/jobs.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__resources_projects__ = __webpack_require__("./resources/projects.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_ProjectSlider_ProjectSlider__ = __webpack_require__("./components/ProjectSlider/ProjectSlider.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Resume_Resume__ = __webpack_require__("./components/Resume/Resume.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Experience_Experience__ = __webpack_require__("./components/Experience/Experience.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_material_ui__ = __webpack_require__("material-ui");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_material_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_material_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_material_ui_icons_LocationOn__ = __webpack_require__("material-ui-icons/LocationOn");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_material_ui_icons_LocationOn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_material_ui_icons_LocationOn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_material_ui_icons_Work__ = __webpack_require__("material-ui-icons/Work");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_material_ui_icons_Work___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_material_ui_icons_Work__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_material_ui_icons_Email__ = __webpack_require__("material-ui-icons/Email");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_material_ui_icons_Email___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_material_ui_icons_Email__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_material_ui_icons_Phone__ = __webpack_require__("material-ui-icons/Phone");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_material_ui_icons_Phone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_material_ui_icons_Phone__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_material_ui_icons_Public__ = __webpack_require__("material-ui-icons/Public");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_material_ui_icons_Public___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_material_ui_icons_Public__);
-var _jsxFileName = "C:\\hub\\homepage\\pages\\index.js";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+// EXTERNAL MODULE: external "react"
+var external__react_ = __webpack_require__(0);
+var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// CONCATENATED MODULE: ./resources/jobs.js
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-var MainPage =
-/*#__PURE__*/
-function (_PureComponent) {
-  _inherits(MainPage, _PureComponent);
-
-  function MainPage() {
-    _classCallCheck(this, MainPage);
-
-    return _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).apply(this, arguments));
-  }
-
-  _createClass(MainPage, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        id: "page",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "page__content",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_material_ui__["Typography"], {
-        variant: "display2",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        }
-      }, "Andrew Borovin"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__top",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__photo",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-        src: "/static/img/ava2.jpg",
-        alt: "\u0410\u043D\u0434\u0440\u0435\u0439 \u0411\u043E\u0440\u043E\u0432\u0438\u043D",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__info",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoRow",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoTitle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_material_ui_icons_LocationOn___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoText",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        }
-      }, "Saint-Petersburg")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoRow",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoTitle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_material_ui_icons_Work___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoText",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        }
-      }, "Front-end developer")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoRow",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoTitle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10_material_ui_icons_Phone___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoText",
-        locator: "phone",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        }
-      }, "+7-921-890-2868")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoRow",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoTitle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9_material_ui_icons_Email___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoText",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        href: "mailto:a@borovin.com",
-        "data-navigate": "0",
-        locator: "email",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        }
-      }, "a@borovin.com"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoRow",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoTitle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 63
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11_material_ui_icons_Public___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 64
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "resume__infoText",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        locator: "githubLink",
-        target: "_blank",
-        "data-navigate": "0",
-        href: "https://github.com/borovin",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        }
-      }, "github.com/borovin"))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_material_ui__["Divider"], {
-        style: {
-          margin: '40px 0'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_Experience_Experience__["a" /* default */], {
-        jobs: __WEBPACK_IMPORTED_MODULE_1__resources_jobs__["a" /* default */],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 77
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_material_ui__["Divider"], {
-        style: {
-          marginBottom: '40px'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Resume_Resume__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        }
-      }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "page__content page__content_projects",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 84
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "page__header",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 86
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
-        className: "page__headerTitle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 87
-        }
-      }, "Projects")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("noindex", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 90
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "portfolio",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 92
-        }
-      }, __WEBPACK_IMPORTED_MODULE_2__resources_projects__["a" /* default */].map(function (project, i) {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-          key: "project-".concat(i),
-          className: "portfolio__item",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 94
-          }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
-          className: "portfolio__itemTitle",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 95
-          }
-        }, project.title), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_ProjectSlider_ProjectSlider__["a" /* default */], {
-          project: project,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 98
-          }
-        }));
-      })))));
-    }
-  }]);
-
-  return MainPage;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"]);
-
-
-
-/***/ }),
-
-/***/ "./resources/jobs.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "C:\\hub\\homepage\\resources\\jobs.js";
-
-
-var ReltioJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  }
-}, "Working on UI services for MDM (Master Data Management) system (Single Page Application, ReactJS, ES6, NodeJS). ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  }
-}), "Integration with REST API and metadata configuration. ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  }
-}), "Implementing SSO (Single Sign On) flow for all internal services (OAuth2, NodeJS auth-middleware) ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  }
-}), "Contributing to the cross-project UI kit and NodeJS libraries. ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  }
-}), "Working on UI localization workflow and internal localization tools ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  }
-}), "Unit and integration testing (Jest, CodeceptJS). ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  }
-}), "Participating in process management as kanban-master.");
-var CrystalsJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  }
-}, "Development of front-end automation system for retail trade (Single Page Application, Backbone).", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  }
-}), "Working with RESTful API. The introduction of modular architecture (AMD, BEM, Requirejs, Bower). ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  }
-}), "Unit-testing (Jasmine, Karma, Code-coverage). ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  }
-}), "Working with CI-server (Teamcity). ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  }
-}), "Using Agile methodology (Scrum)");
-var AISJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27
-  }
-}, "Develop multi window online terminal for currency exchange (Single Page Application, WebSockets).", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28
-  }
-}), "Working with exchange server via WebSockets (SocketIO).", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29
-  }
-}), "Templating and rendering highly dynamic data on the client side (KnockoutJS, CanJS).", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 30
-  }
-}), "The modular architecture design (BEM, RequireJS).");
-var YandexMoneyJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 36
-  }
-}, "Html-coding, refactoring", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37
-  }
-}), "The introduction of the BEM methodology, development of javascript components", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 38
-  }
-}), "Development of the build system for project", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 39
-  }
-}), "Participation in the development of the third version of Yandex.Money", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+var ReltioJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Working on UI services for MDM (Master Data Management) system (Single Page Application, ReactJS, ES6, NodeJS). ", external__react__default.a.createElement("br", null), "Integration with REST API and metadata configuration. ", external__react__default.a.createElement("br", null), "Implementing SSO (Single Sign On) flow for all internal services (OAuth2, NodeJS auth-middleware) ", external__react__default.a.createElement("br", null), "Contributing to the cross-project UI kit and NodeJS libraries. ", external__react__default.a.createElement("br", null), "Working on UI localization workflow and internal localization tools ", external__react__default.a.createElement("br", null), "Unit and integration testing (Jest, CodeceptJS). ", external__react__default.a.createElement("br", null), "Participating in process management as kanban-master.");
+var CrystalsJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Development of front-end automation system for retail trade (Single Page Application, Backbone).", external__react__default.a.createElement("br", null), "Working with RESTful API. The introduction of modular architecture (AMD, BEM, Requirejs, Bower). ", external__react__default.a.createElement("br", null), "Unit-testing (Jasmine, Karma, Code-coverage). ", external__react__default.a.createElement("br", null), "Working with CI-server (Teamcity). ", external__react__default.a.createElement("br", null), "Using Agile methodology (Scrum)");
+var AISJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Develop multi window online terminal for currency exchange (Single Page Application, WebSockets).", external__react__default.a.createElement("br", null), "Working with exchange server via WebSockets (SocketIO).", external__react__default.a.createElement("br", null), "Templating and rendering highly dynamic data on the client side (KnockoutJS, CanJS).", external__react__default.a.createElement("br", null), "The modular architecture design (BEM, RequireJS).");
+var YandexMoneyJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Html-coding, refactoring", external__react__default.a.createElement("br", null), "The introduction of the BEM methodology, development of javascript components", external__react__default.a.createElement("br", null), "Development of the build system for project", external__react__default.a.createElement("br", null), "Participation in the development of the third version of Yandex.Money", external__react__default.a.createElement("a", {
   href: "http://www.artlebedev.ru/everything/yandex/money3/",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41
-  }
+  target: "_blank"
 }, "http://www.artlebedev.ru/everything/yandex/money3/"));
-var GeometriaJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 47
-  }
-}, "Front-end development of new functionality of the media site (photo, video, music)", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48
-  }
-}), "Refactoring and optimization of existing code", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 49
-  }
-}), "Interface design and usability");
-var InlineJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 55
-  }
-}, "Optimization and refactoring of the client part high load Internet services (", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+var GeometriaJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Front-end development of new functionality of the media site (photo, video, music)", external__react__default.a.createElement("br", null), "Refactoring and optimization of existing code", external__react__default.a.createElement("br", null), "Interface design and usability");
+var InlineJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Optimization and refactoring of the client part high load Internet services (", external__react__default.a.createElement("a", {
   href: "http://meatinfo.ru/",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 57
-  }
-}, "meatinfo.ru"), ",", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+  target: "_blank"
+}, "meatinfo.ru"), ",", external__react__default.a.createElement("a", {
   href: "http://foodretail.ru/",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 58
-  }
-}, "foodretail.ru"), " and others)", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 59
-  }
-}), "Development, interface design, html-coding, javascript programming (JQuery, AJAX) and integration (Smarty template engine) of new components and modules.", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 62
-  }
-}), "Close interaction with a team of PHP programmers. Work on AGILE methodology. Work with version control systems (SVN/GIT).");
-var DevellabJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 69
-  }
-}, "HTML-coding, client-side graphics optimization, Development and testing of dynamic features (Animations, AJAX). ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 71
-  }
-}), "Participation in the design of interfaces in conjunction with the designer. ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 72
-  }
-}), "Working closely with web programmer in integrating client side with popular CMS(Drupal, Bitrix, ModX) and other solutions on PHP, JSP.");
-var SpbAllianceJobDescription = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 79
-  }
-}, "Cross-browser(ie6+, FF2+, Opera9+), valid coding based on .psd-layouts. Close interactions with php programmer, flash developer and designer.");
+  target: "_blank"
+}, "foodretail.ru"), " and others)", external__react__default.a.createElement("br", null), "Development, interface design, html-coding, javascript programming (JQuery, AJAX) and integration (Smarty template engine) of new components and modules.", external__react__default.a.createElement("br", null), "Close interaction with a team of PHP programmers. Work on AGILE methodology. Work with version control systems (SVN/GIT).");
+var DevellabJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "HTML-coding, client-side graphics optimization, Development and testing of dynamic features (Animations, AJAX). ", external__react__default.a.createElement("br", null), "Participation in the design of interfaces in conjunction with the designer. ", external__react__default.a.createElement("br", null), "Working closely with web programmer in integrating client side with popular CMS(Drupal, Bitrix, ModX) and other solutions on PHP, JSP.");
+var SpbAllianceJobDescription = external__react__default.a.createElement(external__react_["Fragment"], null, "Cross-browser(ie6+, FF2+, Opera9+), valid coding based on .psd-layouts. Close interactions with php programmer, flash developer and designer.");
 var jobs = [{
   title: 'Senior Front-end Developer',
   company: 'Reltio',
@@ -1027,14 +179,8 @@ var jobs = [{
   dateTo: '01.02.2009',
   Description: SpbAllianceJobDescription
 }];
-/* harmony default export */ __webpack_exports__["a"] = (jobs);
-
-/***/ }),
-
-/***/ "./resources/projects.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
+/* harmony default export */ var resources_jobs = (jobs);
+// CONCATENATED MODULE: ./resources/projects.js
 var projects = [{
   name: 'dorproject',
   title: '"Dorproject" working group',
@@ -1155,66 +301,416 @@ var projects = [{
     screenUrl: '/static/portfolio/vzlet/8.jpg'
   }]
 }];
-/* harmony default export */ __webpack_exports__["a"] = (projects);
+/* harmony default export */ var resources_projects = (projects);
+// CONCATENATED MODULE: ./components/ProjectSlider/ProjectSlider.js
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var ProjectSlider_ProjectSlider =
+/*#__PURE__*/
+function (_PureComponent) {
+  _inherits(ProjectSlider, _PureComponent);
+
+  function ProjectSlider() {
+    _classCallCheck(this, ProjectSlider);
+
+    return _possibleConstructorReturn(this, (ProjectSlider.__proto__ || Object.getPrototypeOf(ProjectSlider)).apply(this, arguments));
+  }
+
+  _createClass(ProjectSlider, [{
+    key: "render",
+    value: function render() {
+      return external__react__default.a.createElement("div", {
+        className: "slider"
+      }, external__react__default.a.createElement("div", {
+        className: "slider__mask"
+      }, this.props.project.items.map(function (item, i) {
+        return external__react__default.a.createElement("div", {
+          key: "item-".concat(i),
+          className: "slider__item"
+        }, external__react__default.a.createElement("a", {
+          className: "slider__itemLink",
+          target: "_blank",
+          "data-navigate": "0",
+          href: item.url
+        }, external__react__default.a.createElement("img", {
+          alt: "#",
+          src: item.screenUrl
+        })));
+      })));
+    }
+  }]);
+
+  return ProjectSlider;
+}(external__react_["PureComponent"]);
+
+Object.defineProperty(ProjectSlider_ProjectSlider, "defaultProps", {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  value: {
+    project: {}
+  }
+});
+
+// EXTERNAL MODULE: external "@material-ui/core"
+var core_ = __webpack_require__(1);
+var core__default = /*#__PURE__*/__webpack_require__.n(core_);
+
+// CONCATENATED MODULE: ./components/Resume/Resume.js
+
+
+function Resume__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Resume__typeof = function _typeof(obj) { return typeof obj; }; } else { Resume__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Resume__typeof(obj); }
+
+function Resume__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function Resume__defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function Resume__createClass(Constructor, protoProps, staticProps) { if (protoProps) Resume__defineProperties(Constructor.prototype, protoProps); if (staticProps) Resume__defineProperties(Constructor, staticProps); return Constructor; }
+
+function Resume__possibleConstructorReturn(self, call) { if (call && (Resume__typeof(call) === "object" || typeof call === "function")) { return call; } return Resume__assertThisInitialized(self); }
+
+function Resume__assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function Resume__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var Resume_Resume =
+/*#__PURE__*/
+function (_PureComponent) {
+  Resume__inherits(Resume, _PureComponent);
+
+  function Resume() {
+    Resume__classCallCheck(this, Resume);
+
+    return Resume__possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
+  }
+
+  Resume__createClass(Resume, [{
+    key: "render",
+    value: function render() {
+      return external__react__default.a.createElement(external__react_["Fragment"], null, external__react__default.a.createElement(core_["Typography"], {
+        variant: "title",
+        style: {
+          paddingBottom: '20px'
+        }
+      }, "Professional knowledge and skills"), external__react__default.a.createElement(core_["Typography"], {
+        component: "p"
+      }, "HTML5/CSS3 - coding with ", external__react__default.a.createElement("a", {
+        href: "https://en.bem.info/method/",
+        target: "_blank"
+      }, "BEM methodology"), external__react__default.a.createElement("br", null), external__react__default.a.createElement("br", null), "Strong knowledge of Javascript: native, HTML5-API, Javascript frameworks (BackboneJS, ReactJS), Javascript OOP, AMD/ES6 modules (RequireJS, BabelJS), JS-templates (EJS, Handlebars), WebSockets, Local Storage, CORS.", external__react__default.a.createElement("br", null), external__react__default.a.createElement("br", null), "Unit-testing: Jest, Jasmine, Karma, Code coverage (Istanbul)", external__react__default.a.createElement("br", null), "Acceptance-testing: Selenium, CodeceptJS, WebdriverIO, CasperJs", external__react__default.a.createElement("br", null), external__react__default.a.createElement("br", null), "Front-end optimization, code refactoring. Working with GIT (Gitflow). Working with Continuous Static Analysis (", external__react__default.a.createElement("a", {
+        href: "https://codacy.com/",
+        target: "_blank"
+      }, "codacy"), ",", external__react__default.a.createElement("a", {
+        href: "https://codeclimate.com/",
+        target: "_blank"
+      }, "codeclimate"), ") and Continuous Integration tools (", external__react__default.a.createElement("a", {
+        href: "https://www.jetbrains.com/teamcity/",
+        target: "_blank"
+      }, "teamcity"), ",", external__react__default.a.createElement("a", {
+        href: "https://circleci.com/",
+        target: "_blank"
+      }, "circleci"), ",", external__react__default.a.createElement("a", {
+        href: "https://travis-ci.org/",
+        target: "_blank"
+      }, "Travis CI"), ") Experience in UX and UI design (", external__react__default.a.createElement("a", {
+        href: "http://www.google.com/design/",
+        target: "_blank"
+      }, "Material Design"), "). Certified Scrum-Master."));
+    }
+  }]);
+
+  return Resume;
+}(external__react_["PureComponent"]);
+
+
+// EXTERNAL MODULE: ./components/Experience/Experience.css
+var Experience_Experience = __webpack_require__(7);
+var Experience_default = /*#__PURE__*/__webpack_require__.n(Experience_Experience);
+
+// CONCATENATED MODULE: ./components/Experience/Experience.js
+
+
+function Experience__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Experience__typeof = function _typeof(obj) { return typeof obj; }; } else { Experience__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Experience__typeof(obj); }
+
+function Experience__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function Experience__defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function Experience__createClass(Constructor, protoProps, staticProps) { if (protoProps) Experience__defineProperties(Constructor.prototype, protoProps); if (staticProps) Experience__defineProperties(Constructor, staticProps); return Constructor; }
+
+function Experience__possibleConstructorReturn(self, call) { if (call && (Experience__typeof(call) === "object" || typeof call === "function")) { return call; } return Experience__assertThisInitialized(self); }
+
+function Experience__assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function Experience__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Experience_Experience_Experience =
+/*#__PURE__*/
+function (_PureComponent) {
+  Experience__inherits(Experience, _PureComponent);
+
+  function Experience() {
+    Experience__classCallCheck(this, Experience);
+
+    return Experience__possibleConstructorReturn(this, (Experience.__proto__ || Object.getPrototypeOf(Experience)).apply(this, arguments));
+  }
+
+  Experience__createClass(Experience, [{
+    key: "render",
+    value: function render() {
+      return external__react__default.a.createElement(external__react_["Fragment"], null, this.props.jobs.map(function (job, i) {
+        return external__react__default.a.createElement(external__react_["Fragment"], {
+          key: job.company
+        }, external__react__default.a.createElement(core_["Typography"], {
+          variant: "title",
+          style: {
+            paddingBottom: '8px'
+          }
+        }, job.url ? external__react__default.a.createElement("a", {
+          href: job.url
+        }, job.company) : job.company), external__react__default.a.createElement(core_["Typography"], {
+          variant: "caption",
+          style: {
+            paddingBottom: '20px'
+          }
+        }, job.dateFrom, " - ", job.dateTo), external__react__default.a.createElement(core_["Typography"], {
+          component: "p"
+        }, job.Description), external__react__default.a.createElement(core_["Divider"], {
+          style: {
+            margin: '40px 0'
+          }
+        }));
+      }));
+    }
+  }]);
+
+  return Experience;
+}(external__react_["PureComponent"]);
+
+Object.defineProperty(Experience_Experience_Experience, "defaultProps", {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  value: {
+    jobs: []
+  }
+});
+
+// EXTERNAL MODULE: external "@material-ui/icons/LocationOn"
+var LocationOn_ = __webpack_require__(8);
+var LocationOn__default = /*#__PURE__*/__webpack_require__.n(LocationOn_);
+
+// EXTERNAL MODULE: external "@material-ui/icons/Work"
+var Work_ = __webpack_require__(9);
+var Work__default = /*#__PURE__*/__webpack_require__.n(Work_);
+
+// EXTERNAL MODULE: external "@material-ui/icons/Email"
+var Email_ = __webpack_require__(10);
+var Email__default = /*#__PURE__*/__webpack_require__.n(Email_);
+
+// EXTERNAL MODULE: external "@material-ui/icons/Phone"
+var Phone_ = __webpack_require__(11);
+var Phone__default = /*#__PURE__*/__webpack_require__.n(Phone_);
+
+// EXTERNAL MODULE: external "@material-ui/icons/Public"
+var Public_ = __webpack_require__(12);
+var Public__default = /*#__PURE__*/__webpack_require__.n(Public_);
+
+// CONCATENATED MODULE: ./pages/index.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return pages_MainPage; });
+function pages__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { pages__typeof = function _typeof(obj) { return typeof obj; }; } else { pages__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return pages__typeof(obj); }
+
+function pages__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function pages__defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function pages__createClass(Constructor, protoProps, staticProps) { if (protoProps) pages__defineProperties(Constructor.prototype, protoProps); if (staticProps) pages__defineProperties(Constructor, staticProps); return Constructor; }
+
+function pages__possibleConstructorReturn(self, call) { if (call && (pages__typeof(call) === "object" || typeof call === "function")) { return call; } return pages__assertThisInitialized(self); }
+
+function pages__assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function pages__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var pages_MainPage =
+/*#__PURE__*/
+function (_PureComponent) {
+  pages__inherits(MainPage, _PureComponent);
+
+  function MainPage() {
+    pages__classCallCheck(this, MainPage);
+
+    return pages__possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).apply(this, arguments));
+  }
+
+  pages__createClass(MainPage, [{
+    key: "render",
+    value: function render() {
+      return external__react__default.a.createElement("div", {
+        id: "page"
+      }, external__react__default.a.createElement("div", {
+        className: "page__content"
+      }, external__react__default.a.createElement(core_["Typography"], {
+        variant: "display1"
+      }, "Andrew Borovin"), external__react__default.a.createElement("div", {
+        className: "resume"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__top"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__photo"
+      }, external__react__default.a.createElement("img", {
+        src: "/static/img/ava3.jpg",
+        alt: "\u0410\u043D\u0434\u0440\u0435\u0439 \u0411\u043E\u0440\u043E\u0432\u0438\u043D"
+      })), external__react__default.a.createElement("div", {
+        className: "resume__info"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__infoRow"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__infoTitle"
+      }, external__react__default.a.createElement(LocationOn__default.a, null)), external__react__default.a.createElement("div", {
+        className: "resume__infoText"
+      }, "Saint-Petersburg")), external__react__default.a.createElement("div", {
+        className: "resume__infoRow"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__infoTitle"
+      }, external__react__default.a.createElement(Work__default.a, null)), external__react__default.a.createElement("div", {
+        className: "resume__infoText"
+      }, "Front-end developer")), external__react__default.a.createElement("div", {
+        className: "resume__infoRow"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__infoTitle"
+      }, external__react__default.a.createElement(Phone__default.a, null)), external__react__default.a.createElement("div", {
+        className: "resume__infoText",
+        locator: "phone"
+      }, "+7-921-890-2868")), external__react__default.a.createElement("div", {
+        className: "resume__infoRow"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__infoTitle"
+      }, external__react__default.a.createElement(Email__default.a, null)), external__react__default.a.createElement("div", {
+        className: "resume__infoText"
+      }, external__react__default.a.createElement("a", {
+        href: "mailto:a@borovin.com",
+        "data-navigate": "0",
+        locator: "email"
+      }, "a@borovin.com"))), external__react__default.a.createElement("div", {
+        className: "resume__infoRow"
+      }, external__react__default.a.createElement("div", {
+        className: "resume__infoTitle"
+      }, external__react__default.a.createElement(Public__default.a, null)), external__react__default.a.createElement("div", {
+        className: "resume__infoText"
+      }, external__react__default.a.createElement("a", {
+        locator: "githubLink",
+        target: "_blank",
+        "data-navigate": "0",
+        href: "https://github.com/borovin"
+      }, "github.com/borovin"))))), external__react__default.a.createElement(core_["Divider"], {
+        style: {
+          margin: '40px 0'
+        }
+      }), external__react__default.a.createElement(Experience_Experience_Experience, {
+        jobs: resources_jobs
+      }), external__react__default.a.createElement(Resume_Resume, null))), external__react__default.a.createElement("div", {
+        className: "page__content page__content_projects"
+      }, external__react__default.a.createElement("div", {
+        className: "page__header"
+      }, external__react__default.a.createElement(core_["Typography"], {
+        variant: "display1"
+      }, "Projects")), external__react__default.a.createElement("noindex", null, external__react__default.a.createElement("div", {
+        className: "portfolio"
+      }, resources_projects.map(function (project, i) {
+        return external__react__default.a.createElement("div", {
+          key: "project-".concat(i),
+          className: "portfolio__item"
+        }, external__react__default.a.createElement(core_["Typography"], {
+          variant: "title",
+          style: {
+            paddingBottom: '20px'
+          }
+        }, project.title), external__react__default.a.createElement(ProjectSlider_ProjectSlider, {
+          project: project
+        }));
+      })))));
+    }
+  }]);
+
+  return MainPage;
+}(external__react_["PureComponent"]);
+
+
 
 /***/ }),
-
-/***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/index.js");
-
-
-/***/ }),
-
-/***/ "material-ui":
+/* 7 */
 /***/ (function(module, exports) {
 
-module.exports = require("material-ui");
+module.exports = {
+	"card": "app-Experience__card"
+};
 
 /***/ }),
-
-/***/ "material-ui-icons/Email":
+/* 8 */
 /***/ (function(module, exports) {
 
-module.exports = require("material-ui-icons/Email");
+module.exports = require("@material-ui/icons/LocationOn");
 
 /***/ }),
-
-/***/ "material-ui-icons/LocationOn":
+/* 9 */
 /***/ (function(module, exports) {
 
-module.exports = require("material-ui-icons/LocationOn");
+module.exports = require("@material-ui/icons/Work");
 
 /***/ }),
-
-/***/ "material-ui-icons/Phone":
+/* 10 */
 /***/ (function(module, exports) {
 
-module.exports = require("material-ui-icons/Phone");
+module.exports = require("@material-ui/icons/Email");
 
 /***/ }),
-
-/***/ "material-ui-icons/Public":
+/* 11 */
 /***/ (function(module, exports) {
 
-module.exports = require("material-ui-icons/Public");
+module.exports = require("@material-ui/icons/Phone");
 
 /***/ }),
-
-/***/ "material-ui-icons/Work":
+/* 12 */
 /***/ (function(module, exports) {
 
-module.exports = require("material-ui-icons/Work");
-
-/***/ }),
-
-/***/ "react":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
+module.exports = require("@material-ui/icons/Public");
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=index.js.map
+/******/ ]);

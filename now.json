@@ -1,3 +1,7 @@
 {
-  "alias": "borovin.com"
+  "version": 2,
+  "alias": "borovin.com",
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" }
+  ]
 }

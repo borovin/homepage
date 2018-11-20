@@ -1,6 +1,6 @@
 import { Fragment, PureComponent } from 'react'
 import styles from './Experience.css'
-import { Card, CardContent, CardHeader, Typography } from 'material-ui'
+import { Divider, Typography } from '@material-ui/core'
 
 export default class Experience extends PureComponent {
   static defaultProps = {
@@ -11,17 +11,18 @@ export default class Experience extends PureComponent {
     return (
       <Fragment>
         {this.props.jobs.map((job, i) =>
-          <Card key={`job-${i}`} className={styles.card}>
-            <CardHeader
-              title={job.url ? (<a href={job.url}>{job.company}</a>) : job.company}
-              subheader={<Fragment>{job.dateFrom} - {job.dateTo}</Fragment>}
-            />
-            <CardContent>
-              <Typography component='p'>
-                {job.Description}
-              </Typography>
-            </CardContent>
-          </Card>
+          <Fragment key={job.company}>
+            <Typography variant='title' style={{paddingBottom: '8px'}}>
+              {job.url ? (<a href={job.url}>{job.company}</a>) : job.company}
+            </Typography>
+            <Typography variant='caption' style={{paddingBottom: '20px'}}>
+              {job.dateFrom} - {job.dateTo}
+            </Typography>
+            <Typography component='p'>
+              {job.Description}
+            </Typography>
+            <Divider style={{margin: '40px 0'}} />
+          </Fragment>
         )}
       </Fragment>
     )
