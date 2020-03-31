@@ -1,4 +1,0 @@
-window.CONFIG = {
-    apiHost: '<%- grunt.option("apiHost") || "http://api.borovin.com" %>',
-    clientVersion: '<%- grunt.option("clientVersion") || Date.now() %>'
-};

@@ -1,4 +1,0 @@
-block
-=====
-
-extended backbone view

@@ -1,4 +1,0 @@
-get
-===
-
-Smart property getter

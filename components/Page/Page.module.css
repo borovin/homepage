@@ -1,0 +1,40 @@
+.root {
+    position: relative;
+    height: 100%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.column:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+@media print {
+    .root {
+        padding: 30px;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        position: static !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .root {
+        height: auto;
+    }
+
+    .column {
+        padding: 30px;
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
