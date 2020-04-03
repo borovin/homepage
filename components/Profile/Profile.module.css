@@ -1,0 +1,20 @@
+.root {
+    position: relative;
+    padding: 20px 0 40px;
+}
+
+.avatar {
+    float: left;
+    height: 432px;
+}
+
+.dataList {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .dataList {
+        overflow: visible;
+    }
+}

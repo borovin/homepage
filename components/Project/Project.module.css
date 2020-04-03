@@ -1,0 +1,24 @@
+.root {
+    padding: 20px 0;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.screenLink {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.screenImage {
+    width: 100%;
+}
+
+@media print {
+    .root {
+        display: none;
+    }
+}
