@@ -21,7 +21,7 @@ const Profile = () => (
       </ListItem>
       <ListItem>
         <ListItemIcon><Icon path={mdiEmail} size={1} color="currentColor" /></ListItemIcon>
-        <ListItemText primary="a@borovin.com" secondary="Email" />
+        <ListItemText primary={<a href="mailto:a@borovin.com">a@borovin.com</a>} secondary="Email" />
       </ListItem>
       <ListItem>
         <ListItemIcon><Icon path={mdiPhone} size={1} color="currentColor" /></ListItemIcon>
@@ -29,11 +29,11 @@ const Profile = () => (
       </ListItem>
       <ListItem>
         <ListItemIcon><Icon path={mdiGithub} size={1} color="currentColor" /></ListItemIcon>
-        <ListItemText primary="github.com/borovin" secondary="Github" />
+        <ListItemText primary={<a target="blank" href="https://github.com/borovin">github.com/borovin</a>} secondary="Github" />
       </ListItem>
       <ListItem>
         <ListItemIcon><Icon path={mdiLinkedin} size={1} color="currentColor" /></ListItemIcon>
-        <ListItemText primary="linkedin.com/in/borovin" secondary="Linkedin" />
+        <ListItemText primary={<a target="blank" href="https://linkedin.com/in/borovin">linkedin.com/in/borovin</a>} secondary="Linkedin" />
       </ListItem>
     </div>
   </div>
