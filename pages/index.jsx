@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import Page from '../components/Page';
 import pageStyles from '../components/Page/Page.module.css';
 import Profile from '../components/Profile';

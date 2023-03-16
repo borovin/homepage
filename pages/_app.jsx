@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import '../styles.css';
 
-function App(props) {
+const App = (props) => {
   const { Component } = props;
 
   return (
@@ -15,7 +15,7 @@ function App(props) {
       <Component />
     </>
   );
-}
+};
 
 App.propTypes = {
   Component: PropTypes.elementType.isRequired,

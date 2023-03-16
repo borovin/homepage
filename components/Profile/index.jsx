@@ -1,10 +1,8 @@
-import {
-  ListItemIcon, ListItemText, ListItem,
-} from '@material-ui/core';
 import Icon from '@mdi/react';
 import {
   mdiGithub, mdiLinkedin, mdiClipboardAccount, mdiPhone, mdiMapMarker, mdiEmail,
 } from '@mdi/js';
+import { ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import profileStyes from './Profile.module.css';
 
 const Profile = () => (

@@ -1,4 +1,5 @@
-import { Typography } from '@material-ui/core';
+/* eslint-disable react/prop-types */
+import { Typography } from '@mui/material';
 import projectStyles from './Project.module.css';
 
 const Project = (props) => {
